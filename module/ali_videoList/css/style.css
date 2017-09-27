@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    /*background: cyan;*/
+}
+ul li {
+    margin: 16px;
+    float: left;
+    width: 408px;
+    height: 350px;
+    background: #FFF;
+    text-align: center;
+    padding: 30px;
+    z-index: 100;
+    position: relative;
+}
+.contentTitle {
+    display: block;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 24px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+ul li .contentText {
+    font-family: MicrosoftYaHei;
+    margin-top: 9px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left;
+    padding: 0;
+}
+ .contentPic {
+    width: 428px;
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+ul li .contentPic .videoPicture {
+    width: 100%;
+    height: 100%;
+}
+ul li .contentPic .playButton {
+    cursor: pointer;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 63px;
+    left: 175px;
+}
+ul li .contentPic .playButton img {
+    width: 100%;
+    height: 100%;
+}
+ul li .btn {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    background: #00C1DE;
+    width: 128px;
+    height: 36px;
+    /*padding-top: 8px;*/
+    line-height: 36px;
+    margin-left: 0;
+    float: left;
+    border-radius: 4px;
+}
+ul li .btn span {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #FFF;
+    letter-spacing: 0;
+}
+ul li .rightDock {
+    float: right;
+    margin-top: 28px;
+    margin-left: 20px;
+    display: block;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.Dataiconfont {
+    font-family: "Dataiconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    z-index: 1100;
+    display: none;
+    box-sizing: border-box;
+}
+.mask .dt-block-msg {
+    width: 800px;
+    height: 500px;
+    background: #000;
+    border: 2px solid #00C1DE;
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,.5);
+    z-index: 1200;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -300px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#closeVideo {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    color: #9B9EA0;
+    cursor: pointer;
+    z-index: 10000;
+}
+#video_player {
+    width: 100%;
+    height: 549px;
+    margin-top: 50px;
+    z-index: 9999;
+}
+@font-face {font-family: "Dataiconfont";
+  src: url('http://at.alicdn.com/t/font_oekugurnj370hpvi.eot?t=1479212968031'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_oekugurnj370hpvi.eot?t=1479212968031#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_oekugurnj370hpvi.woff?t=1479212968031') format('woff'), /* chrome, firefox */
+  url('http://at.alicdn.com/t/font_oekugurnj370hpvi.ttf?t=1479212968031') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_oekugurnj370hpvi.svg?t=1479212968031#Dataiconfont') format('svg'); /* iOS 4.1- */
+}
+
+.Dataiconfont {
+  font-family:"Dataiconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-odps:before { content: "\e600"; }
+
+.icon-ide:before { content: "\e601"; }
+
+.icon-eia:before { content: "\e602"; }
+
+.icon-fenxixingshujuku:before { content: "\e603"; }
+
+.icon-guizeyinqingyujingguankongban:before { content: "\e604"; }
+
+.icon-mt:before { content: "\e606"; }
+
+.icon-learn:before { content: "\e607"; }
+
+.icon-yuntu-jx:before { content: "\e608"; }
+
+.icon-sc:before { content: "\e609"; }
+
+.icon-rengongzhinengwangzhan:before { content: "\e60a"; }
+
+.icon-face:before { content: "\e60b"; }
+
+.icon-taifengyujing:before { content: "\e60c"; }
+
+.icon-gia:before { content: "\e60d"; }
+
+.icon-re:before { content: "\e60e"; }
+
+.icon-ocr:before { content: "\e60f"; }
+
+.icon-yidongdingxiangyingxiaoban:before { content: "\e610"; }
+
+.icon-prophet:before { content: "\e611"; }
+
+.icon-datahub:before { content: "\e613"; }
+
+.icon-datav:before { content: "\e614"; }
+
+.icon-porana:before { content: "\e615"; }
+
+.icon-guizeyinqingyingxiaoban:before { content: "\e616"; }
+
+.icon-shujujicheng:before { content: "\e618"; }
+
+.icon-shujushichang:before { content: "\e619"; }
+
+.icon-yidongshujufenxi:before { content: "\e61a"; }
+
+.icon-nls:before { content: "\e605"; }
+
+.icon-qiyetupu:before { content: "\e612"; }
+
+.icon-logo:before { content: "\e617"; }
+
+.icon-guizeyinqing:before { content: "\e61b"; }
+
+.icon-post-odps:before { content: "\e61c"; }
+
+.icon-bi:before { content: "\e637"; }

@@ -1,0 +1,10 @@
+@media screen and (max-width: 450px) {
+  .pay-for .pro-bar .stage {
+    font-size: 12px;
+    padding-left: 22px; } }
+@media screen and (max-width: 360px) {
+  .pay-for .pay-style .wei-pay {
+    margin-left: 0;
+    margin-top: 20px; } }
+
+/*# sourceMappingURL=c.css.map */

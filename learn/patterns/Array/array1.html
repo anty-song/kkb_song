@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array1</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3],
+            _arr = [2, 3, 4];
+        var __arr = arr.concat(_arr);
+        
+        console.log([
+            __arr,
+            arr.join('-'),
+            arr.pop(),// 
+            arr,
+            arr.push(4),// return the length of arr
+            arr,
+            // arr.reverse(),
+            arr.slice(0, 1),
+            __arr.sort(),
+            // arr.splice(0, 1)
+            arr.toString(),
+            arr.toLocaleString(),
+            isNaN(_arr[1])
+        ])
+    </script>
+</body>
+</html>

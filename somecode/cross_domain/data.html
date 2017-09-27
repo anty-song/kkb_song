@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window.name跨域</title>
+	<script>
+		function getData() {
+			var iframe = document.getElementById('proxy');
+			iframe.onload = function () {
+				var data = iframe.contentWindow.name;
+				alert(data);
+			}
+			iframe.src = "b.html";
+		}
+	</script>
+</head>
+<body>
+	<iframe id="proxy" src="file:///Users/edianzu/Desktop/somecode/a.html" frameborder="0" style="" onload="getData()"></iframe>
+</body>
+</html>

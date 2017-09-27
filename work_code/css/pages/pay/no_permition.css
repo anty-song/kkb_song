@@ -1,0 +1,30 @@
+.no-permition {
+    padding: 232px 0 177.2px 0;
+    text-align: center;
+}
+.no-permition .lock {
+    width: 71px;
+    height: 93px;
+    margin: 0 auto;
+}
+.no-permition .lock img {
+    width: 100%;
+    height: 100%;
+}
+.no-permition .no-permition-txt {
+    font-size: 14px;
+    color: #DDD;
+    margin: 24px 0 34px 0;
+}
+.no-permition .go-home {
+    display: block;
+    width: 143px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+    background: #00ABE6;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+}

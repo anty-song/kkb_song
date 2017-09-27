@@ -1,0 +1,133 @@
+/* line 1, client/sass/pages/login.scss */
+.access-wrap {
+  padding: 130px 0 296px 0; }
+
+/* line 4, client/sass/pages/login.scss */
+.access-wrap .access-tab {
+  width: 148px;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 auto;
+  color: #8A959D; }
+
+/* line 11, client/sass/pages/login.scss */
+.access-wrap .access-tab p {
+  text-align: center;
+  width: 50px;
+  height: 40px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer; }
+
+/* line 18, client/sass/pages/login.scss */
+.access-wrap .access-tab p.login-tab {
+  float: left; }
+
+/* line 21, client/sass/pages/login.scss */
+.access-wrap .access-tab p.reg-tab {
+  float: right; }
+
+/* line 24, client/sass/pages/login.scss */
+.access-wrap .access-tab p.active {
+  border-color: #00abe6;
+  color: #353535; }
+
+/* line 28, client/sass/pages/login.scss */
+.access-wrap .login-box, .access-wrap .register-box {
+  padding: 0 45px; }
+
+/* line 31, client/sass/pages/login.scss */
+.access-wrap .tel, .access-wrap .password, .access-wrap .nickname {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+  color: #8f8f8f;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 10px; }
+
+/* line 41, client/sass/pages/login.scss */
+.access-wrap .login-box .tel, .access-wrap .register-box .nickname {
+  margin: 26px 0 20px 0; }
+
+/* line 44, client/sass/pages/login.scss */
+.access-wrap .login-box .checkbox {
+  padding-left: 20px;
+  margin: 8px 0 21px 0;
+  font-size: 12px;
+  line-height: 17px; }
+
+/* line 50, client/sass/pages/login.scss */
+.access-wrap .login-box .checkbox input {
+  cursor: pointer; }
+
+/* line 53, client/sass/pages/login.scss */
+.access-wrap .login-box .checkbox a {
+  float: right;
+  color: #8f8f8f; }
+
+/* line 57, client/sass/pages/login.scss */
+.access-wrap .login-box .login-btn {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background: #00ABE6;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 44px; }
+
+/* line 68, client/sass/pages/login.scss */
+.access-wrap .login-box .login-btn:hover {
+  background-color: #0799CB; }
+
+/* line 71, client/sass/pages/login.scss */
+.access-wrap .register-box .password {
+  margin: 20px 0; }
+
+/* line 74, client/sass/pages/login.scss */
+.access-wrap .register-box .captcha-box .captcha {
+  width: 62%;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 36px;
+  color: #8f8f8f;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px; }
+
+/* line 84, client/sass/pages/login.scss */
+.access-wrap .register-box .captcha-box .get-captcha {
+  float: right;
+  display: block;
+  width: 35%;
+  height: 36px;
+  border: 1px solid #00abe6;
+  border-radius: 4px;
+  color: #00abe6;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px; }
+
+/* line 96, client/sass/pages/login.scss */
+.access-wrap .register-box .captcha-box .get-captcha:hover {
+  background-color: #00abe6;
+  color: #fff; }
+
+/* line 100, client/sass/pages/login.scss */
+.access-wrap .register-box .register-btn {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background: #00ABE6;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 44px;
+  margin-top: 20px; }
+
+/* line 112, client/sass/pages/login.scss */
+.access-wrap .register-box .register-btn:hover {
+  background: #0799CB; }

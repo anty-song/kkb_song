@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		function testWebSocket() {
+			//建立客户端与服务器端的长连接 全双工通信
+			if ("WebSocket" in window) {
+				//1.创建对象
+				//WebSocket(url,[protocal]) localhost:8080
+				//url :连接指定的url地址
+				//[protocal] 可以接受的子协议
+				var ws = new WebSocket("ws://echo.websocket.org");
+				//2.建立长连接
+				ws.onopen = function () { //open:一次握手 建立与服务器端的连接
+					//客户端可以发数据 向指定的url发送数据
+					ws.send("Hello"); //连接成功之后发消息
+					alert("Hello");
+				};
+				//3.message 即时通讯
+				ws.onmessage = function (evt) {
+					//接收数据 数据保存在事件对象的data属性中
+					var event = evt || window.event;
+					//输出消息事件中保存的消息内容 'hello'
+					alert('recevied' + event.data); //message传输的消息内容保存在事件对象的data属性中
+					ws.close();//关闭连接
+				};
+				ws.onclose = function () {
+					//关闭连接
+					ws.close();
+				};
+
+
+			} else {
+				alert('浏览器不支持WS');
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+		<a href="javascript:testWebSocket()">TestWebSocket </a>
+	</div>
+</body>
+
+</html>

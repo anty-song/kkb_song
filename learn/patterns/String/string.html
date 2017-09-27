@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string</title>
+</head>
+<body>
+    <script>
+        var str,
+            str1,
+            _str,
+            str2;
+        str = new String( 'song' );
+        str1 = String( 'song' );
+        _str = 'annty';
+        str2 = ' song ';
+        console.log( [
+            'str1: ' + str1,
+            'str: ' + str,
+            'str1的类型：' + typeof str1,
+            'str的类型：' + typeof str
+        ] );
+        console.log( [
+            _str.length,
+            _str.charAt( 1 ),       // 取出一个字符串中第n个字符
+            _str.charCodeAt( 1 ),   // 取得字符串中第n个字符的编码
+            _str.concat( str ),     // 连接字符串 参数可以是多个
+            // _str.fromCharCode(110),
+            _str.indexOf('n', 2),         // 在指定字符串中查找一个字符或子串(在位置2以后首次出现‘n’的位置)
+            _str.slice(0, 2),           // 返回字符串的切片或子串
+            _str.split( '' )        // 在指定分隔符或正则表达式处断开，将一个字符串分割为由字符串组成的数组
+        ] );
+        console.log([
+            str2.substr(1, 3),
+            str2.substring(1, 3),
+            str2.trim(),
+            str2.valueOf()
+        ]);
+    </script>
+</body>
+</html>

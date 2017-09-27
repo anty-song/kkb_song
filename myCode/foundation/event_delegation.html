@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件委托</title>
+</head>
+<body>
+    <ul id="myUl">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <button id="btn">添加</button>
+    <script>
+        window.onload = function() {
+            var myUl = document.getElementById('myUl');
+            myUl.addEventListener('click', function(event) {
+                var event = event || window.event;
+                var target = event.target || event.srcElement;
+                if (target.nodeName.toLowerCase() == 'li') {
+                    alert(target.innerHTML);
+                };
+            });
+            var btn = document.getElementById('btn');
+            btn.onclick = function() {
+                addElement();
+            }
+            function addElement() {
+                var li = document.createElement('li');
+                li.innerHTML = 'ddd';
+                myUl.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>

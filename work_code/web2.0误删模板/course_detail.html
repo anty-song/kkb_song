@@ -1,0 +1,507 @@
+<div class="pm-wrap">
+        <section class="navigation hidden-sm hidden-xs" style="display: none;">
+            <div class="container">
+                <a class="anchor" href="{{"/course/"+courseId+"#data"}}">关于产品经理</a>
+                <a class="anchor" href="{{"/course/"+courseId+"#efficient"}}">学习路径</a>
+                <a class="anchor" href="{{"/course/"+courseId+"#scheme"}}">两种学习方案</a>
+                <a class="anchor" href="{{"/course/"+courseId+"#faq"}}">常见问题</a>
+                <a class="contact-teacher" href="javascript:openwin();">联系课程导师</a>
+            </div>
+        </section>
+        <section id="detailsBanner" data-img="{{ courseDetails.data.bigpic }}" class="banner">
+            <div class="container">
+                <p class="banner-tit">
+                    {{courseDetails.data.name}}<br>{{courseDetails.data.desc}}
+                </p>
+            </div>
+        </section>
+        <section class="data clearfix" id='data'>
+            <div class="container">
+                <p class="tit">2017客观数据</p>
+                <div class="container">
+                    <div class="left-pic col-md-6">
+                        <img src="/img/pm/data_left.png" alt="">
+                        <p>以上数据：每座城市产品经理职位需求量 即全国产品经理职位总需求量</p>
+                    </div>
+                    <div class="right-pic col-md-6">
+                        <img src="/img/pm/data_right.png" alt="">
+                    </div>
+                </div>
+                <div class="data-summary">
+                    <p>从拉勾、BOSS直聘、智联、猎聘等主流招聘网站的实时数据与专项报告中，</p>
+                    <p>产品经理人才市场明显呈求大于供状态，且薪资福利持续走高。</p>
+                </div>
+            </div>
+        </section>
+        <section class="character">
+            <div class="container">
+                <p class="tit">产品经理生来磅礴的特性，即注定了其学习方式无法平庸</p>
+                <ul class="row">
+                    <li class="col-md-3 col-xs-6">
+                        <img src="/img/pm/video.png" alt="">
+                        <span>录播视频</span>
+                        <p>系统掌握知识体系<br>随时随地学习</p>
+                    </li>
+                    <li class="col-md-3 col-xs-6">
+                        <img src="/img/pm/interactive.png" alt="">
+                        <span>互动直播</span>
+                        <p>掌握实战应用方法<br>剖析大量商业案例</p>
+                    </li>
+                    <li class="col-md-3 col-xs-6">
+                        <img src="/img/pm/video.png" alt="">
+                        <span>实战演练</span>
+                        <p>阶段性、游戏化教学<br>32场项目实战层层深入</p>
+                    </li>
+                    <li class="col-md-3 col-xs-6">
+                        <img src="/img/pm/one.png" alt="">
+                        <span>一对一辅导</span>
+                        <p>专业知识一对一交流<br>人才顾问一对一辅导</p>
+                    </li>
+                </ul>
+                <div class="path hidden-sm hidden-xs">
+                    <img src="/img/pm/path.png" alt="">
+                    <p>高效的系统学习成长路径</p>
+                </div>
+                <div class="grid-line row  hidden-sm hidden-xs">
+                    <img class="center-block col-md-8 col-sm-8" src="/img/pm/grid.png" alt="">
+                </div>
+                <div class="steps row  hidden-sm hidden-xs">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stage">
+                            <div>
+                                <img src="/img/pm/1.png" alt="">
+                            </div>
+                            <span>1</span>
+                            <p>学习知识体系</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stage arrow">
+                            <div>
+                                <img src="/img/pm/2.png" alt="">
+                            </div>
+                            <span>2</span>
+                            <p>实战演练</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stage arrow">
+                            <div>
+                                <img src="/img/pm/3.png" alt="">
+                            </div>
+                            <span>3</span>
+                            <p>总结分享</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stage arrow">
+                            <div>
+                                <img src="/img/pm/4.png" alt="">
+                            </div>
+                            <span>4</span>
+                            <p>创新 . 作品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="efficient" id='efficient'>
+            <div class="container">
+                <p class="tit">
+                    适合产品经理高效的学习路径
+                </p>
+                {% for item in section %}
+                <div class="system real">
+                    <div class="circle-white">
+                        <div class="circle-red">{{ loop.index }}</div>
+                    </div>
+                    <p>{{ item.title }}</p>
+                    <div class="eff-txt">{{item.description}}</div>
+                    <div class="course-ctt clearfix">
+                        <span class="txt">课程内容</span>
+                        <span class="item1 glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="ctt-box item1-box" style="display: none;">
+                        <table class="table">
+                        {% for item in item.subs %}
+                           <tr>
+                                <td style="background: #F8F8F8;"><a style="width:100%;display:block;color:#6C7881" href="{{ urlConfig.student + "/course/"+courseId+"/study/" + item.subid}}" >{{loop.index + "."}}{{ item.title }}</a></td>
+                                <td style="background: #F1F1F1;"><a style="width:100%;display:block;color:##6C7881" href="{{ urlConfig.student + "/course/"+courseId+"/study/" + item.subid}}" >{{item.v_total}}课时</a></td>
+                            </tr> 
+                        {% endfor %}
+                        </table>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section class="teach container">
+            <p class="tit">参加该学习计划，谁来指导？</p>
+            <ul class="row">
+                <li class="col-md-4">
+                    <div class="li-box">
+                        <div class="tea-avatar">
+                            <img src="/img/pm/liu.png" alt="">
+                        </div>
+                        <p class="name">刘文智<span>Jason</span></p>
+                        <p class="desc">
+                            从2012年起，为国内数以万计的产品新人提供“阅读+问答+视频学习”的一体化免费学习服务；同时，魄力开创中国产品经理职业教育体系。2016年应邀出席美国ASU-GSV在线教育科技创新峰会。
+                        </p>
+                        <p class="case">
+                            <span class="success">- 成功案例 -</span>
+                            <span class="item item1">《产品经理深入浅出》</span>
+                            <span class="item item2">《手把手教你做产品》</span>
+                            <span class="item item3">《产品经理入门指南》</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="col-md-4">
+                    <div class="li-box">
+                        <div class="tea-avatar">
+                            <img src="/img/pm/li.png" alt="">
+                        </div>
+                        <p class="name">李海洋<span>Ocean</span></p>
+                        <p class="desc">
+                            10年产品及项目交付管理经验，前华为项目经理有多个运营商，大型企业的服务经验。独立负责多个领域的电子商务互联网产品项目。 
+                        </p>
+                        <p class="case">
+                            <span class="success">- 成功案例 -</span>
+                            <span class="item item1">中国石油西气东输二线配套项目</span>
+                            <span class="item item2">山东美琪石化电子交易平台 </span>
+                        </p>
+                    </div>
+                </li>
+                <li class="col-md-4">
+                    <div class="li-box">
+                        <div class="tea-avatar">
+                            <img src="/img/pm/kuang.png" alt="">
+                        </div>
+                        <p class="name">旷健<span>Breeze</span></p>
+                        <p class="desc">
+                            前搜淘移动端产品负责人，资深产品研究者。曾主导多款移动互联网产品，擅长分析和解构新兴知识，并形成通俗易懂的实操方法论。对移动产品设计、交互设计、用户体验有深厚的理论与应用积淀。
+                        </p>
+                        <p class="case">
+                            <span class="success">- 成功案例 -</span>
+                            <span class="item item1">美好学院App 移动产品经理</span>
+                            <span class="item item2">搜淘App 移动产品经理</span>
+                            <span class="item item3">蓝海K+平台</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="scheme" id='scheme'>
+            <div class="container">
+                <p class="tit">2套成熟的产品进阶解决方案</p>
+                <div class="col-md-6">
+                    <div class="scheme-item scheme-jing">
+                        <div class="tit-box">
+                            <p class="scheme-name">精英方案</p>
+                            <p class="scheme-use">适用于渴望极速成才的产品新人</p>
+                        </div>
+                        <div class="ctt-box">
+                            <p class="scheme-des">具备基础的产品经理概念认知与职业理解，学习时间紧迫，渴望通过较短时间（3个月）即可系统完成学习成长。</p>
+                            <hr>
+                            <a href="{{"/signup/"+courseId+"/2?courseId="+courseId}}" class="scheme-more">立即报名</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scheme-item scheme-pro">
+                        <div class="tit-box">
+                            <p class="scheme-name">pro方案</p>
+                            <p class="scheme-use">适用于期待厚积薄发的产品新人</p>
+                        </div>
+                        <div class="ctt-box">
+                            <p class="scheme-des">具备完整的产品经理概念认知、职业理解、基础技能，学习时间丰富，期待通过完美周期（4个月）系统、深度、极致的完成学习成长。</p>
+                            <hr>
+                            <a href="{{"/signup/"+courseId+"/3?courseId="+courseId}}" class="scheme-more">立即报名</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scheme-table container">
+            <table class="table table-bordered">
+                <tr class="tr-item">
+                    <td></td>
+                    <td class="jing">精英方案</td>
+                    <td class="pro">Pro方案</td>
+                </tr>
+                <tr>
+                    <td class="tip">报名条件</td>
+                    <td><p>一般学员均可报名</p><p>零基础学员建议向学习导师寻求专业建议</p></td>
+                    <td><p>具备初级产品基础或产品相关高等学历才可申请</p><p>向学习导师提交申请</p></td>
+                </tr>
+                <tr class="tr-item">
+                    <td class="tip">能力模型</td>
+                    <td>市场调研、产品规划、产品设计、项目管理、</p><p>产品宣讲、市场运营、更新迭代</td>
+                    <td>商业定位、市场调研、产品规划、产品设计、项目管理、</p><p>产品宣讲、市场运营、更新迭代、产品生命力管理、</p><p>品牌支持、领导力</td>
+                </tr>
+                <tr>
+                    <td class="tip">设计理念</td>
+                    <td>游戏化、沉浸式、场景感</td>
+                    <td>游戏化、沉浸式、场景感、激励制</td>
+                </tr>
+                <tr class="tr-item">
+                    <td class="tip">学习方式</td>
+                    <td>录播视频＋互动直播＋实战演练＋一对一辅导</td>
+                    <td>录播视频＋互动直播＋实战演练＋一对一辅导+奖学金激励</td>
+                </tr>
+                <tr>
+                    <td class="tip">项目作品</td>
+                    <td>从0到1打造2款互联网产品</td>
+                    <td>从0到1打造3款真实互联网产品</td>
+                </tr>
+                <tr class="tr-item">
+                    <td class="tip">学习周期</td>
+                    <td>3个月</td>
+                    <td>4个月</td>
+                </tr>
+                <tr>
+                    <td class="tip">增值服务</td>
+                    <td>终身答疑</td>
+                    <td>终身答疑、专属社群</td>
+                </tr>
+                <tr class="tr-item">
+                    <td class="tip">费用机制</td>
+                    <td>{{courseDetails.data.practisePrice}}元</td>
+                    <td>{{courseDetails.data.occupy_price}}元（每季度1期，每期仅限32名额）</td>
+                </tr>
+            </table>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <p class="tit">FAQ</p>
+                <div class="col-md-6">
+                    <div class="item">
+                        <p class="question">
+                            <span>Q:</span>课程是如何学习的？
+                        </p>
+                        <span>A:</span>
+                        <div class="answer">
+                            课程是互联网在线学习的，包括在线形式的系统视频课程学习，商业实战实操技能的在线直播，以及一对一名师实时互动辅导，保证学习后对口就业。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <p class="question">
+                            <span>Q:</span>课程的特色以及优势有哪些？
+                        </p>
+                        <span>A:</span>
+                        <div class="answer">
+                            课程的授课理念是场景化、实战化、案例化，所有课程的设置均结合企业真实的岗位需求来设定，极具实用性，以就业为学习结果导向的系统化职业课程。整个课程体系由浅入深，从系统知识框架到实践运用，通过符合学习认知规律的教学方式方法，使学员切实提高自己产品能力。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <p class="question">
+                            <span>Q:</span>为什么选择线上学习？
+                        </p>
+                        <span>A:</span>
+                        <div class="answer">
+                            线上学习不受时间和空间的限制，能最大化实现教育公平化，视频的特性可以满足新人学习反复复习巩固的需求，同时通过在线直播实战、即时互动、课后辅导、任务实时跟踪，最大化还原一线产品团队工作场景的情景化教学方式，提供真实产品实战项目学习，课程时间安排灵活方便，在职在校皆可轻松学习。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <p class="question">
+                            <span>Q:</span>课程的特色以及优势有哪些？
+                        </p>
+                        <span>A:</span>
+                        <div class="answer">
+                            课程的授课理念是场景化、实战化、案例化，所有课程的设置均结合企业真实的岗位需求来设定，极具实用性，以就业为学习结果导向的系统化职业课程。整个课程体系由浅入深，从系统知识框架到实践运用，通过符合学习认知规律的教学方式方法，使学员切实提高自己产品能力。
+                            <p class="other">
+                            基础还不是很扎实，建议优先考虑<a>产品经理精英方案</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="core container">
+            <p class="tit">
+                带来核心竞争力的解决方案制作优势
+                <span>开课吧独有的互联网智慧职业教育解决方案，真正解决1-3年产品新人最急的需求与最深的痛点。</span>
+            </p>
+            <ul class="row">
+                <li class="col-md-4 col-xs-4">
+                    <div class="core-list-item">
+                        <img src="/img/pm/front.png" alt="">
+                    </div>
+                    <span>前沿课程体系</span>
+                </li>
+                <li class="col-md-4 col-xs-4">
+                    <div class="core-list-item">
+                        <img src="/img/pm/wize.png" alt="">
+                    </div>
+                    <span>智慧学习系统</span>
+                </li>
+                <li class="col-md-4 col-xs-4">
+                    <div class="core-list-item">
+                        <img src="/img/pm/better.png" alt="">
+                    </div>
+                    <span>贴心服务设计</span>
+                </li>
+            </ul>
+            <div class="core-pic">
+                <img src="/img/pm/method.png" alt="">
+            </div>
+        </section>
+        <section class="fix" id='fix'>
+            <div class="container">
+                <p class="tit">一套解决方案完美解决这些问题</p>
+                <div class="item item1">
+                    <p class="ques">
+                        <span>1:</span>
+                        怎样的学习体验？
+                    </p>
+                    <p class="answ">
+                        整个学习过程由系统录播视频＋直播互动＋实战演练＋一对一辅导组成，结合数据驱动的智慧学习系统。在降低学习者成本、提升学习效率、保障学习效果三个维度上，让每位学习者收获更高效、愉悦的学习体验，保障所学即所用的学习收获。
+                    </p>
+                </div>
+                <div class="item item2">
+                    <p class="ques">
+                        <span>2:</span>
+                        学到什么样的产品能力？
+                    </p>
+                    <p class="answ">
+                        经过几个月的系统学习和跟着导师实战演练强化，你将掌握产品经理核心的几项技能：市场与用户调研分析、市场与产品定位、产品规划与设计、项目管理与协同、产品宣讲、运营支持、产品迭代与生命周期管理，在这些能力基础上，将产生属于你个人的3个商业项目作品。
+                    </p>
+                </div>
+                <div class="item item3">
+                    <p class="ques">
+                        <span>3:</span>
+                        获得什么样的就业机会？
+                    </p>
+                    <p class="answ">
+                        我们有更为专业的就业服务团队，陪伴你的学习周期，为你解惑答疑，竭力为每位学习者带来最理想的就业机会，也的确已经解决了<span>x</span>人的就业高薪梦想。
+                    </p>
+                    <p class="know">
+                        具体可了解<a>就业服务计划</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="gain container">
+            <p class="tit">看看大家在这次计划中的学习收获</p>
+            <ul class="row">
+                <li class="col-md-4">
+                    <div class="li-box">
+                        <div class="stu-avatar">
+                            <img src="/img/pm/bai.png" alt="">
+                        </div>
+                        <p class="name">白卓玉</p>
+                        <div class="info">
+                            <p class="one">
+                                <span class="place">北京</span>
+                                <span class="job">就职于 新浪</span>
+                            </p>
+                            <p class="two">
+                                <span>应届生入职产品经理  </span>
+                                <span class="money">薪资：25000</span>
+                            </p>
+                        </div>
+                        <div class="words">
+                            <img src="/img/pm/quot-left.png" alt="" class="quot">
+                            <p>
+                                课程饱含系统知识、实战方法和对行业的深度见解，</p><p>
+                                全面提升了我的职业思维和专业能力！</p><p>
+                                感谢在开课吧遇见的所有人，更感谢现在的自己，</p><p>
+                                加油！
+                            </p>
+                            <img src="/img/pm/quot-right.png" alt="" class="quot">
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4">
+                    <div class="li-box">
+                        <div class="stu-avatar">
+                            <img src="/img/pm/lu.png" alt="">
+                        </div>
+                        <p class="name">陆再晨</p>
+                        <div class="info">
+                            <p class="one">
+                                <span class="place">北京</span>
+                                <span class="job">就职于 玄武无线科技</span>
+                            </p>
+                            <p class="two">
+                                <span>研发转产品经理  </span>
+                                <span class="money">薪资：25000</span>
+                            </p>
+                        </div>
+                        <div class="words">
+                            <img src="/img/pm/quot-left.png" alt="" class="quot">
+                            <p>
+                                结合在开课吧产品壹佰学院的学习和在创业团队中的<br>
+                                实践使我发生了很大的变化。细腻的需求文档，<br>
+                                周密的项目计划表，加上我非常喜欢的早间例会，<br>
+                                都使团队沟通更高效。
+                            </p>
+                            <img src="/img/pm/quot-right.png" alt="" class="quot">
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4">
+                    <div class="li-box">
+                        <div class="stu-avatar">
+                            <img src="/img/pm/huang.png" alt="">
+                        </div>
+                        <p class="name">黄辉</p>
+                        <div class="info">
+                            <p class="one">
+                                <span class="place">北京</span>
+                                <span class="job">就职于 华澳翼时代</span>
+                            </p>
+                            <p class="two">
+                                <span>销售转职产品经理  </span>
+                                <span class="money">薪资：25000</span>
+                            </p>
+                        </div>
+                        <div class="words">
+                            <img src="/img/pm/quot-left.png" alt="" class="quot">
+                            <p>
+                                我在开课吧学到了系统的理论知识，还亲手经历了<br>
+                                3款产品从0到1的全过程。感谢开课吧，<br>
+                                不但让我找到了一份体面的产品工作，对以后的职业<br>
+                                发展也有了清醒认识。
+                            </p>
+                            <img src="/img/pm/quot-right.png" alt="" class="quot">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="join">
+            <div class="container">
+                <p class="title">
+                    选择一种适合你的产品方案，和一群热爱产品的人共同完成提升。
+                    <span>已有10人参与该产品方案</span>
+                    <a href="{{"/course/"+courseId+"#scheme"}}">加入我们</a>
+                </p>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="http://kefu8.kuaishang.com.cn/bs/ks.j?cI=418723&fI=35187" charset="utf-8"></script>
+    <script type="text/javascript">
+  function openwin(text){
+   if(KS && KS.openDirChatWin){
+    var win=$("#k_s_ol_chatWin");
+    if(win.length>0){
+        if(win.is(':visible')){
+            win.addClass("bounce");
+            var a=setTimeout(function(){
+                win.removeClass("bounce");
+            },1000);
+        }
+    }
+    KS.openDirChatWin({sText:text});
+   }else{
+    var a=setTimeout(openwin,1000);
+   }
+  }
+</script>

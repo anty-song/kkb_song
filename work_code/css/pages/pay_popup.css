@@ -1,0 +1,65 @@
+/* line 1, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap {
+  position: relative;
+  padding: 52px 0 62px 0;
+  text-align: center;
+  font-size: 0; }
+
+/* line 7, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap button.close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer; }
+
+/* line 13, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap .pay-pop-tab {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 50px;
+  border-bottom: 3px solid #00ABE6; }
+
+/* line 21, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap .pay-pop-txt {
+  font-size: 14px;
+  color: #7B7B7B;
+  line-height: 18px;
+  margin: 45px 0 42px 0; }
+
+/* line 27, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap .pay-pop-txt span {
+  display: inline-block;
+  margin-top: 5px; }
+
+/* line 31, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap a {
+  display: inline-block;
+  width: 142px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none; }
+
+/* line 40, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap .paid-btn {
+  background: #00ABE6;
+  color: #fff;
+  vertical-align: top; }
+
+/* line 45, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap .paid-btn:hover {
+  background: #0799CB; }
+
+/* line 49, client/sass/pages/pay_popup.scss */
+.modal .pay-pop-wrap .err-btn {
+  border: 1px solid #E9E9E9;
+  color: #BCC3C8;
+  margin-left: 18px; }
+
+@media screen and (min-width: 768px) {
+  /* line 55, client/sass/pages/pay_popup.scss */
+  .modal-sm {
+    width: 416px; } }

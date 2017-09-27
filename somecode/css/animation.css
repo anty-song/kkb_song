@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*抽屉样式的动画*/
+.draw{
+	position: relative;
+	width: 30px;
+	height: 30px;
+}
+.draw>p{	
+	width: 30px;
+	height: 30px;		
+	background-color: red;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	border-radius: 4px;
+	user-select: none;
+}
+em{
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	color: red;
+	text-align: center;
+	background-color: cyan;
+	position: absolute;
+	left: -30px;
+	top: 0;
+	border-radius: 4px;
+	font-style: normal;
+	z-index: -1;
+	/*-webkit-transition: left 0.3s ease-in-out 0.1s;*/
+	/*这行代码在此处写动画效果正常*/
+	transition: left 1s ease-in-out 0.1s;
+}
+.draw:hover em{
+	/*这行代码在此处写动画效果不正常但是会有效果*/
+	/*transition: left 0.3s ease-in-out 0.1s;*/
+	/*加上-webkit-之后效果正常了*/
+	/*-webkit-transition: left 0.3s ease-in-out 0.1s;*/
+	left: 40px;
+}

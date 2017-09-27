@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*系统课程列表*/
+/* line 2, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+/* line 6, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-item {
+  border: 1px solid #EEEEEE;
+  margin-top: 30px;
+  cursor: pointer;
+  overflow: hidden; }
+
+/* line 12, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-item:hover {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); }
+
+/* line 15, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-item:hover img {
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 21, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSysInfo {
+  width: 100%; }
+
+/* line 25, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSysInfo img {
+  width: 100%;
+  height: 200px; }
+
+/* line 30, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSysLink {
+  width: 100%;
+  height: 143px;
+  padding-left: 18px; }
+
+/* line 36, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSysList .row {
+  margin-right: -12px !important;
+  margin-left: -12px !important; }
+
+/* line 41, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSysList .col-md-4 {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+/* line 45, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-title {
+  font-size: 22px;
+  color: #171717;
+  padding-top: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  width: 80%;
+  text-decoration: none; }
+
+/* line 56, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-title a {
+  font-size: 22px;
+  color: #171717;
+  text-decoration: none; }
+
+/* line 61, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-title a:hover {
+  color: #00ABE6; }
+
+/* line 64, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-studyNum {
+  font-size: 14px;
+  color: #8A959D; }
+
+/* line 68, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-oneword {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #959595; }
+
+/* line 77, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-detail a {
+  display: block; }
+
+/* line 80, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-detail .getmore {
+  display: inline-block;
+  width: 92px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 12px;
+  margin-right: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px; }
+
+/* line 92, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-detail:nth-child(3n-2) .getmore {
+  background: linear-gradient(90deg, #FF9595, #FE6868); }
+
+/* line 98, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-detail:nth-child(3n-1) .getmore {
+  background: linear-gradient(90deg, #24CAFB, #00ABE6); }
+
+/* line 103, client/sass/tpl/courselist/sysCourse-list.scss */
+.courseSys-detail:nth-child(3n) .getmore {
+  background: linear-gradient(90deg, #5BE3C3, #4CC8AA); }
+
+/*系统课程列表 end*/

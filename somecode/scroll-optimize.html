@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scroll</title>
+</head>
+<body>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	<p>1</p><p>1</p><p>1</p><p>1</p>
+	
+	<script type="text/javascript">
+		// 简单去抖函数
+		function debounce(func,wait) {
+			var timeout;
+			return function() {
+				clearTimeout(timeout);
+				timeout = setTimeout(func,wait);
+			}
+		}
+		function realFunc() {
+			console.log('success');
+		}
+		// window.addEventListener('scroll',debounce(realFunc,500));
+		// window.addEventListener('scroll',realFunc);// 此处是不去抖的可以比较一下
+
+		// 简单节流函数
+		function throttle(func,wait,mustRun) {
+			var timeout,
+				startTime = new Date();
+			return function () {
+						var context = this,
+							args = arguments,
+							curTime = new Date();
+						clearTimeout(timeout);
+						if (startTime - curTime >= mustRun) {
+							func.apply(context,args); // 为什么要加这一行？？
+							startTime = curTime;
+						}
+						else{
+							timeout = setTimeout(func,wait);
+						}
+					}
+		}
+		window.addEventListener('scroll',throttle(realFunc,1000,2000));
+	</script>
+</body>
+</html>

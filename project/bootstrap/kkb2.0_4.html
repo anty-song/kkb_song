@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kkb2.0_4</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+        }
+        @media screen and (min-width: 992px) {
+
+            .container {
+                width: 1100px;
+
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            
+            .container {
+                width: 1100px;
+
+            }
+        }
+        ul {
+            list-style: none;
+        }
+        .activity, .combat {
+            text-align: center;
+        }
+        .activity .act-tit p:nth-of-type(1), .combat .combat-tit p:nth-of-type(1) {
+            font-size: 34px;
+            line-height: 48px;
+            color: #343434;
+        }
+        .activity .act-tit p:nth-of-type(2), .combat .combat-tit p:nth-of-type(2) {
+            font-size: 14px;
+            line-height: 20px;
+            color: #959595;
+        }
+        .activity ul li div {
+            /*width: 330px;*/
+            /*height: 206px;*/
+            /*background: red;*/
+        }
+        .activity ul li p:nth-of-type(1) {
+            font-size: 16px;
+            line-height: 22px;
+            color: #171717;
+        }
+        .activity ul li p:nth-of-type(2) {
+            font-size: 14px;
+            line-height: 20px;
+            color: #a2a2a2;
+        }
+        .activity ul li div img {
+            width: 100%;
+        }
+        .combat .combat-courses {
+            /*padding: 0;*/
+            margin: 0 auto;
+        }
+        .combat .combat-courses .course {
+            /*padding: 0;*/
+            border: 1px solid #eee;
+        }
+        .combat .combat-courses .course .info hr {
+            /*height: 2px;*/
+        }
+        
+        .knowmore {
+            display: inline-block;
+            width: 160px;
+            height: 50px;
+            margin: 30px 0 45px;
+            font-size: 14px;
+            line-height: 50px;
+            color: #000;
+            border-radius: 4px;
+            border: 1px solid #00abe5;
+        }
+        .line {
+            height: 0px;
+            width: 80%;
+            border: 1px solid #f2f2f2;
+            margin: 0 auto;
+        }
+        .row {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="activity container">
+        <div class="act-tit">
+            <p>课外活动</p>
+            <p>会资深大咖，传道解惑；友志同道合，无间互动。</p>
+        </div>
+        <ul>
+            <li class="col-md-4">
+                <div class="act1">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <p>壹佰学社2017精益创业马拉松北京站</p>
+                <p>2017.06.28</p>
+            </li>
+            <li class="col-md-4">
+                <div class="act2">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <p>阿里高级PM：互联网产品的生财之道</p>
+                <p>2017.07.03</p>
+            </li>
+            <li class="col-md-4">
+                <div class="act3">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <p>微软专门为设计师打造的电脑 Surface Pro</p>
+                <p>2017.08.20</p>
+            </li>
+        </ul>
+    </div>
+    <div class="combat">
+        <div class="combat-tit">
+            <p>体系实战课</p>
+            <p>从初学者到秒杀老鸟，开启新的职业征程。</p>
+        </div>
+        <div class="cutting-line"><img src="./images/cutting_line.png" alt=""></div>
+        <div class="combat-courses container">
+            <div class="col-md-6">
+                <div class="course course-cpjl">
+                    <img src="./images/combat_course1.png" alt="">
+                    <div class="info cpjl-info">
+                        <a class="knowmore" href="javascript:;">了解详情</a>
+                        <p class="line"></p>
+                        <ul class="row">
+                            <li class="col-md-4 col-sm-4 col-xs-4"><img src="./images/google.png" alt=""></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4"><img src="./images/google.png" alt=""></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4"><img src="./images/google.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="course course-ui">
+                    <img src="./images/combat_course1.png" alt="">
+                    <div class="info ui-info">
+                        <a class="knowmore" href="javascript:;">了解详情</a>
+                        <p class="line"></p>
+                        <ul class="row">
+                            <li class="col-md-4 col-sm-4 col-xs-4"><img src="./images/google.png" alt=""></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4"><img src="./images/google.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

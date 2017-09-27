@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>problem</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* problem_one (该方法设置垂直居中 元素至少要有高度值)*/
+        .father {
+            width: 100%;
+            height: 400px;
+            background: #ccc;
+            position: relative;
+        }
+        .son {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            /*left: 0;*/
+            /*right: 0;*/
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .son1 {
+            background: black;
+        }
+        .son2 {
+            right: 0;
+            background: red;
+        }
+        /* =======================================*/
+        /* 忽然发现 当你把HTML中的body标签删除 在网页中还是有body标签的 什么鬼❓*/
+        /* shift + tab 可以整体退格 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1 son"></div>
+        <div class="son2 son">vertical</div>
+    </div>
+    <!-- a标签包裹一个图片 给a设置display属性时 inline-block[宽度和图片宽度相同 高度会在底部多出5像素]block[宽度和父容器相同 高度也会多出5像素] -->
+    <a href="#" style="display: inline-block; background-color: red;">
+        <img src="img/6.png">
+    </a>
+    <p style="height: 20px; width: 100px; background-color: black;"></p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>unordered-load</title>
+    <link rel="stylesheet" href="preload.css">
+</head>
+<body>
+    <div class="box">
+        <div class="img_box">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495505688&di=3da77d0d6937b024fef65eb51ba95385&imgtype=jpg&er=1&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D7c204481494a20a42e1e31c7a0539847%2F96dda144ad3459828d81f9010af431adcbef841d.jpg" alt="pic" id="img">
+        </div>
+        <p>
+            <a href="javascript:;" class="btn" data-control="prev">prev</a>
+            <a href="javascript:;" class="btn" data-control="next">next</a>
+        </p>
+        <div class="loading">
+            <p class="progress">0%</p>
+        </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="preload.js"></script>
+    <script type="text/javascript">
+        var imgs = [
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495505688&di=3da77d0d6937b024fef65eb51ba95385&imgtype=jpg&er=1&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D7c204481494a20a42e1e31c7a0539847%2F96dda144ad3459828d81f9010af431adcbef841d.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494911117833&di=1073044fca4b15349315a88f1949dff2&imgtype=0&src=http%3A%2F%2Fi0.bbswater.fd.zol-img.com.cn%2Ft_s1200x5000%2Fg5%2FM00%2F01%2F03%2FChMkJ1YsP3mILF-sABi9d4rDFsEAAEESAPhigkAGL2P496.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494911143178&di=44fc144557c9c9d9dec22eaac10c9908&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D75f0ceb296ef76c6cfd2f62bad17fdf6%2F7e3e6709c93d70cfabeab69efedcd100baa12b14.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494911157942&di=ef17a9f12553b084d26f4d1c2455a1e2&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D0d90522a98510fb367197a97e932c893%2F9f2f070828381f300279913aaf014c086f06f0c5.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494911172305&di=c20344fb1f791afe38661a378077c414&imgtype=0&src=http%3A%2F%2Fi3.bbswater.fd.zol-img.com.cn%2Ft_s1200x5000%2Fg5%2FM00%2F01%2F03%2FChMkJlYsUFuIb83_ADunwNcar5MAAEEbAAAAAAAO6fY159.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495505920&di=1734354a1f964b0e6735d9d84e7eeed0&imgtype=jpg&er=1&src=http%3A%2F%2Fi2.bbswater.fd.zol-img.com.cn%2Ft_s1200x5000%2Fg5%2FM00%2F01%2F03%2FChMkJlYsRkSIIrCcABWhvktijzwAAEEVwEx2qsAFaHW552.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494911217333&di=a6ec561b3dd4575cf51306b284bbbbf9&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D802c90a24c90f6031bb091470913b370%2Fb3fb43166d224f4a2a0a6f800ff790529922d195.jpg"
+        ];
+
+        var index = 0,
+            len = imgs.length,
+            // count = 0,
+            progress = $('.progress');
+
+        $.preload(imgs, {
+            each: function (count) {
+                progress.html(Math.round((count + 1) / len * 100) + '%');
+            },
+            all: function () {
+                $('.loading').hide();
+                document.title = '1/' + len;
+            }
+        });
+
+        // $.each(imgs, function (i, src) {
+        //     var imgObj = new Image();
+        //     $(imgObj).on('load error', function () {
+        //         progress.html(Math.round((count + 1) / len * 100) + '%');
+        //         count++;
+        //         if (count >= len - 1) {
+        //             $('.loading').hide();
+        //             document.title = '1/' + len;
+        //         }
+        //     });
+        //     imgObj.src = src;
+        // });
+        $('.btn').on('click', function () {
+            if ($(this).data('control') === 'prev') {// 上一张
+                index = Math.max(0, --index);
+            } else {// 下一张
+                index = Math.min(len - 1, ++index);   
+            }
+            document.title = (index + 1) + '/' + len;
+            $('#img').attr('src', imgs[index]);
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

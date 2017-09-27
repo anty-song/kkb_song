@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>enter_search</title>
+</head>
+<body>
+    <input type="text" id="txt" value="" onkeypress="return check()" />
+    <input type="button" id="bt" value="确 定" onclick="test()">
+    <button>keyEvent</button>
+    <script>
+        function check() {
+            var bt = document.getElementById("bt");
+            var key = event.keyCode;
+            if (key == 13)
+                bt.click();       
+            }
+
+
+        function test() {
+            var txtValue = document.getElementById("txt").value;
+            alert(txtValue);
+        }
+        var keyPressBtn = document.getElementsByTagName('button')[0];
+        keyPressBtn.onclick = function() {
+            keyPress();
+        } 
+        function keyPress(event) {
+            console.log(event);
+        }
+    </script>
+</body>
+</html>

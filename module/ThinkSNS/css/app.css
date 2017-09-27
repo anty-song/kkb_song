@@ -1,0 +1,249 @@
+h1,h2,h3,h4,h5,p {
+    margin: 0px;
+    font-weight: lighter;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+.am-container {
+    width: 1100px !important;
+    max-width: none;
+}
+.clearfix:after {
+    ontent:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.ts-box_g {
+    width: 100%;
+    padding-top: 80px;
+    position: relative;
+    height: 1048px;
+    overflow: hidden;
+}
+.ts-box_g h2 {
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+.ts-box_g h4 {
+    width: 100%;
+    color: #999999;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+.ts-box_g h5 {
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 85px;
+    text-align: center;
+}
+.ts-box_g h5 a {
+    color: #ffffff;
+    background: #2190cb;
+    font-size: 16px;
+    padding: 14px 50px;
+}
+.ts-g {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+.ts-g_a {
+    width: 1100px;
+    height: 390px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+}
+.ts-g_b {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    height: 65px;
+}
+.ts-g_b p {
+    border-top: 2px solid #e6e6e6;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    z-index: -22;
+}
+.ts-g_b a {
+    display: block;
+    float: left;
+    padding: 20px 40px;
+    color: #999999;
+    position: relative;
+}
+.ts-g_b a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    -webkit-transition: background-color 0.3s, border-color 0.3s;
+    -moz-transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.ts-g_b .sw {
+    color: #2ad7a4;
+    border-top: 2px solid #2ad7a4;
+    z-index: 33;
+}
+.ts-g_b .sw:after {
+    background: #2ad7a4 !important;
+    top: -7px;
+}
+.ts-g_left {
+    width: 550px;
+    height: 390px;
+    float: left;
+    font-size: 14px;
+}
+.ts-g_right {
+    width: 480px;
+    height: 390px;
+    float: right;
+    margin-right: 20px;
+}
+.ts-g_right b {
+    display: block;
+    color: #2190cb;
+    font-size: 24px;
+    line-height: 60px;
+}
+.ts-g_right p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+.s {
+    width: 49px;
+    height: 48px;
+    background: url('../image/box-a_ioc.png') no-repeat 0px 0px;
+    position: absolute;
+    left: -74px;
+    top: 580px;
+}
+.x {
+    width: 49px;
+    height: 48px;
+    background: url('../image/box-a_ioc.png') no-repeat -49px 0px;
+    position: absolute;
+    right: -74px;
+    top: 580px;
+}
+
+.ts-box_h {
+    width: 100%;
+    height: 797px;
+    background: url('../image/box-h_bg.jpg') center no-repeat;
+    color: #ffffff;
+}
+.ts-box_h h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    margin-top: 90px;
+}
+.ts-h_box {
+    width: 100%;
+    height: 445px;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+}
+.trigger {
+    width: 850px;
+    height: 130px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.trigger p {
+    color:#fff;
+    float: left;
+    display: none;
+    font-size: 18px;
+    line-height: 45px;
+    width: 850px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.slideBox {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -130px;
+    padding: 0px 125px;
+}
+.slideBox li {
+    width: 170px;
+    float: left;
+    padding: 0px 10px;
+}
+.slideBox li a {
+    display: block;
+    width: 110px;
+    height: 110px;
+    background: #081729;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px 20px
+}
+.slideBox li a img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.slideBox li a img:hover {
+    opacity: 1;
+}
+.slideBox .show {
+    display: block;
+}
+.slideBox .show img {
+    opacity: 1;
+}
+.slideBox .show span {
+    display: block;
+}
+.slideBox li  span {
+    display: none; text-align: center; font-size: 16px; line-height: 40px;
+}
+.slideBox li  span b {
+    display: block;
+}
+.slideBox li  span i {
+    display: block; font-style: normal;
+}

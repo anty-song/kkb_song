@@ -1,0 +1,34 @@
+.weiPay {
+    padding: 197px 0 160px 0;
+    text-align: center;
+}
+.weiPay .wei-tit {
+    font-size: 18px;
+    line-height: 25px;
+    color: #353535;
+}
+.weiPay .wei-money {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 15px 0 40px 0;
+    color: #171717;
+}
+.weiPay .wei-money span {
+    font-size: 22px;
+    color: #F37169;
+}
+.weiPay .wei-qrcode {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.weiPay .wei-qrcode img {
+    width: 100%;
+    height: 100%;
+}
+.weiPay .wei-dec {
+    font-size: 14px;
+    color: #7B7B7B;
+    line-height: 18px;
+    margin-top: 30px;
+}

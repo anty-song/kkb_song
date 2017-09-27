@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular_4</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p ng-bind="_url"></p>
+        <p>{{path}}</p>
+        <!-- <p>{{datas}}</p> -->
+        <!-- <p>{{Header}}</p> -->
+        <p>{{_timeout}}</p>
+        <p>{{_interval}}</p>
+        <p>{{ _str }}</p>
+        
+        <ul>
+          <li ng-repeat="x in names">
+            {{ x.Name + ', ' + x.Country }}
+          </li>
+        </ul>
+    </div>
+    <script>
+        // angular 服务 service
+        var app = angular.module( 'myApp', [] );
+
+        // 创建自定义服务
+        app.service( 'anty', function () {
+            this.run = function ( x ) {
+                return x.toString( 2 );
+            }
+        });
+        app.controller( 'myCtrl', function ( $scope, $location, $http, $timeout, $interval, anty ) {
+
+            $scope._url = $location.absUrl();
+
+            $scope._timeout = 'Hello kkb';
+            $timeout( function () {
+                $scope._timeout = "How are you today!";
+            }, 1000 );
+
+            $scope._interval = new Date().toLocaleTimeString();
+            $interval( function () {
+                $scope._interval = new Date().toLocaleTimeString();
+            }, 1000 );
+
+            
+            
+            $scope._str = anty.run( 8 );
+        })
+    </script>
+</body>
+</html>

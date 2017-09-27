@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>简单的JavaScript图像延迟加载库Echo.js演示1</title>
+
+<style>
+
+.demo img { width: 736px; height: 490px; background: url(images/loading.gif) 50% no-repeat;}
+.menu .cur { background-color: #ddd !important; color: #000;}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<h1 style="margin: 40px; font: 32px Microsoft Yahei; text-align: center;">简单的JavaScript图像延迟加载库Echo.js演示</h1>
+
+
+
+<div class="menu">
+
+    <a href="./">演示1</a>
+
+    <a class="cur" href="index_2.html">演示2（图片延迟5秒加载）</a>
+
+</div>
+
+
+<div class="demo" style="width: 736px; margin: 0 auto;">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-1.jpg">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-2.jpg">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-3.jpg">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-4.jpg">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-5.jpg">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-6.jpg">
+
+    <img class="lazy" src="images/blank.gif" data-echo="images/big-7.jpg">
+
+</div>
+
+
+
+<script src="js/echo.min.js"></script>
+
+<script>
+
+Echo.init({
+
+    offset: 0,
+
+    throttle: 3000
+
+});
+
+</script>
+
+</body>
+
+</html>

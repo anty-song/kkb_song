@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gallery</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/special.css">
+</head>
+<body>
+    <ul class="gallery">
+        <li><a><img src="images/6-1.png" alt=""></a></li>
+        <li><a><img src="images/6-2.png" alt=""></a></li>
+        <li><a><img src="images/6-3.png" alt=""></a></li>
+        <li><a><img src="images/6-4.png" alt=""></a></li>
+        <li><a><img src="images/6-5.png" alt=""></a></li>
+        <li><a><img src="images/6-6.png" alt=""></a></li>
+        <li><a><img src="images/6-7.png" alt=""></a></li>
+        <li><a><img src="images/6-8.png" alt=""></a></li>
+        <li><a><img src="images/6-9.png" alt=""></a></li>
+        <li><a><img src="images/6-10.png" alt=""></a></li>
+        <li><a><img src="images/6-11.png" alt=""></a></li>
+        <li><a><img src="images/6-12.png" alt=""></a></li>
+    </ul>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        var speed = 35000,
+            $gallery = $('.gallery');
+
+        $gallery.mCustomScrollbar({
+            horizontalScroll:true,
+            axis: 'x',
+            advanced: {
+                updateOnContentResize: false,
+                updateOnImageLoad: false,
+                updateOnSelectorChange: false
+            },
+            scrollInertia: 200,
+            autoHideScrollbar: false,
+            mouseWheel: {
+                scrollAmount: 50,
+                enable: false
+            },
+            onTotalScrollOffset: $('.gallery .mCSB_container').width()-20,
+            callbacks:{
+                onInit: function(){
+                    scroll_gallery()
+                },
+                onTotalScroll: function(){
+                    $gallery.mCustomScrollbar("scrollTo", 'left');
+                },
+                onTotalScrollBack: function(){
+                    scroll_gallery()
+                },
+                onScroll: function(){
+                    var left = Math.abs(this.mcs.left),
+                        cl = Math.abs(parseInt($('.gallery .mCSB_container').css('left'))),
+                        t = $('.gallery .mCSB_container').width(),
+                        k = $gallery.width();
+                    if( t - k - cl < 80){
+                        // $gallery.mCustomScrollbar("stop");
+                        // $gallery.mCustomScrollbar("scrollTo", 'left');
+                    }else if(cl > 40){
+                        // continue_scroll();
+                    };
+                }
+            }
+        })
+        function scroll_gallery (time){
+            if(!time){
+                time = speed;
+            }
+            $gallery.mCustomScrollbar("scrollTo", 'right',{
+                scrollInertia: time,
+                scrollEasing: 'linear'
+            });
+        }
+
+        var hovering = false;
+        function continue_scroll(){
+            if(hovering){
+                return 
+            }
+            var d = $('.gallery .mCSB_container'),
+                t = d.width(), 
+                l = parseInt(d.css('left'));
+
+            var time = speed * ((t - Math.abs(l) - $gallery.width())/t);
+            scroll_gallery(time);
+        }
+
+        $('.gallery .mCSB_container, .gallery .mCSB_dragger_bar').hover(function(){
+            $gallery.mCustomScrollbar("stop");
+            hovering = true;
+        }, function(){
+            hovering = false;
+            continue_scroll();
+        })
+
+        $(window).scroll();
+    </script>
+</body>
+</html>

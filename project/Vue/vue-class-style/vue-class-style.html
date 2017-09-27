@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue-class-style</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- class 中的active可以带引号可以不带引号 但是text-danger必须带引号 否则编译会报错 -->
+        <div class="static" 
+            v-bind:class="classObject"
+            v-bind:style="styleObject">class&style
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../vue.js"></script>
+    <script type="text/javascript" src="vue-class-style.js"></script>
+
+</body>
+
+</html>

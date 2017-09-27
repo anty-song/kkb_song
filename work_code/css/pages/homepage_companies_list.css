@@ -1,0 +1,43 @@
+/* line 1, client/sass/pages/homepage_companies_list.scss */
+div.companies {
+  text-align: center;
+  padding: 70px 0 121px 0; }
+
+/* line 5, client/sass/pages/homepage_companies_list.scss */
+.companies div.item > p {
+  font-size: 34px;
+  color: #171717;
+  line-height: 48px;
+  margin-bottom: 53px; }
+
+/* line 11, client/sass/pages/homepage_companies_list.scss */
+.companies div.item ul li a:nth-child(2) {
+  margin-top: 40px; }
+
+/* line 14, client/sass/pages/homepage_companies_list.scss */
+.companies div.item ul li a {
+  display: block; }
+
+/* line 17, client/sass/pages/homepage_companies_list.scss */
+.companies div.item ul li .toutiao img {
+  width: 100%;
+  height: 100%; }
+
+@media screen and (min-width: 1200px) {
+  /* line 22, client/sass/pages/homepage_companies_list.scss */
+  .container {
+    width: 1100px; }
+  /* line 25, client/sass/pages/homepage_companies_list.scss */
+  .companies .media {
+    padding-right: 100px; }
+  /* line 28, client/sass/pages/homepage_companies_list.scss */
+  .companies .partner {
+    padding-left: 100px; } }
+
+@media screen and (max-width: 768px) {
+  /* line 33, client/sass/pages/homepage_companies_list.scss */
+  .companies {
+    padding: 50px 15px; }
+  /* line 36, client/sass/pages/homepage_companies_list.scss */
+  .companies div.item > p {
+    margin: 15px 0; } }

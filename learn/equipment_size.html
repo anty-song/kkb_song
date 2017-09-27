@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>equipment_size</title>
+    <style>
+        #box{
+            width: 1000px;
+            height: 600px;
+            background: grey;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #son{
+            width: 100px;
+            height: 100px;
+            background: cyan;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="son"></div>
+    </div>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script>
+        var box = document.getElementById('box');
+        var w = window.getComputedStyle(box, null).width;
+        var clientW = box.clientWidth;
+        var scrollW = box.scrollWidth;
+        console.log(w,clientW,scrollW);
+    </script>
+</body>
+</html>

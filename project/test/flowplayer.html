@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flowplayer video</title>
+     
+    <!-- 1. skin -->
+    <link rel="stylesheet" href="./flowplayer/skin/skin.css">
+     
+    <!-- 2. jquery library - required for video tag based installs -->
+    <script
+        src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+     
+    <!-- 3. flowplayer -->
+    <script src="./flowplayer/flowplayer.min.js"></script>
+
+</head>
+<body>
+    <div id="player" data-swf="flowplayer.swf"></div>
+     
+    <script>
+    // select the above element as player container
+    var container = document.getElementById("player");
+     
+    // install flowplayer into selected container
+    flowplayer(container, {
+        clip: {
+            sources: [
+                  { type: "application/x-mpegurl",
+                    src:  "//mydomain.com/video.m3u8" },
+                  { type: "video/mp4",
+                    src:  "//mydomain.com/video.mp4" }
+            ]
+        }
+    });
+    </script>
+
+</body>
+</html>

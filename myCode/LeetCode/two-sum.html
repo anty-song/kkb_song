@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    输入数组：<input type="text" id="nums"><br>
+    输入目标值： <input type="text" id="target"><br>
+    <button id="btn">confirm</button>
+    <script type="text/javascript">
+        let nums = document.getElementById("nums").value.split(",");
+        let target = document.getElementById("target").value;
+        let btn = document.getElementById("btn");
+        // function twoSum(nums, target) {
+        //     for (let i = 0;i < nums.length;i++) {
+        //         console.log(nums[i]);
+        //     }
+        //     alert(nums, target);
+        // };
+        btn.onclick = function () {
+            return function twoSum(nums, target) {
+            for (let i = 0;i < nums.length;i++) {
+                console.log(nums[i]);
+            }
+            alert(nums, target);
+        };
+        }
+    </script>
+</body>
+</html>

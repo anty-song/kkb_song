@@ -1,0 +1,201 @@
+.activity-box {
+    background: url(../../../img/activity/banner.png) no-repeat;
+    background-size: 100% 100%;
+}
+.activity p {
+    margin: 0;
+}
+.activity {
+    position: relative;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.activity .teacher-bg img {
+    width: 100%;
+    height: 100%;
+}
+.activity .class-info {
+    padding-top: 98px;
+    padding-bottom: 73px;
+    text-align: center;
+}
+.activity .class-info .title {
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+.activity .class-info .people {
+    background-color: rgba(0, 0, 0, .48);
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 9px 25px;
+}
+.activity .class-info .time {
+    margin-top: 41px;
+    font-size: 16px;
+    line-height: 35px;
+}
+.activity .class-info .time span {
+    color: #FFF;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 19px;
+    width: 29px;
+    height: 35px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .43);
+}
+.activity .class-info .apply {
+    display: inline-block;
+    width: 164px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 50px;
+    background: #00abe6;
+    border-radius: 4px;
+    /*margin-bottom: 20px;*/
+}
+.activity .class-info a.apply {
+    color: #fff;
+}
+.activity .class-info .applyed {
+    margin-top: 26px;
+    color: #FF6C6C;
+}
+.activity .class-info .underway {
+    margin-top: 7px;
+    color: #fff;
+}
+.activity .class-info .end {
+    margin-top: 55px;
+    color: #fff;
+}
+.activity .teacher-info {
+    padding-left: 158px;
+    font-size: 0;
+    /*margin-top: 58px;*/
+    height: 70px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: rgba(0, 0, 0, .3);
+    padding-top: 6px;
+}
+.activity .teacher-info .teacher-avatar {
+    float: left;
+    width: 58px;
+    height: 58px;
+    background: url(../../../img/public_class/teacher.png) center no-repeat;
+}
+.activity .teacher-info .teacher-desc {
+    float: left;
+    margin: 0;
+    margin-left: 10px;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.activity .teacher-info .teacher-desc span {
+    font-weight: bold;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.activity .place-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.clearfix {
+    zoom: 1
+}
+.activity .place-info .activity-place {
+    margin-left: 17px;
+}
+.activity .place-info .activity-time:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../../img/activity/time.png);
+    margin-right: 8px;
+}
+.activity .place-info .activity-place:before {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 12px;
+    background-image: url(../../../img/activity/place.png);
+    margin-right: 9px;
+    vertical-align: middle;
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .activity-box {
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .activity {
+        overflow: hidden;
+    }
+    .activity .class-info {
+        padding: 0;
+    }
+    .activity .teacher-info {
+        display: none;
+    }
+    .activity .class-info .title {
+        font-size: 16px;
+        margin-top: 26px;
+    }
+    .activity .class-info .people, .activity .class-info .time {
+        font-size: 12px;
+    }
+    .activity .class-info .people {
+        width: 260px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .activity .class-info .time {
+        margin-top: 26px;
+    }
+    .activity .class-info .apply {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .activity .place-info {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

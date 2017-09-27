@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sliderShow</title>
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <section class="slider">
+        <!-- 0. 修改VIEW 即 Template （关键字替换），增加template ID -->
+        <div class="main" id="template_main">
+            <div class="main-i {{css}}" id="main_{{index}}">
+                <div class="caption">
+                    <h2>{{h2}}</h2>
+                    <h3>{{h3}}</h3>
+                </div>
+                <img class="picture" src="images/{{index}}.jpg">
+            </div>
+        </div>
+        <div class="ctrl" id="template_ctrl">
+            <!-- 这里a标签没有闭合的写法是为了去除 设置inline-block时元素之间的间距 -->
+            <a class="ctrl-i" id="ctrl_{{index}}" href="javascript:switchSlider({{index}});"><img src="images/{{index}}.jpg"></a><!-- 这里的闭合标签 要有 否则DOM结构会出现变化 -->
+        </div>
+    </section>
+    <script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>

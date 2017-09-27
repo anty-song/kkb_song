@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏特效</title>
+	<style>
+		body {
+		  font-family: sans-serif;
+		}
+		h1,
+		h2 {
+		  text-align: center;
+		}
+		ul {
+		  display: flex;
+		  list-style: none;
+		  text-transform: uppercase;
+		  width: 90%;
+		  box-sizing: border-box;
+		  padding: 0;
+		  margin: 0 auto 2em;
+		  position: relative;
+		  background-color: #f1f1f1;
+		}
+		ul li {
+		  flex: 1 1;
+		  position: relative;
+		}
+		ul li.current,
+		ul li:hover {
+		  z-index: 2;
+		}
+		ul li:last-child::after {
+		  content: "";
+		  width: 100%;
+		  height: 100%;
+		  background-color: transparent;
+		  display: block;
+		  transition: all .3s ease;
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		}
+		ul li.current a:hover {
+		  color: #fff !important;
+		}
+		ul li:nth-child(1).current ~ li:last-child::after {
+		  left: -500%;
+		  background-color: #360033;
+		}
+		ul li:nth-child(2).current ~ li:last-child::after {
+		  left: -400%;
+		  background-color: #301441;
+		}
+		ul li:nth-child(3).current ~ li:last-child::after {
+		  left: -300%;
+		  background-color: #263357;
+		}
+		ul li:nth-child(4).current ~ li:last-child::after {
+		  left: -200%;
+		  background-color: #1b546f;
+		}
+		ul li:nth-child(5).current ~ li:last-child::after {
+		  left: -100%;
+		  background-color: #117385;
+		}
+		ul li:nth-child(6).current:last-child::after {
+		  left: 0;
+		  background-color: #0b8793;
+		}
+		ul li:nth-child(1):hover ~ li:last-child::after {
+		  left: -500%;
+		  background-color: #360033;
+		}
+		ul li:nth-child(2):hover ~ li:last-child::after {
+		  left: -400%;
+		  background-color: #301441;
+		}
+		ul li:nth-child(3):hover ~ li:last-child::after {
+		  left: -300%;
+		  background-color: #263357;
+		}
+		ul li:nth-child(4):hover ~ li:last-child::after {
+		  left: -200%;
+		  background-color: #1b546f;
+		}
+		ul li:nth-child(5):hover ~ li:last-child::after {
+		  left: -100%;
+		  background-color: #117385;
+		}
+		ul li:nth-child(6):last-child:last-child:hover::after {
+		  left: 0;
+		  background-color: #0b8793 !important;
+		}
+		ul li:nth-child(6):hover::after {
+		  left: 0%;
+		  background-color: #0b8793;
+		}
+		ul li:nth-child(1) {
+		  color: #360033;
+		}
+		ul li:nth-child(2) {
+		  color: #301441;
+		}
+		ul li:nth-child(3) {
+		  color: #263357;
+		}
+		ul li:nth-child(4) {
+		  color: #1b546f;
+		}
+		ul li:nth-child(5) {
+		  color: #117385;
+		}
+		ul li:nth-child(6) {
+		  color: #0b8793;
+		}
+		ul li a {
+		  color: inherit;
+		  transition: all 1s ease;
+		  padding: 1rem;
+		  display: block;
+		  text-align: center;
+		  text-decoration: none;
+		  position: relative;
+		}
+		ul li a:hover {
+		  color: #fff;
+		  z-index: 9;
+		}
+		ul:not(:hover) li.current {
+		  color: #fff !important;
+		}
+		@media (max-width: 320px) {
+		  ul {
+		    flex-direction: column;
+		  }
+		  ul li:last-child::after {
+		    margin-top: -1.5px;
+		  }
+		  ul li:nth-child(1).current ~ li:last-child::after {
+		    left: 0;
+		    top: -500%;
+		  }
+		  ul li:nth-child(2).current ~ li:last-child::after {
+		    left: 0;
+		    top: -400%;
+		  }
+		  ul li:nth-child(3).current ~ li:last-child::after {
+		    left: 0;
+		    top: -300%;
+		  }
+		  ul li:nth-child(4).current ~ li:last-child::after {
+		    left: 0;
+		    top: -200%;
+		  }
+		  ul li:nth-child(5).current ~ li:last-child::after {
+		    left: 0;
+		    top: -100;
+		  }
+		  ul li:nth-child(6).current:last-child::after {
+		    left: 0;
+		    top: 0;
+		  }
+		  ul li:last-child::after {
+		    left: 0%;
+		    top: 0%;
+		  }
+		  ul li:nth-child(1):hover ~ li:last-child::after {
+		    left: 0;
+		    top: -500%;
+		  }
+		  ul li:nth-child(2):hover ~ li:last-child::after {
+		    left: 0;
+		    top: -400%;
+		  }
+		  ul li:nth-child(3):hover ~ li:last-child::after {
+		    left: 0;
+		    top: -300%;
+		  }
+		  ul li:nth-child(4):hover ~ li:last-child::after {
+		    left: 0;
+		    top: -200%;
+		  }
+		  ul li:nth-child(5):hover ~ li:last-child::after {
+		    left: 0;
+		    top: -100%;
+		  }
+		  ul li:nth-child(6):last-child:last-child:hover::after {
+		    left: 0;
+		    top: 0;
+		  }
+		}
+		.nav-2 li:last-child::after {
+		  border-radius: 2.5em;
+		}
+		.nav-3 li:last-child::after {
+		  transform: skewX(30deg);
+		  width: 95%;
+		}
+		.nav-4 li:hover ~ li:last-child::after,
+		.nav-4 li:nth-child(6):last-child:last-child:hover::after {
+		  transform: scale(1, 1.2);
+		}
+		.nav-5 li:hover ~ li:last-child::after,
+		.nav-5 li:nth-child(6):last-child:last-child:hover::after {
+		  border-radius: 2.5em;
+		  transform: scale(0.8);
+		}
+		.nav-6 li:not(.current):hover ~ li:last-child::after,
+		.nav-6 li:nth-child(6):last-child:last-child:hover::after {
+		  transform: skewX(30deg);
+		  width: 95%;
+		}
+		.nav-7 li:not(.current):hover ~ .current ~ li:last-child::after {
+		  transform: skewX(30deg);
+		  width: 95%;
+		}
+		.nav-7 li.current ~ :not(.current):hover ~ li:last-child::after,
+		.nav-7 li:nth-child(6):last-child:last-child:hover::after {
+		  transform: skewX(-30deg);
+		  width: 95%;
+		}
+		.nav-8 li:last-child::after {
+		  border-radius: 100%;
+		}
+		.nav-8 li:not(.current):hover ~ .current ~ li:last-child::after {
+		  border-radius: 100%;
+		  transform: rotate(5deg);
+		}
+		.nav-8 li.current ~ :not(.current):hover ~ li:last-child::after,
+		.nav-8 li:nth-child(6):last-child:last-child:hover::after {
+		  border-radius: 100%;
+		  transform: rotate(-5deg);
+		}
+
+	</style>
+</head>
+<body>
+	<h1>CSS only navigation with animated bar on hover and with support for current item class.</h1>
+	<ul class="nav-1">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<ul class="nav-2">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<ul class="nav-3">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<h2>The next few show how you can change the shape when you hover over the navigation.</h2>
+	<ul class="nav-4">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<ul class="nav-5">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<h2>The hover effect can be triggered only when the item hovered isn't the current one.</h2>
+	<ul class="nav-6">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<h2>You can also set the effect so that hovering items before the current one has a different effect to hovering the ones after.</h2>
+	<ul class="nav-7">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<ul class="nav-8">
+	  <li><a href="">Home</a></li>
+	  <li><a href="">About</a></li>
+	  <li class="current"><a href="">Projects</a></li>
+	  <li><a href="">Events</a></li>
+	  <li><a href="">Services</a></li>
+	  <li><a href="">Contact us</a></li>
+	</ul>
+	<p>Limitations: you need to know how many items are in the navigtion, Doesn't work well on touch devices, not tested with drop downs.</p>
+</body>
+</html>

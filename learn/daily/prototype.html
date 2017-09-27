@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prototype</title>
+</head>
+<body>
+    <script>
+        function Point( x, y ) {
+            this.x = x;
+            this.y = y;
+        }
+        var myPoint = new Point();
+        // new 之后都干了什么
+        // 1. var myPoint = {};初始化一个对象myPoint
+        // 2. myPoint.__proto__ = Point.prototype;
+        // 3. Point.call( myPoint ); 也就是构造myPoint， 也可称之为初始化myPoint
+        console.log( myPoint.__proto__ == Point.prototype );// true
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>live</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./flowplayer/skin/skin.css">
+    <script type="text/javascript">
+     　　document.documentElement.style.fontSize = document.documentElement.clientWidth / 750*100 + 'px';
+    </script>
+    <script
+        src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+     
+    <!-- 3. flowplayer -->
+    <script src="./flowplayer/flowplayer.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="live clearfix">
+        <div class="live-left">
+            <div class="tit-bar clearfix">
+                <div class="live-logo"></div>
+                <div class="live-title-box">
+                    <p class="live-tit">8点一课直播间</p>
+                    <p class="live-count">直播间人数<span>2345</span></p>
+                </div>
+            </div>
+            <div class="live-box flowplayer" data-swf="flowplayer.swf" data-ratio="0.4167" id="player">
+                <!-- <video> -->
+                    <!-- <source type="application/x-mpegurl" src="http://pili-live-hls.kaikeba.com/kaikeba/songpeng.m3u8"> -->
+                    <!-- Chrome -->
+                    <!-- <source type="video/webm" src="https://edge.flowplayer.org/bauhaus.webm"> -->
+                    <!-- Safari + Chrome -->
+                    <!-- <source type="video/mp4" src="https://edge.flowplayer.org/bauhaus.mp4"> -->
+                    <!-- <source type="video/flash"             src="rtmp://pili-live-rtmp.kaikeba.com/kaikeba/songpeng"> -->
+                <!-- </video> -->
+            </div>
+        </div>
+        <div class="live-right">
+            <div class="discuss-title">讨论</div>
+            <div class="discuss-content" id="box">
+                <div class="visitor-item">
+                    <div class="visitor-info">
+                        <i class="avator"></i>
+                        <span class="name">籼米</span>
+                        <span class="time">18:06</span>
+                    </div>
+                    <p class="visitor-msg">你说的都是什么鬼东西？</p>
+                </div>
+                <div class="visitor-item">
+                    <div class="visitor-info">
+                        <i class="avator"></i>
+                        <span class="name">你叫什么名字</span>
+                        <span class="time">18:06</span>
+                    </div>
+                    <p class="visitor-msg">你说的都是什么鬼东西？你说的都是什么鬼东西？你说的都是什么鬼东西？</p>
+                </div>
+            </div>
+            <div class="send-discussion clearfix">
+                <input type="text" class="msg-box" placeholder="你想说点什么">
+                <p class="send-btn">发送</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/WebIM/strophe-1.2.8.js"></script>
+    <script src="js/WebIM/webim.config.js"></script>
+    <script src="js/WebIM/websdk-1.4.12.js"></script>
+    <script src="js/WebIM/chat.js"></script>
+    <script src="js/Player/player.js"></script>
+
+  </body>
+</html>

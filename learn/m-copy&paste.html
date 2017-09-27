@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="copyright" content=""/>
+    <title>复制粘贴</title>
+    <body>
+       <div class="one">
+        <input type="text" class="gift_num fl" value="XXXXXXXXXXXXXXXXXXXXXX" disabled="disabled" readonly="true"/>
+        <a href="javascript:;" hidefocus="none" class="btn_copy block fl" id="btnCopy">复制</a>    
+       </div>
+    </body>
+</html>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="ZeroClipboard.js"></script>
+<script type="text/javascript">
+//这里的参数说明一下，text是要复制的文本内容，button是点击触发复制的dom对象,msg是复制成功后的提示信息，parent是包含flash的父元素
+function clipboard(text, button, msg, parent) {
+    if (window.clipboardData) {//如果是IE浏览器
+        var copyBtn = document.getElementById(button);
+        copyBtn.onclick = function() {
+            window.clipboardData.setData('text', text);
+            alert(msg);
+        }
+    } else {//非IE浏览器
+        var clip = new ZeroClipboard.Client();//初始化一个剪切板对象
+        clip.setHandCursor(true);//设置手型游标
+        clip.setText(text);//设置待复制的文本内容
+        clip.addEventListener("mouseUp", function(client) {//绑定mouseUp事件触发复制
+            alert(msg);
+        });
+        clip.glue(button,parent);//调用ZeroClipboard.js的内置方法处理flash的位置的问题
+    }
+    return false;
+}
+$(function(){
+    clipboard($(".gift_num").val(),"btnCopy","复制成功",'btnCopy');//调用方式
+})
+</script>

@@ -1,0 +1,62 @@
+.class-ctt {
+    width: 790px;
+    height: 430px;
+    background: url(../../../img/public_class/class_bg.png) center no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.class-ctt .class-info {
+    padding-top: 98px;
+    padding-bottom: 73px;
+    text-align: center;
+}
+.class-ctt .class-info .title {
+    font-size: 28px;
+    line-height: 40px;
+}
+.class-ctt .class-info .people, .class-ctt .class-info .time {
+    font-size: 16px;
+    line-height: 22px;
+}
+.class-ctt .class-info .time span {
+    color: #FF4E4F
+}
+.class-ctt .class-info .apply {
+    width: 176px;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 42px;
+    background: #FF4E4F;
+    border-radius: 4px;
+}
+.class-ctt .teacher-info {
+    padding-left: 183px;
+}
+.class-ctt .teacher-info .teacher-desc {
+    margin-left: 18px;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

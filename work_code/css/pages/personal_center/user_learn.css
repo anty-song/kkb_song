@@ -1,0 +1,144 @@
+.user-center .user-learn img, .best img {
+    width: 100%;
+}
+
+.container {
+    width: 1100px;
+    padding: 0;
+    padding-top: 30px;
+}
+.user-center .user-learn li {
+    padding: 0;
+    width: 100%;
+    border: 1px solid #EEE;
+    margin-top: 30px;
+}
+.user-center .user-learn li .sys-img {
+    float: left;
+}
+.user-center .user-learn li .sys-info {
+    float: left;
+    margin: 45px 0 43px 34px;
+}
+.user-center .user-learn li .sys-info .tit {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.user-center .user-learn li .sys-info p.sys-progress {
+    display: none;
+}
+.user-center .user-learn li .sys-info .end-time {
+    font-size: 14px;
+    line-height: 20px;
+    color: #171717;
+}
+.user-center .user-learn li div.sys-progress {
+    float: right;
+    font-size: 16px;
+    line-height: 42px;
+    color: #171717;
+    margin: 50px 51px 49px 0;
+}
+.user-center .user-learn li div.sys-progress span {
+    display: inline-block;
+    width: 55px;
+    height: 42px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #363636;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0;
+}
+.user-center .user-learn li.cpjl div.sys-progress span {
+    color: #F37169;
+}
+.user-center .user-learn li .point-right {
+    float: right;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-right: 73px;
+}
+.user-center .best .best-tit {
+    font-size: 34px;
+    line-height: 48px;
+    color: #343434;
+    text-align: center;
+}
+.user-center .best {
+    padding-bottom: 76px;
+}
+.user-center .best .item {
+    margin-top: 28px;
+    border: 1px solid #EEE;
+}
+
+.user-center .best .item p {
+    padding: 0 18px;
+}
+.user-center .best .item .course-name {
+    font-size: 16px;
+    color: #343434;
+    margin: 15px 0 10px 0;
+}
+.user-center .best .item .num {
+    font-size: 14px;
+    color: #8A959D; 
+    margin-bottom: 14px;
+}
+.user-center .best .item .num span {
+    color: #F07474;
+}
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 100%;
+    }
+}
+.user-center .learn-empty {
+    text-align: center;
+}
+.user-center .learn-empty .words {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8D8D8D;
+    margin-top: 20.6px;
+}
+.user-center .learn-empty .words a, .user-center .learn-empty .words a:hover, .user-center .learn-empty .words a:focus {
+    text-decoration: none;
+    color: #00abe6;
+}
+@media screen and (max-width: 992px) {
+    .user-center .user-learn {
+        padding: 0 15px;
+    }
+    .user-center .user-learn .sys-img {
+        width: 100%;
+    }
+    .user-center .user-learn li .point-right {
+        margin-right: 34px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .user-center .user-learn li .sys-info .end-time {
+        display: none;
+    }
+    .user-center .user-learn li div.sys-progress {
+        display: none;
+    }
+    .user-center .user-learn li .sys-info p.sys-progress {
+        display: block;
+    }
+    .user-center .user-learn li .sys-info p.sys-progress span {
+        color: #F37169;
+    }
+    .user-center .user-learn li .sys-info {
+        margin: 20px;
+    }
+    .user-center .user-learn li .point-right {
+        margin-right: 20px;
+        margin-top: 0;
+    }
+}

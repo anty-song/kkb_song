@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>with</title>
+</head>
+<body>
+	<script>
+		function Kkb() {
+			this.name = "song";
+			this.age = 26;
+			this.gender = "boy";
+		}
+		var people = new Kkb();
+		with(people){
+			var str =  "name:" + name + "</br>";
+			str += "age:" + age + "</br>";
+			str += "gender:" + gender + "</br>";
+			document.write(str);
+			document.writeln(str);
+		}
+	</script>
+</body>
+</html>

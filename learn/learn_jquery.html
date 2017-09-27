@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn_jquery</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <style>
+        .learn_jquery form input {
+            color: #f00;
+        }
+        .learn_jquery ul li {
+            list-style: none;
+        }
+        .learn_jquery ul .li_2 {
+            /*visibility: hidden;*/
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="learn_jquery">
+        <form action="#">
+            <input type="text" value="input">
+            <input type="text" placeholder="input">
+        </form>
+        <ul>
+            <li class="li_1">1</li>
+            <li class="li_2" title="this is 2">2</li>
+            <li>3</li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        $().ready( function () {
+            // code
+        });
+        $( document ).ready( function () {
+            // code
+        });
+        $( function () {
+            // $( window ).on( 'click', function () {
+            //     $( 'ul .li_1' ).next().show();
+            // });
+        });
+    </script>
+</body>
+</html>

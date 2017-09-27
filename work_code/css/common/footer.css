@@ -1,0 +1,181 @@
+.footer {
+    width: 100%;
+    background: #36394C;
+    text-align: center;
+}
+.footer .row {
+    margin-right: 0;
+}
+.footer .footer-ctt {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer .footer-prod {
+    padding: 82px 0 58px 0;
+}
+.footer .footer-prod .left-item {
+    width: 13.4%;
+    float: left;
+}
+.footer .footer-prod .left-item .footer-logo {
+    width: 147px;
+    height: 45px;
+    background: url(../../img/footer/footer_logo.png) no-repeat;
+}
+.footer .footer-prod .center-item {
+    width: 60%;
+    float: left;
+    border-right: 2px solid #454859;
+    padding-left: 7%;
+}
+.footer .footer-prod .center-item ul {
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C7881;
+    text-align: left;
+}
+.footer .footer-prod .center-item ul a {
+    color: rgba(255, 255, 255, .4);
+}
+.footer .footer-prod .center-item ul a:before {
+    display: inline-block;
+    content: url(../../img/footer/gt.png);
+    width: 4px;
+    height: 14px;
+    -webkit-transform: translateY(-2px);
+    -noz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+.footer .footer-prod .center-item ul li img {
+    vertical-align: middle;
+}
+.footer .footer-prod .center-item ul li:nth-of-type(1) {
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+}
+.footer .footer-prod .center-item ul li:nth-of-type(2) {
+    height: 0;
+    width: 21px;
+    border: 1px solid rgba(151, 151, 151, .33);
+    margin: 15px 0;
+}
+.footer .footer-prod .center-item ul li:nth-of-type(4) {
+    margin: ;
+}
+.footer .footer-prod .right-item {
+    float: right;
+}
+.footer .footer-prod .right-item .connect-style li {
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+.footer .footer-prod .right-item .connect-style li a {
+    border-radius: 50%;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.footer .footer-prod .right-item .connect-style li:nth-of-type(1) a {
+    background: #74B828 url(../../img/footer/weChat.png) center no-repeat;
+}
+.footer .footer-prod .right-item .connect-style li:nth-of-type(2) {
+    margin: 0 17.6px;
+}
+.footer .footer-prod .right-item .connect-style li:nth-of-type(2) a {
+    background: #F07474 url(../../img/footer/weiBo.png) center no-repeat;
+}
+.footer .footer-prod .right-item .connect-style li:nth-of-type(3) a {
+    background:  #00ABE6 url(../../img/footer/iPhone.png) center no-repeat;
+}
+.footer .footer-prod .right-item .connect-style .popover {
+    border: 1px solid #DEDEDE;
+    box-shadow: 2px 1px 12px 0 rgba(207,207,207,0.50);
+    border-radius: 3px;
+}
+.footer .footer-prod .right-item .connect-style .popover.top {
+    margin-top: -14px;
+}
+.footer .footer-prod .right-item .connect-style .popover-content {
+    font-size: 12px;
+    color: #3C4A55;
+    line-height: 18px;
+    padding: 0;
+}
+.footer .footer-prod .right-item .connect-style .weChat-ctt, .Phone-ctt {
+    text-align: center;
+    padding: 19px 17px 15px;
+}
+.footer .footer-prod .right-item .connect-style .weChat-ctt div, .Phone-ctt div {
+    width: 120px;
+    height: 112px;
+    margin-bottom: 9px;
+}
+.footer .footer-prod .right-item .connect-style .weChat-ctt img, .Phone-ctt img {
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-prod .right-item .connect-style .weiBo-ctt {
+    padding: 14px 23px;
+    width: 154px;
+}
+.footer .copyright {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .4);
+    padding: 20px 0;
+}
+.footer .h-line {
+    height: 0;
+    border: 1px solid #454859;
+    
+}
+.footer .links {
+    font-size: 14px;
+    line-height: 22px;
+}
+.footer .links span {
+    color: #000;
+}
+.footer .links a {
+    color: #6c7881;
+}
+.footer .xs-show{
+
+}
+.footer .xs-show a{
+    color: #fff;
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 14px;
+    width: 30%;
+    opacity: 0.5;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+.footer .xs-show a:last-child{
+    
+    border-right: none;
+}
+.footer .xs-copyright{
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+@media (min-width: 1100px) {
+    .footer .container {
+        width: 1100px;
+    }
+}
+@media (max-width: 1100px) {
+    .footer .footer-ctt{
+        width: 100%;
+    }
+}

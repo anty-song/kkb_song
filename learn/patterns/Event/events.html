@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>events</title>
+    <script type="text/javascript" src="/Users/edianzu/Desktop/learn/jquery_plugins/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="input">
+    <script>
+        $('#input').on('click', function (event) {
+            console.log(event.target);
+        });
+    </script>
+</body>
+</html>

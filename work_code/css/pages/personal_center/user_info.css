@@ -1,0 +1,80 @@
+.user-banner {
+    background: url(../../../img/personal_center/user_info/banner.png) center no-repeat;
+    background-size: 100% 100%;
+    height: 251px;
+}
+.user-info {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 11px;
+    margin-bottom: 24px;
+}
+.user-info .avatar {
+    position: absolute;
+    left: 0;
+    top: -52px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: url(../../../img/personal_center/user_info/avatar.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.user-info .user-ctt {
+    padding-left: 206.5px;
+}
+.user-info .user-ctt .user-name {
+    font-size: 18px;
+    line-height: 25px;
+    color: #171717;
+    font-weight: bold;
+}
+.user-info .user-ctt .user-job {
+    font-size: 16px;
+    line-height: 18px;
+    color: #6C7881;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+.user-info .user-ctt .user-desc {
+    font-size: 14px;
+    color: #8A959D;
+    line-height: 20px;
+}
+.user-info .user-ctt a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100px;
+    height: 29px;
+    border: 1px solid #98A2A9;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 29px;
+    color: #99A3A9;
+}
+@media (max-width: 1100px) {
+    .user-info {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .user-info .user-ctt a {
+        position: static;
+    }
+    .user-info .user-ctt .user-desc {
+        display: none;
+    }
+    .user-info .avatar {
+        left: 20px;
+        top: -30px;
+        width: 100px;
+        height: 100px;
+    }
+    .user-info .user-ctt {
+        padding-left: 135px;
+    }
+}

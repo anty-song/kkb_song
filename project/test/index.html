@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            text-align: left;
+        }
+        .footer {
+            background-color: #F1F8FE;
+            height: 370px;
+            text-align: center;
+        }
+        .footer .footer-ctt {
+            width: 85.3%;
+            margin: 0 auto;
+        }
+        .footer .footer-prod {
+            padding: 60px 0;
+        }
+        .footer .footer-prod .left-item {
+            width: 13.4%;
+            float: left;
+        }
+        .footer .footer-prod .left-item .footer-logo {
+            width: 147px;
+            height: 45px;
+            background: url(./images/footer_logo.png) no-repeat;
+        }
+        .footer .footer-prod .center-item {
+            width: 60%;
+            float: left;
+            border-right: 2px solid #E3E6E8;
+            padding-left: 7%;
+        }
+        .footer .footer-prod .center-item ul {
+            padding-left: 6.9%;
+            float: left;
+            font-size: 14px;
+            line-height: 24px;
+            color: #6C7881;
+        }
+        .footer .footer-prod .center-item ul li:nth-of-type(1) {
+            font-size: 16px;
+            line-height: 22px;
+            color: #000;
+        }
+        .footer .footer-prod .center-item ul li:nth-of-type(2) {
+            height: 0;
+            width: 21px;
+            border: 1px solid #E3E6E8;
+            margin: 15px 0;
+        }
+        .footer .footer-prod .center-item ul li:nth-of-type(4) {
+            margin: ;
+        }
+        .footer .footer-prod .right-item {
+            width: 21.6%;
+            float: right;
+        }
+        .footer .footer-prod .right-item .connect-style li {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            float: left;
+        }
+        .footer .footer-prod .right-item .connect-style li:nth-of-type(1) {
+            background: #74B828 url(./images/weChat.png) center no-repeat;
+        }
+        .footer .footer-prod .right-item .connect-style li:nth-of-type(2) {
+            background: #F07474 url(./images/weiBo.png) center no-repeat;
+            margin: 0 17.6px;
+        }
+        .footer .footer-prod .right-item .connect-style li:nth-of-type(3) {
+            background:  #00ABE6 url(./images/iPhone.png) center no-repeat;
+        }
+        .footer .copyright {
+            font-size: 14px;
+            line-height: 20px;
+            color: #6C7881;
+        }
+        .footer .h-line {
+            height: 0;
+            border: 1px solid #E2E5E7;
+            margin: 20px 0;
+        }
+        .footer .links {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .footer .links span {
+            color: #000;
+        }
+        .footer .links a {
+            color: #6c7881;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container" style="padding-top: 100px; width: 360px;height:500px;">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">账号</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="请输入账号" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                    <input type="password" placeholder="请输入密码" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox">记住账号
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="col-xs-12 btn btn-info">登录
+                </button>
+            </div>
+        </form>
+    </div> -->
+    <div class="footer">
+        <div class="footer-ctt">
+            <section class="footer-prod container hidden-xs">
+                <div class="left-item">
+                    <div class="footer-logo"></div>
+                </div>
+                <div class="center-item">
+                    <ul>
+                        <li>热门课程</li>
+                        <li></li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 产品经理</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> UI设计师</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> Java工程师</li>
+                    </ul>
+                    <ul>
+                        <li>热门学社</li>
+                        <li></li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 壹佰学社</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 莱茵学社</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 极限学社</li>
+                    </ul>
+                    <ul>
+                        <li>其他资源</li>
+                        <li></li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 全部课程</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 课外活动</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> APP下载</li>
+                    </ul>
+                    <ul>
+                        <li>关于我们</li>
+                        <li></li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 我们的故事</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 联系我们</li>
+                        <li><i><img src="./images/arrow.png" alt="arrow"></i> 意见反馈</li>
+                    </ul>
+                    <div class="clear" style="clear: both;"></div>
+                </div>
+                <div class="right-item">
+                    <ul class="connect-style">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="clear" style="clear: both;"></div>
+            </section>
+            <section class="copyright hidden-xs">北京开课吧科技有限公司版权所有   京ICP证140465号   京ICP备13032407号-1   京公网安备 11010802013162</section>
+            <div class="h-line hidden-xs"></div>
+            <section class="show visible-xs">
+                <img src="images/footer_logo.png" alt="">
+                <span>互联网人O2O立体化学习平台</span>
+                <a href="">关于我们</a>
+                <a href="">联系我们</a>
+                <a href="">意见反馈</a>
+            </section>
+            <section class="links hidden-xs">
+                <span>友情链接</span>
+                <a href="javascript">产品经理</a>
+                <a href="javascript">科技猎</a>
+                <a href="javascript">活动盒子</a>
+                <a href="javascript">推酷网</a>
+                <a href="javascript">设计师导航</a>
+                <a href="javascript">产品大牛</a>
+                <a href="javascript">pmp培训</a>
+                <a href="javascript">西安家教网</a>
+                <a href="javascript">Axure正版</a>
+                <a href="javascript">DevStore</a>
+                <a href="javascript">美好学院</a>
+                <a href="javascript">莱茵教育</a>
+                <a href="javascript">产品经理</a>
+                <a href="javascript">科技猎</a>
+                <a href="javascript">全部友链 ></a>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

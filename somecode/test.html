@@ -1,0 +1,152 @@
+<!-- text-overflow: ellipsis;/*显示省略符号来代表被修剪的文本(没用啊、、、、)*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS图片显示特效测试</title>
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margin: 0;
+		}
+
+		.absolute-bg {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 0;
+		  height: 100%;
+		  width: 100%;
+		  background-position: 50%;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  overflow: hidden;
+		}
+
+		.home-mast {
+		  height: 100vh;
+		}
+		.home-mast__container {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  height: 100%;
+		}
+		.home-mast__container > * {
+		  position: relative;
+		  -webkit-box-flex: 1;
+		      -ms-flex-positive: 1;
+		          flex-grow: 1;
+		  padding: 1em;
+		  -webkit-transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -webkit-box-flex 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+		  transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -webkit-box-flex 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+		  transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+		  transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -webkit-box-flex 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -ms-flex-positive 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+		}
+		.home-mast__container > *:hover {
+		  -webkit-box-flex: 3;
+		      -ms-flex-positive: 3;
+		          flex-grow: 3;
+		}
+		.home-mast__container > *:nth-child(1):after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 0;
+		  height: 100%;
+		  width: 100%;
+		  background-color: #00a19b;
+		  opacity: 0;
+		  -webkit-transition: opacity 0.4s ease-in-out;
+		  transition: opacity 0.4s ease-in-out;
+		}
+		.home-mast__container > *:nth-child(1):hover:after {
+		  opacity: 0.65;
+		  -webkit-transition-delay: 0.6s;
+		          transition-delay: 0.6s;
+		}
+		.home-mast__container > *:nth-child(2):after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 0;
+		  height: 100%;
+		  width: 100%;
+		  background-color: #bb1654;
+		  opacity: 0;
+		  -webkit-transition: opacity 0.4s ease-in-out;
+		  transition: opacity 0.4s ease-in-out;
+		}
+		.home-mast__container > *:nth-child(2):hover:after {
+		  opacity: 0.65;
+		  -webkit-transition-delay: 0.6s;
+		          transition-delay: 0.6s;
+		}
+		.home-mast__container > *:nth-child(3):after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 0;
+		  height: 100%;
+		  width: 100%;
+		  background-color: #006ba6;
+		  opacity: 0;
+		  -webkit-transition: opacity 0.4s ease-in-out;
+		  transition: opacity 0.4s ease-in-out;
+		}
+		.home-mast__container > *:nth-child(3):hover:after {
+		  opacity: 0.65;
+		  -webkit-transition-delay: 0.6s;
+		          transition-delay: 0.6s;
+		}
+		.home-mast__container > *:nth-child(4):after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 0;
+		  height: 100%;
+		  width: 100%;
+		  background-color: #e6661f;
+		  opacity: 0;
+		  -webkit-transition: opacity 0.4s ease-in-out;
+		  transition: opacity 0.4s ease-in-out;
+		}
+		.home-mast__container > *:nth-child(4):hover:after {
+		  opacity: 0.65;
+		  -webkit-transition-delay: 0.6s;
+		          transition-delay: 0.6s;
+		}
+
+	</style>
+</head>
+<body>
+<section class="home-mast">
+  <div class="home-mast__container">
+    <div>
+      <div class="absolute-bg" style="background-image: url('https://source.unsplash.com/3IEZsaXmzzs/1500x1200');">      	
+      </div>
+    </div>
+    <div class="">
+      <div class="absolute-bg" style="background-image: url('https://source.unsplash.com/OcWwYCVIOOU/1500x1200');">
+      </div>
+    </div>
+    <div class="">
+      <div class="absolute-bg" style="background-image: url('https://source.unsplash.com/z55CR_d0ayg/1500x1200');">      	
+      </div>
+    </div>
+    <div class="">
+      <div class="absolute-bg" style="background-image: url('https://source.unsplash.com/Oj82K0a0XOE/1500x1200');">      	
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

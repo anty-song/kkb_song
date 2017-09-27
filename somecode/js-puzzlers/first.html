@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>first</title>
+</head>
+<body>
+	<script>
+		console.log(['1','2','3'].map(function(ele,index){return ele+'-'+index;}));
+		var map = Array.prototype.map;
+		console.log(map.call(['1','2','3'],function(ele){return parseInt(ele,0)}));
+	</script>
+</body>
+</html>

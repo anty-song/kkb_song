@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/*navbar-fixed-top*/
+/* line 3, client/sass/common/nav.scss */
+.nav {
+  position: absolute;
+  z-index: 10000;
+  width: 100%; }
+  /* line 8, client/sass/common/nav.scss */
+  .nav .container-fluid {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0 15px 0; }
+  /* line 13, client/sass/common/nav.scss */
+  .nav .navbar-brand {
+    height: 44px;
+    width: 140px;
+    background: url("../../img/resource_header.png") no-repeat -10px -10px; }
+  /* line 18, client/sass/common/nav.scss */
+  .nav .navbar-header {
+    height: 42px;
+    width: 140px;
+    margin-right: 140px; }
+  /* line 24, client/sass/common/nav.scss */
+  .nav .nav-search-xs .btn-search {
+    height: 17px;
+    width: 15px;
+    padding: 5;
+    background: url(../../img/resource_header.png) no-repeat -168px -31px; }
+  /* line 31, client/sass/common/nav.scss */
+  .nav .nav-login {
+    color: #fff; }
+  /* line 34, client/sass/common/nav.scss */
+  .nav .nav-register {
+    color: #fff; }
+  /* line 38, client/sass/common/nav.scss */
+  .nav .navbar-nav .select::after {
+    content: '';
+    height: 13px;
+    width: 11px;
+    line-height: 16px;
+    margin-top: 10px;
+    background-size: 100%;
+    float: right;
+    margin-top: 21px;
+    margin-left: 5px;
+    background: url("../../img/resource_header.png") no-repeat -169px -18px; }
+  /* line 50, client/sass/common/nav.scss */
+  .nav .navbar-nav li {
+    margin-right: 50px;
+    line-height: 50px; }
+  /* line 55, client/sass/common/nav.scss */
+  .nav .navbar-nav li:hover a {
+    color: #00ABE6; }
+  /* line 60, client/sass/common/nav.scss */
+  .nav .navbar-nav .active a {
+    color: #00ABE6; }
+  /* line 65, client/sass/common/nav.scss */
+  .nav .navbar-nav .dropdown .dropdown-menu {
+    min-width: 150px;
+    padding: 0 10px;
+    left: -100%; }
+    /* line 69, client/sass/common/nav.scss */
+    .nav .navbar-nav .dropdown .dropdown-menu li {
+      margin: 0;
+      text-align: center;
+      line-height: 50px; }
+      /* line 73, client/sass/common/nav.scss */
+      .nav .navbar-nav .dropdown .dropdown-menu li a:hover {
+        background: #fff; }
+      /* line 76, client/sass/common/nav.scss */
+      .nav .navbar-nav .dropdown .dropdown-menu li a {
+        line-height: 50px;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #3C4A55; }
+    /* line 83, client/sass/common/nav.scss */
+    .nav .navbar-nav .dropdown .dropdown-menu .bottom-solid {
+      border-bottom: 2px solid #DBDFE3; }
+    /* line 87, client/sass/common/nav.scss */
+    .nav .navbar-nav .dropdown .dropdown-menu .down-load img {
+      padding: 14px 9px; }
+    /* line 90, client/sass/common/nav.scss */
+    .nav .navbar-nav .dropdown .dropdown-menu .down-load p {
+      text-align: center;
+      font-size: 12px;
+      color: #3C4A55;
+      letter-spacing: 0;
+      line-height: 18px; }
+    /* line 97, client/sass/common/nav.scss */
+    .nav .navbar-nav .dropdown .dropdown-menu .down-load p:last-child {
+      padding-bottom: 17px; }
+  /* line 102, client/sass/common/nav.scss */
+  .nav .navbar-nav .dropdown .dropdown-menu-download {
+    left: -179%; }
+  /* line 105, client/sass/common/nav.scss */
+  .nav .navbar-nav .dropdown .dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    left: 43%;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: ''; }
+  /* line 116, client/sass/common/nav.scss */
+  .nav .navbar-nav .dropdown .dropdown-menu:after {
+    position: absolute;
+    top: -6px;
+    left: 44%;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+    content: ''; }
+  /* line 128, client/sass/common/nav.scss */
+  .nav .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; }
+  /* line 132, client/sass/common/nav.scss */
+  .nav .navbar-nav a {
+    font-size: 16px;
+    color: #fff; }
+  /* line 137, client/sass/common/nav.scss */
+  .nav .white-nav {
+    border-bottom: 1px solid #eee; }
+    /* line 140, client/sass/common/nav.scss */
+    .nav .white-nav .container .navbar-brand {
+      background-position: -440px -10px; }
+    /* line 146, client/sass/common/nav.scss */
+    .nav .white-nav .container .collapse ul li a {
+      color: #171717; }
+    /* line 149, client/sass/common/nav.scss */
+    .nav .white-nav .container .collapse ul li .select:after {
+      background-position: -381px -19px; }
+    /* line 154, client/sass/common/nav.scss */
+    .nav .white-nav .container .collapse ul .active a {
+      color: #00ABE6; }
+    /* line 161, client/sass/common/nav.scss */
+    .nav .white-nav .container .navbar-nav-right .nav-search {
+      background: rgba(226, 226, 226, 0.37);
+      border-radius: 18px; }
+      /* line 164, client/sass/common/nav.scss */
+      .nav .white-nav .container .navbar-nav-right .nav-search .btn-search {
+        background-position: -404px -12px; }
+    /* line 168, client/sass/common/nav.scss */
+    .nav .white-nav .container .navbar-nav-right .nav-register {
+      opacity: 0.81;
+      border: 1px solid #BBBBBB;
+      border-radius: 4px; }
+    /* line 173, client/sass/common/nav.scss */
+    .nav .white-nav .container .navbar-nav-right .nav-login {
+      color: #171717; }
+    /* line 176, client/sass/common/nav.scss */
+    .nav .white-nav .container .navbar-nav-right .nav-register {
+      color: #171717; }
+
+/*todo:废弃的划过效果*/
+/* line 185, client/sass/common/nav.scss */
+.nav-wrap1:hover {
+  background: #FFFFFF;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  /* Firefox 4 */
+  -webkit-transition: background 1s;
+  /* Safari 和 Chrome */
+  -o-transition: width 2s; }
+  /* line 194, client/sass/common/nav.scss */
+  .nav-wrap1:hover a {
+    color: #171717; }
+  /* line 197, client/sass/common/nav.scss */
+  .nav-wrap1:hover .navbar-brand {
+    background-position: -440px -10px; }
+  /* line 201, client/sass/common/nav.scss */
+  .nav-wrap1:hover .navbar-nav .select::after {
+    background-position: -381px -19px; }
+  /* line 207, client/sass/common/nav.scss */
+  .nav-wrap1:hover .navbar-nav-right .nav-search {
+    background: rgba(226, 226, 226, 0.37);
+    border-radius: 18px; }
+    /* line 210, client/sass/common/nav.scss */
+    .nav-wrap1:hover .navbar-nav-right .nav-search .btn-search {
+      background-position: -404px -12px; }
+  /* line 214, client/sass/common/nav.scss */
+  .nav-wrap1:hover .navbar-nav-right .nav-register {
+    opacity: 0.81;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px; }
+
+/* line 222, client/sass/common/nav.scss */
+.navbar-nav-right {
+  margin-top: 13px;
+  margin-right: 30px; }
+  /* line 225, client/sass/common/nav.scss */
+  .navbar-nav-right .dropdown {
+    padding-bottom: 10px; }
+    /* line 227, client/sass/common/nav.scss */
+    .navbar-nav-right .dropdown img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-top: -8px; }
+    /* line 233, client/sass/common/nav.scss */
+    .navbar-nav-right .dropdown .dropdown-menu {
+      margin-left: -11%; }
+  /* line 237, client/sass/common/nav.scss */
+  .navbar-nav-right .nav-search {
+    margin-top: -6px;
+    margin-right: 32px;
+    float: left;
+    height: 32px;
+    width: 164px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    padding-left: 10px; }
+    /* line 246, client/sass/common/nav.scss */
+    .navbar-nav-right .nav-search .btn-search {
+      height: 17px;
+      width: 15px;
+      padding: 5;
+      background: url(../../img/resource_header.png) no-repeat -168px -31px; }
+    /* line 252, client/sass/common/nav.scss */
+    .navbar-nav-right .nav-search input {
+      line-height: 32px;
+      border: 0;
+      width: 102px;
+      background: transparent; }
+  /* line 259, client/sass/common/nav.scss */
+  .navbar-nav-right .nav-login {
+    font-size: 16px;
+    margin-right: 23px; }
+  /* line 263, client/sass/common/nav.scss */
+  .navbar-nav-right .nav-register {
+    font-size: 16px;
+    opacity: 0.81;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 4px 8px; }
+
+/* line 272, client/sass/common/nav.scss */
+.navbar-brand img {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: -3px;
+  height: 30px; }
+
+@media screen and (max-width: 768px) {
+  /* line 280, client/sass/common/nav.scss */
+  .nav {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1); }
+    /* line 285, client/sass/common/nav.scss */
+    .nav .white-nav .navbar-toggle .icon-bar {
+      background: #c4c8ce; }
+    /* line 289, client/sass/common/nav.scss */
+    .nav .white-nav .btn-search {
+      height: 20px;
+      width: 15px;
+      padding: 5;
+      background: url(../../img/search/search.png) no-repeat;
+      background-size: contain; }
+    /* line 297, client/sass/common/nav.scss */
+    .nav .navbar-toggle {
+      border: none; }
+    /* line 300, client/sass/common/nav.scss */
+    .nav .navbar-nav-right {
+      margin-right: 0; }
+    /* line 303, client/sass/common/nav.scss */
+    .nav .container-fluid {
+      width: 100%;
+      padding: 0;
+      background: rgba(255, 255, 255, 0.5); }
+      /* line 307, client/sass/common/nav.scss */
+      .nav .container-fluid button {
+        border-color: #eee; }
+        /* line 309, client/sass/common/nav.scss */
+        .nav .container-fluid button .icon-bar {
+          background-color: #fff; }
+      /* line 313, client/sass/common/nav.scss */
+      .nav .container-fluid .navbar-header {
+        float: left;
+        width: 30px;
+        margin: 0; }
+        /* line 317, client/sass/common/nav.scss */
+        .nav .container-fluid .navbar-header .navbar-brand {
+          background: url(../../img/m_logo.png) no-repeat;
+          background-size: 100%;
+          width: 100px;
+          margin-top: 10px;
+          margin-left: 13px; }
+      /* line 326, client/sass/common/nav.scss */
+      .nav .container-fluid .navbar-nav {
+        padding-top: 42px; }
+        /* line 329, client/sass/common/nav.scss */
+        .nav .container-fluid .navbar-nav li a {
+          color: #000; } }

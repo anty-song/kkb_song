@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular_3</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1>{{ lastName }}成员：</h1>
+        <ul>
+            <li ng-repeat=" x in names ">{{ x }} {{ lastName }}</li>
+        </ul>
+        <div>{{149016.1945000 | number:2}}</div>
+        {{ 250 | currency }}            // 结果：$250.00<br>
+        {{ 250 | currency:"RMB ￥ " }}  // 结果：RMB ￥ 250.00 <br>
+        {{ [{"age": 20,"id": 10,"name": "iphone"},
+        {"age": 12,"id": 11,"name": "sunm xing"},
+        {"age": 44,"id": 12,"name": "test abc"}
+        ] | filter:{'name':'iphone'} }}<br>
+        <p>{{ str | reverse }}</p>
+    </div>
+    <script>
+        // scope & rootscope 和 过滤器 filter
+        var app = angular.module( 'myApp', [] );
+
+        // 自定义过滤器
+        app.filter( 'reverse', function () {
+            return function ( text ) {
+                return text.split( "" ).reverse().join( "" );
+            }
+        } );
+        app.controller( 'myCtrl', function ( $scope, $rootScope ) {
+            $scope.str = "anty";
+            $scope.names = [ 'zhao', 'qian', 'sun' ];
+            $rootScope.lastName = 'song';
+        })
+    </script>
+</body>
+</html>

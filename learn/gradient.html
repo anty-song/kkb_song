@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation_one.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 500px;
+            height: 100px;
+            /* Webkit: Safari 4-5, Chrome 1-9(没测试过) */
+            background: -webkit-gradient( 0 0 0 100%, from(#fff), to(#000) );
+            
+            background: -webkit-linear-gradient( left, #fff, #000 );
+            background: -moz-linear-gradient( left, #fff, #000 );
+            background: -o-linear-gradient( left, #fff, #000 );
+            /* IE 10 */
+            background: -ms-linear-gradient( left, #fff, #000 );
+            /* IE < 10 */
+            FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#fff, endColorStr=#000);}
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="box"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>

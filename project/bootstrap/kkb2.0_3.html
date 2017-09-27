@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kkb2.0_3</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .academy {
+            width: 802px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .academy a {
+            position: relative;
+            display: block;
+            width: 360px;
+            height: 230px;
+        }
+        .academy a img {
+           width: 100%;
+        }
+        .academy a i img {
+            display: block;
+        }
+        .academy a p, .academy a i {
+            position: absolute;
+            margin: 0;
+        }
+        .academy a i {
+            right: 15px;
+            bottom: 15px;
+        }
+        .academy a p {
+            bottom: 36px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #fff;
+        }
+        .academy a.yibai {
+            float: left;
+        }
+        .academy a.laiyin {
+            float: right;
+        }
+        .academy a.yibai p {
+            left: 131px;
+        }
+        .academy a.laiyin p {
+            left: 114px;
+        }
+        @media screen and (max-width: 992px) {
+            .academy {
+                width: 100%;
+            }
+            .academy a.yibai, .academy a.laiyin {
+                float: none;
+                margin: 0 auto;
+            }
+            .academy a.laiyin {
+                margin-top: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="academy">
+        <a href="/" class="yibai">
+            <img src="./images/yibai.png" alt>
+            <p>
+                百万产品经理<br>梦想开始的地方
+            </p>
+            <i><img src="./images/arrow.png" alt></i>
+        </a>
+        <a href="/" class="laiyin">
+            <img src="./images/yibai.png" alt>
+            <p>
+               UX、UED、UI设计狮<br>美好从这里开始 
+            </p>
+            <i><img src="./images/arrow.png" alt></i>
+        </a>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

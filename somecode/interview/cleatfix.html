@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clearfix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body {
+            position: relative;
+        }
+        .out {
+            /* 第一种：给父元素定高 */
+            /* height: 154px; */
+            /* 第五种：父元素浮动 */
+            /* float: left; */
+            /* 第六种：父元素绝对定位 */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 400px;
+            border: 2px solid red;
+            /* 第三种：父元素添加overflow：hidden； */
+            /* overflow: hidden; */
+        }
+        .fir {
+            float: left;
+            width: 150px;
+            height: 150px;
+            border: 2px solid blue;
+        }
+        .sec {
+            float: right;
+            width: 150px;
+            height: 150px;
+            border: 2px solid blue;
+        }
+        /* 第四种：伪元素法(百度使用) */
+        .clear::after {
+            display: block;
+            height: 0;
+            content: "";
+            clear: both;
+            visibility: hidden;
+        }
+        .clear {/* 兼容IE */
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <!-- 空标签放在这里是没有作用的 -->
+        <!-- <div class="clearfix" style="clear: both;"></div> -->
+        <div class="fir"></div>
+        <div class="sec"></div>
+        <!-- 第二种：添加空白标签 空标签只能放在后面 -->
+        <!-- <div class="clearfix" style="clear: both;"></div> -->
+    </div>
+</body>
+</html>

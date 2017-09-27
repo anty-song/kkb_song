@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+  /* line 3, client/sass/pages/personal_center.scss */
+  .user-center .tabs-wrap {
+    width: 1100px;
+    margin: 0 auto; }
+  /* line 7, client/sass/pages/personal_center.scss */
+  .nav-tabs > li > a {
+    width: 85px;
+    height: 42px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 42px;
+    color: #868686; }
+  /* line 15, client/sass/pages/personal_center.scss */
+  .nav > li > a {
+    padding: 0; } }
+
+/* line 19, client/sass/pages/personal_center.scss */
+.user-center .tabs-wrap ul {
+  width: 100%; }
+
+/* line 22, client/sass/pages/personal_center.scss */
+.nav-tabs {
+  border-bottom: 1px solid #e6e6e6; }
+
+/* line 25, client/sass/pages/personal_center.scss */
+.nav-tabs > li {
+  margin-bottom: -1px; }
+
+/* line 29, client/sass/pages/personal_center.scss */
+.nav-tabs > li > a:hover {
+  border-color: transparent; }
+
+/* line 32, client/sass/pages/personal_center.scss */
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent; }
+
+@media screen and (max-width: 1100px) {
+  /* line 37, client/sass/pages/personal_center.scss */
+  .user-center .tabs-wrap {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  /* line 42, client/sass/pages/personal_center.scss */
+  .user-center .tabs-wrap {
+    padding: 0 15px; }
+  /* line 45, client/sass/pages/personal_center.scss */
+  .nav > li > a {
+    padding: 10px;
+    text-align: center;
+    color: #868686; }
+  /* line 50, client/sass/pages/personal_center.scss */
+  .nav-tabs > li {
+    width: 25%; } }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>half_transparent_border</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		section {
+			position: relative;
+			height: 700px;
+			width: 100%;
+			background: url('http://bbs.crsky.com/1236983883/Mon_1204/25_200729_c35ceb9c11a6d5c.jpg') no-repeat;
+		}
+		.box {
+			position: absolute;
+			left: 300px;
+			top: 200px;
+			width: 400px;
+			height: 300px;
+			background: #fff;
+			border: 30px solid hsla( 0, 0%, 100%, .5 );
+			box-sizing: border-box;
+			background-clip: padding-box;
+		}
+		p {
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="box">
+			<p>content here..</p>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,679 @@
+html,
+body {
+    margin: 0 auto;
+    font-family:"微软雅黑";
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.text-aligin-right {
+    text-align: right
+}
+
+/* header 开始 */
+
+header {
+    position: relative;
+    margin: 0;
+}
+
+.header-img {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: .24rem;
+    left: .24rem;
+}
+
+.header-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.header-text > p {
+    font-size: .28rem;
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.header-text > h3 {
+    font-size: .58rem;
+    margin-top: .24rem;
+    margin-bottom: -.39rem;
+}
+
+.header-text > span {
+    display: inline-block;
+    font-size: .3rem;
+    margin-top: .37rem;
+    border: 2px solid #00ABE5;
+    padding: .07rem .34rem;
+}
+
+/* header 结束*/
+
+/* section 公共css 开始 */
+
+.section {
+    padding-top: .46rem;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: .6rem;
+}
+
+.section > h3 {
+    font-size: .42rem;
+    color: #1f1f1f;
+    margin-bottom: .46rem;
+}
+
+.section > p {
+    font-size: .24rem;
+    color: #1F1F1F;
+    line-height: .4rem;
+    margin: .35rem;
+}
+
+/* section 公共css 结束 */
+
+/* 第二屏开始 */
+
+.compensation {
+    background-color: #F6F9F9;
+    padding-bottom: .2rem;
+}
+
+
+.compensation-content {
+    width: 100%;
+    height: 7.28rem;
+    background: url(../img/compensation-bg.png) top center no-repeat;
+    background-size: 2.36rem 100%;
+    margin-top: .146rem;
+    position: relative;
+}
+
+.compensation-left {
+    position: absolute;
+    top: 1.4rem;
+    left: .1rem;
+}
+
+.compensation-right {
+    position: absolute;
+    top: 2.78rem;
+    right: .1rem;
+}
+
+p.compensation-p {
+    font-size: .26rem;
+    margin-top: .65rem;
+}
+
+/* 第二屏结束 */
+
+/* 培养解决方案 开始 */
+
+.solution-bg {
+    width: 100%;
+    height: 12.21rem;
+    background: url(../img/solution-bg.png) top center no-repeat;
+    margin-top: .146rem;
+    position: relative;
+    background-size: 100% 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.solution-ul p {
+    font-size: .24rem;
+    width: 4.82rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.solution-ul h4 {
+    font-size: .34rem;
+    color: #1f1f1f;
+    margin: 0;
+}
+
+.solution-ul > li {
+    margin-top: .9rem;
+}
+
+.solution-ul > li:nth-of-type(1) {
+    margin-left: 1.5rem;
+}
+
+.solution-ul > li:nth-of-type(1) > p {
+    margin-left: -.5rem;
+}
+
+.solution-ul > li:nth-of-type(1) > h4 {
+    margin-right: .9rem;
+    margin-top: .2rem;
+}
+
+.solution-ul > li:nth-of-type(2) {
+    margin-top: 1.2rem;
+}
+
+.solution-ul > li:nth-of-type(2) > h4 {
+    margin-top: .1rem;
+}
+
+.solution-ul > li:nth-of-type(3) {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.solution-ul > li:nth-of-type(3) > p {
+    margin-left: -.5rem;
+}
+
+.solution-ul > li:nth-of-type(3) > h4 {
+    margin-right: 1rem;
+    margin-top: .1rem;
+}
+
+.solution-ul > li:nth-of-type(4) {
+    margin-top: 1.2rem;
+}
+
+.solution-ul > li:nth-of-type(4) > h4 {
+    margin-top: .1rem;
+}
+
+.solution-ul > li:nth-of-type(5) {
+    margin-left: 1.3rem;
+    margin-top: .9rem;
+}
+
+.solution-ul > li:nth-of-type(5) > p {
+    margin-left: -.5rem;
+}
+
+.solution-ul > li:nth-of-type(5) > h4 {
+    margin-top: .2rem;
+    margin-right: 1rem;
+}
+
+/* 培养解决方案 结束 */
+
+/* 阶段性 开始 */
+
+.stage {
+    width: 100%;
+    height: 10.5rem;
+    background-color: #00ABE5;
+    background: #00ABE5 url(../img/stage-bg.png) center 70px no-repeat;
+    margin-top: .146rem;
+    position: relative;
+    background-size: 100% 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.stage > h3 {
+    color: #fff;
+}
+
+.stage-ul h4 {
+    font-size: .34rem;
+    margin: 0;
+}
+
+.stage-ul p {
+    font-size: .26rem;
+    margin: 0;
+}
+
+.stage-ul > li:nth-of-type(1) {
+    margin-top: 2.5rem;
+    margin-left: -4.15rem;
+}
+
+.stage-ul > li:nth-of-type(2) {
+    margin-top: .7rem;
+    margin-left: 2.9rem;
+}
+
+.stage-ul > li:nth-of-type(3) {
+    margin-top: .7rem;
+    margin-left: -4.15rem;
+}
+
+.stage-ul > li:nth-of-type(4) {
+    margin-top: .7rem;
+    margin-left: 2.9em;
+}
+
+.stage-ul > li:nth-of-type(5) {
+    margin-top: .7rem;
+    margin-left: -4.15rem;
+}
+
+/* 阶段性 结束 */
+
+/* teacher 开始 */
+
+.teacher {
+    background: #F6F9F9;
+}
+
+.teacher-ul > li {
+    width: 6.2rem;
+    color: #1f1f1f;
+    position: relative;
+}
+
+.teacher-ul > li:nth-of-type(2) {
+    margin-top: .99rem;
+}
+
+.teacher-ul > li > img {
+    width: 100%;
+}
+
+.teacher-ul > li h4 {
+    font-size: .34rem;
+}
+
+.teacher-ul > li h4 > em {
+    font-size: .28rem;
+    color: #00ABE5;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.teacher-ul > li p {
+    font-size: .24rem;
+    width: 4.32rem;
+}
+
+.teacher-cont {
+    position: absolute;
+    top: -.2rem;
+    left: 2.25rem;
+    text-align: left
+}
+
+.teacher-ul > li:nth-of-type(2) > .teacher-cont {
+    top: -.15rem;
+    left: .15rem;
+}
+
+/* teacher 结束 */
+
+/* talents 开始 */
+
+.talents > img {
+    width: 100%;
+}
+
+.talents > p {
+    margin-top: 0;
+    margin-bottom: .57rem;
+}
+
+/* talents 结束 */
+
+/* class 开始 */
+
+.class {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.class > .line {
+    display: block;
+    width: 2.31rem;
+    height: .4rem;
+    border-top: 2px solid #979797;
+    margin: 0 auto;
+    position: static;
+}
+.class em {
+    color: #00ABE5;
+    font-size: .28rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.class > p {
+    margin-top: -.2rem;
+}
+
+.class-box {
+    padding-left: 0;
+    padding-top: .4rem;
+}
+
+.class-box-li {
+    width: 3.34rem;
+    /*height: 3.22rem;*/
+    position: relative;
+    display: inline-block;
+}
+
+.class-box-li::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1.67rem .32rem;
+    border-top: 0;
+    border-color: transparent;
+    position: absolute;
+    top: -.31rem;
+    left: 0;
+}
+
+.class-box-li > h4 {
+    color: #FFE17F;
+    font-size: .34rem;
+    font-weight: 200;
+    line-height: .36rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: .15rem;
+}
+
+.class-box-li.red {
+    background: #F07474;
+}
+
+.class-box-li.red::before {
+    border-bottom-color: #F07474;
+}
+
+.class-box-li.blue {
+    background: #00ABE5;
+}
+
+.class-box-li.blue::before {
+    border-bottom-color: #00ABE5;
+}
+
+.class-box-li > p {
+    color: #fff;
+    font-size: .26rem;
+    font-weight: 200;
+    text-align: center;
+    /*padding-left: .62rem;*/
+}
+
+.original-price {
+    font-size: .5rem;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+
+.presell-price {
+    font-size: .6rem;
+    vertical-align: middle;
+}
+
+p.count-down {
+    font-size: .28rem;
+    margin-top: .415rem;
+}
+
+.time-count-down {
+    width: .79rem;
+    height: .79rem;
+    color: #00ABE5;
+    font-size: .52rem;
+    border: 1px solid #CDCDCD;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: center;
+    line-height: .79rem;
+    font-weight: 900
+}
+
+/* class 结束 */
+
+/* warp 开始 */
+
+.warp {
+    background: url(../../uxd_v2/images/warp-bg.png);
+    width: 100%;
+    height: 11.99rem;
+    margin-top: .146rem;
+    position: relative;
+    background-size: 100% 100%;
+    overflow: hidden;
+    color: #fff;
+    padding-bottom: .6rem;
+}
+
+.slogan {
+    width: 5.46rem;
+    text-align: center;
+    font-size: .42rem;
+    color: #fff;
+    margin: 0.7rem auto 0;
+    line-height: 0.73rem;
+}
+
+.warp .slogan:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.course-warp {
+    margin: 0.72rem auto;
+    width: 5.4rem;
+    position: relative;
+}
+
+.course-title {
+    background: #03AAE5;
+    height: 0.58rem;
+    width: 100%;
+    line-height: 0.58rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+}
+
+.course-item {
+    margin-top: 0.34rem;
+    margin-left: 0.25rem;
+}
+
+.course-item > p {
+    margin: 0;
+}
+
+.course-warp .course-item:nth-of-type(1) {
+    margin-top: 0.65rem;
+}
+
+.course-time{
+    line-height: 0.33rem;
+    opacity: 0.63;
+    font-family: PingFangSC-Regular;
+    font-size:0.24rem;
+    color: #FFFFFF;
+}
+.line{
+    position: absolute;
+    left: -.86rem;
+    top: .5rem;
+    height: 6.34rem;
+    width: 0.2rem;
+
+}
+.line .line-ball{
+    height: 0.18rem;
+    width: 0.18rem;
+    background: #fff;
+    margin: 0.01rem auto;
+    border-radius: 50%;
+    border: 0.02rem solid  #2134AE;
+
+}
+.line .line-bar:nth-last-child(1){
+    height: 2rem;
+}
+.line .line-bar{
+    height: 0.9rem;
+    opacity: 0.71;
+    width: 0.01rem;
+    border-left: 0.03rem solid #03AAE5;
+    margin:0 auto;
+}
+
+.course{
+    font-size: 0.3rem;
+    color: #FFFFFF;
+    line-height: 0.42rem;
+}
+
+.wechat-warp{
+    padding:0.47rem 0.4rem  0.47rem 0.65rem ;
+}
+.wechat-img{
+    height: 2.07rem;
+    width: 2.07rem;
+    float: left;
+    margin-right: 0.18rem;
+}
+.wechat-tips-warp{
+    float: left;
+    margin-top: 0.4rem;
+}
+.wechat-tips{
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    line-height: 0.44rem;
+    font-weight: 100;
+}
+.wechat{
+    position: relative;
+    z-index: 33;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+    width: 10rem;
+}
+
+.bounceInRight1 {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+    animation-delay: 0.5s;
+}
+.bounceInLeft2 {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+    animation-delay: 1s;
+}
+.bounceInLeft3 {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+    animation-delay: 1.5s;
+}
+.bounceInRight3 {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+    animation-delay: 1.5s;
+}
+
+.wechat {
+    margin-top: .71rem;
+    margin-left: -.5rem;
+}
+
+.blue-font {
+    color: #00ABE5;
+}
+
+/* warp 结束 */
+
+/* 客服 开始 */
+
+.kefu {
+    width: 100%;
+    height: .98rem;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background: rgba(121, 137, 142, 1);
+}
+
+.kefu-btn {
+    width: 50%;
+    height: .98rem;
+    background: #00ABE5;
+    color: #fff;
+    font-size: .3rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: .98rem;
+    font-weight: 200;
+    float: left;
+    /*margin-top: .13rem;*/
+    /*margin-left: .5rem;*/
+}
+
+.consult-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.consult-ph{
+    /* Webkit: Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#02D2F1), to(#00abe6));
+    /* Webkit: Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(left,#02D2F1,#00abe6);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(left,#02D2F1,#00abe6);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left,#02D2F1,#00abe6);
+    /* IE 10 */
+    background: -ms-linear-gradient(left,#02D2F1,#00abe6);
+}
+.consult-online{
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#FFA594), to(#F07474));
+    background: -webkit-linear-gradient(left,#FFA594,#F07474);
+    background: -moz-linear-gradient(left,#FFA594,#F07474);
+    background: -o-linear-gradient(left,#FFA594,#F07474);
+    background: -ms-linear-gradient(left,#FFA594,#F07474);
+}
+.ph-icon {
+    width: .68rem;
+    height: .67rem;
+    background: url(../img/consult-icon_r2_c1.png) center center no-repeat;
+    background-size: 75% 75%;
+}
+
+.online-icon {
+    width: .68rem;
+    height: .58rem;
+    background: url(../img/consult-icon_r2_c2.png) center center no-repeat;
+    background-size: 75% 75%;
+}
+
+/* 客服 结束 */

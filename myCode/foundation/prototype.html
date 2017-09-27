@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型模式</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Person() {}
+        // var song = new Person();
+        // Person.prototype.job = 'fe';
+        Person.prototype = {
+            name: 'song',
+            age: 25
+        };
+        // Object.defineProperty(Person.prototype, "constructor", {
+        //     enumerable: false,
+        //     value: Person
+        // })
+        var song = new Person();
+        var keys = Object.keys(Person.prototype);
+        // alert(keys);
+        var _keys = Object.getOwnPropertyNames(Person.prototype);
+        console.log(_keys);
+        console.log('song的构造函数（constructor):'+song.constructor);
+        console.log(Person.prototype.constructor);
+    </script>
+</body>
+</html>

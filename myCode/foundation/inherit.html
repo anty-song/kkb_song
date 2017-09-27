@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inherit</title>
+</head>
+<body>
+    <script>
+        function B() {
+            this.method = function() {
+                console.log("this is B");
+                console.log(this);
+            };
+        }
+        var A = new B();
+        A.method();
+    </script>
+</body>
+</html>

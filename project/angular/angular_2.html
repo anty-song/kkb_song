@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular_2</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <song></song>
+        <div song></div>
+        <div class="song"></div>
+        <!-- directive: song -->
+    </div>
+    <script>
+        var app = angular.module( 'myApp', [] );
+        app.directive( 'song', function () {
+            return {
+                // 默认restrict值为“EA”
+
+                // 注意： 你必须设置 restrict 的值为 "C" 才能通过类名来调用指令。
+                // restrict: "C",
+
+                // 注意：我们需要在该实例添加 replace 属性， 否则评论是不可见的；你必须设置 restrict 的值为 "M" 才能通过注释来调用指令。
+                // restrict: "M",
+                // replace: true,
+
+                // 注意： 通过设置 restrict 属性值为 "A" 来设置指令只能通过 HTML 元素的属性来调用。
+                // restrict: "A",
+
+                // 注意： 通过设置 restrict 属性值为 "E" 来设置指令只能通过 元素名称 来调用。
+                // restrict: "E",
+
+                template: "<h1>自定义指令</h1>"
+            }
+        })
+    </script>
+</body>
+</html>

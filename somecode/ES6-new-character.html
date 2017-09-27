@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ES6新特性</title>
+</head>
+<body>
+	<script>
+		// 1.new Set()
+		let arr = [ 1,2,2,3 ];
+		let set = new Set(arr);
+		let newArr = Array.from(set);//Array.from()方法可以将Set结构转为数组
+		console.log(newArr);
+		// 2.Object.assign()
+		let obj1 = {a:1,b:2};
+		let obj2 = {c:2,d:3};
+		let obj3 = Object.assign( {},obj1,obj2 );
+		console.log(obj3);
+		// 3.map()、filter()、every()、some()遍历数组区别；
+		// 4.~~运算符 按位取反
+		let a = 1.23;
+		let b = -1.23;
+		console.log(~a);
+		console.log(~b);
+		console.log(~~a);
+		console.log(~~b);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pic_lsit</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			width: 1000px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		figure {
+			position: relative;
+			width: 33.3%;
+			float: left;
+			cursor: pointer;
+		}
+		figure > img {
+			width: 100%;
+		}
+		figcaption {
+			display: none;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: rgba( 0, 0, 0, .5 );
+			color: #fff;
+		}
+		figure:hover > figcaption {
+			display: block;
+		}
+		p {
+			width: 40%;
+			height: 30%;
+			border: 1px solid #fff;
+			font-size: 16px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -20%;
+			margin-top: -10%;
+			text-align: center;
+			/*transform: rotate(45deg);*/
+			-webkit-transition: -webkit-transform .3s;
+			transition: transform .5s;
+		}
+		/* 这里有个问题 如果下面的选择器是 figure:hover p 将不会有效果（搞得我很蛋疼）*/
+		figcaption:hover p {
+			-webkit-transform: scale(2);
+			transform: scale(2);
+			/* zoom 的使用方法 有待熟悉 */
+			zoom: 1;
+		}
+		span {
+			display: block;
+			width: 70px;
+			margin: 0 auto;
+			font-size: 14px;
+			line-height: 16px;
+			border: 1px solid #fff;
+			-webkit-transition: width .5s;
+			transition: width .5s;
+			margin-top: 20px;
+		}
+		span:hover {
+			width: 90px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<figure>
+			<img src="http://demo.cssmoban.com/cssthemes4/tbsp_5_personal/images/portfolio/1.jpg" alt="">
+			<figcaption>
+				<p>
+					<label>1</label>
+					<span>first</span>
+				</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="http://demo.cssmoban.com/cssthemes4/tbsp_5_personal/images/portfolio/3.jpg" alt="">
+			<figcaption>
+				<p>
+					<label>2</label>
+					<span>second</span>
+				</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="http://demo.cssmoban.com/cssthemes4/tbsp_5_personal/images/portfolio/4.jpg" alt="">
+			<figcaption>
+				<p>
+					<label>3</label>
+					<span>third</span>
+				</p>
+			</figcaption>
+		</figure>
+	</div>
+</body>
+</html>

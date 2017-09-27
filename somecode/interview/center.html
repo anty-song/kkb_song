@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .item1 {
+            position: relative;
+            height: 100px;
+            background: cyan;
+        }
+        .one {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -25px;
+            margin-top: -25px;
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+        .item2 {
+            position: relative;
+            background: gray;
+            height: 100px;
+        }
+        .two {
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .item3 {
+            height: 100px;
+            width: 500px;
+            background: cyan;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .three {
+            background: red;
+            /* width: 50px;
+            height: 50px; */
+        }
+        .item4 {
+            position: relative;
+            background: grey;
+            height: 100px;
+        }
+        .four {
+            position: absolute;
+            background: yellow;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .item5 {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: cyan;
+        }
+        .five {
+            background: red;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一种方法 绝对定位 条件是：需要item1定高； -->
+    <div class="item1">
+        <div class="one">one</div>
+    </div>
+    <!-- 第二种方法 绝对定位 条件同上：需要item1定高；-->
+    <div class="item2">
+        <div class="two">two</div>
+    </div>
+    <!-- 第三种方法 table-cell 条件是：item3成了行内块元素了 内部元素不能设置宽高（设置了就不能居中了） -->
+    <div class="item3">
+        <div class="three">three</div>
+    </div>
+    <!-- 第四种方法 transform -->
+    <div class="item4">
+        <div class="four">four</div>
+    </div>
+    <div class="item5">
+        <div class="five">five</div>
+    </div>
+</body>
+</html>

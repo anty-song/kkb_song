@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        var person = {};
+        Object.defineProperty(person, "name", {
+            writable: false,
+            value: "Song"
+        });
+        alert(person.name);// Song
+        person.name = "Peng";
+        alert(person.name);// Song
+        */
+        /*
+        // year是访问器属性
+        var book = {
+            _year: 2004,
+            edition: 1
+        }
+        Object.defineProperty(book, "year", {
+            get: function() {
+                return this._year;
+            },
+            set: function(newValue) {
+                if (newValue > 2004) {
+                    this._year = newValue;
+                    this.edition += newValue - 2004;
+                }
+            }
+        });
+        book.year = 2005;
+        console.log(book._year);
+        console.log(book.year);
+        alert(book.edition);
+        */
+        
+        var obj = {};
+        Object.defineProperties(obj, {
+            _year: {
+                value: 2004
+            },
+            edition: {
+                value: 1
+            },
+            year: {
+                get: function() {
+                    return this._year;
+                },
+                set: function(newValue) {
+                    if (newValue > 2004) {
+                        this._year = newValue;
+                        this.edition += newValue - 2004;
+                    }
+                }
+            }
+        });
+        // 可知_year是数据属性
+        var descriptor = Object.getOwnPropertyDescriptor(obj, "_year");
+        console.log(descriptor.value);// 2004
+        console.log(descriptor.configurable);// false
+        console.log(typeof descriptor.get);// undefined
+        // 可知year是访问器属性
+        var _descriptor = Object.getOwnPropertyDescriptor(obj, "year");
+        console.log(_descriptor.value);// undefined
+        console.log(_descriptor.enumerable);// false
+        console.log(typeof _descriptor.get);// function
+    </script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+/* 公用样式的一些设置 */
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+/* 清除浮动*/
+.clear {
+    clear: both;
+}
+li {
+    list-style: none;
+}
+/* 内容垂直居中 */
+.vertical-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* 内容水平居中 */
+.horizontal-center {
+    width: 1000px;
+    margin: 0 auto;
+}
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 50px 0;
+}
+/* ================================导航部分 */
+.tech-nav {
+    height: 75px;
+    position: relative;
+}
+.tech-nav .logo {
+    width: 120px;
+    height: 35px;
+}
+.tech-nav .logo img {
+    width: 100%;
+}
+.list {
+    height: 18px;
+    right: 0;
+}
+.tech-nav .list li {
+    display: inline-block;
+    margin-left: 39px;
+    font-size: 16px;
+    line-height: 18px;
+}
+.tech-nav .list li a {
+    color: #171717;
+}
+/* ================================首屏部分 */
+.tech-banner {
+    height: 315px;
+    position: relative;
+}
+.tech-banner .banner-list li {
+    height: 315px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.tech-banner .banner-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    width: 190px;
+    background-color: rgba( 0, 0, 0, .3 );
+}
+.tech-banner .banner-btn li {
+    height: 77px;
+    line-height: 77px;
+    text-align: center;
+    border-bottom: 2px solid rgba( 255, 255, 255, .2 );
+}
+.tech-banner .banner-btn li:nth-of-type(4) {
+    border-bottom: none;
+}
+.tech-banner .banner-btn li a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+.tech-banner .imgSelected {
+    background: rgba( 0, 171, 230, .2 );
+}
+/* ================================学习方式部分 */
+.learning-style {
+    text-align: center;
+}
+.learning-style > p:nth-of-type(1) {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 50px 0 18px 0;
+}
+.learning-style > p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 16px;
+    color: #333;
+    margin-bottom: 56px;
+}
+.learning-style > p:nth-of-type(3) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+.learning-style > p:nth-of-type(3) a {
+    display: inline-block;
+    color: #00abe5;
+}
+.learning-style > p:nth-of-type(3) .online {
+    margin-right: 280px;
+}
+.learning-style-pic {
+    width: 914px;
+    margin: 0 auto;
+}
+.learning-style-pic img {
+    display: block;/* 此处为了消除5个像素的多余高度 */
+}
+/* ================================课程部分 */
+.tech-courses {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-top: 70px;
+    padding-bottom: 84px;
+}
+.tech-courses .courses-ctt {
+    width: 1000px;
+    margin: 0 auto;
+}
+.tech-courses .title {
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+.tech-courses .title i {
+    font-style: normal;
+    display: inline-block;
+    width: 180px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 60px;
+}
+.tech-courses .title span {
+    font-size: 16px;
+    line-height: 18px;
+    color: #00abe6;
+}
+.tech-courses .title a:nth-of-type(2) {
+    display: inline-block;
+    margin: 0 20px;
+}
+.tech-courses .content {
+    background-color: #fff;
+    height: 190px;
+    box-shadow: 0 2px 5px 0 rgba( 235, 235, 235, .5 );
+}
+.tech-courses .content .words {
+    width: 175px;
+    margin-top: 18px;
+}
+.tech-courses .content .words a {
+    font-size: 14px;
+    line-height: 17px;
+    color: #00abe6;
+}
+.tech-courses .content .title2 {
+    font-size: 20px;
+}
+.tech-courses .content p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 15px 0 10px 0;
+}
+.tech-courses ul {
+    float: left;
+}
+.tech-courses li {
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.tech-courses li:nth-of-type(1) {
+    margin-left: 0
+}
+.tech-courses li img {
+    display: block;
+}
+.tech-courses .words {
+    float: left;
+    margin-left: 23px;
+}
+/* ================================智慧学习助手，高效学习 */
+.tech-learning-assistant {
+    height: 677px;
+    background: url(../images/learning-assistant.png) center no-repeat;
+    position: relative;
+}
+.tech-learning-assistant-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    color: #fff;
+    margin-left: -100px;
+    display: block;
+    margin-bottom: 60px;
+    width: 214px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border: 1px solid #00AAE5;
+    text-align: center;
+    border-radius: 4px;
+    background: #00AAE5;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.tech-learning-assistant-btn:hover {
+    background: #0090D3;
+    border-color: #0090D3;
+}
+/* ================================学员就业相关描述 */
+.successful-case-title {
+    font-size: 38px;
+    line-height: 39px;
+    margin: 56px 0 37px 0;
+    text-align: center;
+}
+.tech-successful-case ul {
+    height: 368px;
+    overflow: hidden;
+}
+.tech-successful-case ul li {
+    width: 310px;
+    background-color: #f9f9f9;
+    float: left;
+    position: relative;
+}
+.tech-successful-case ul li:nth-of-type(2) {
+    margin: 0 35px;
+}
+.tech-successful-case .stu-info {
+    margin-left: 22px;
+    overflow: hidden;
+}
+.tech-successful-case .company {
+    position: absolute;
+    left: 75px;
+    top: 179px;
+    border-radius: 4px;
+    width: 160px;
+    height: 56px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px #ccc;
+}
+.tech-successful-case .baidu {
+    background: url(../images/baidu.png) center no-repeat;
+    background-size: 100%;
+}
+.tech-successful-case .big-data {
+    background: url(../images/big_data.png) center no-repeat;
+    background-size: 100%;
+}
+.tech-successful-case .sany {
+    background: url(../images/sany.png) center no-repeat;
+    background-size: 100%;
+}
+.tech-successful-case ul li > p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #808080;
+    text-align: center;
+}
+.tech-successful-case ul li a {
+    font-size: 16px;
+    display: block;
+    width: 137px;
+    height: 38px;
+    text-align: center;
+    color: #fff;
+    margin: 18px auto 28px;
+    background-color: #00abe6;
+    border-radius: 3px;
+    line-height: 38px;
+}
+.tech-successful-case .stu-info > div {
+    float: left;
+    margin: 28px 0 46px 0;
+    text-align: center;
+}
+.tech-successful-case .stu-info > div:nth-of-type(2) {
+    margin-left: 18px;
+}
+.tech-successful-case .stu-info > div p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.tech-successful-case table {
+    width: 1000px;
+    margin-top: 50px;
+}
+.tech-successful-case table td{
+    width: 250px;
+    height: 34px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 34px;
+}
+.tech-successful-case table .first>td{
+    font-weight: bold;
+}
+.tech-successful-case table tr:nth-child(even){
+    background-color: #f1f1f1;
+}
+.tech-successful-case span {
+    color: #00abe6;
+}
+/* ================================两位老师描述 */
+.tech-teachers > div {
+    margin-left: 82px;
+}
+.tech-teachers .tea-info h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+.tech-teachers .tea-info span {
+    font-size: 16px;
+    line-height: 18px;
+    color: #797979;
+    /*margin: 5px 0 26px 0;*//* 这行没作用？ */
+}
+.tech-teachers .tea-info p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #797979;
+    margin: 25px 0 25px 0;
+}
+.tech-teachers .tea-info a {
+    display: block;
+    width: 130px;
+    height: 41px;
+    background-color: #00abe6;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 41px;
+}
+.tech-teachers .tea-bi {
+    margin-top: 50px;
+}
+.tech-teachers .tea-bi .bi-pic {
+    float: left;
+}
+.tech-teachers .tea-bi .bi-info {
+    float: left;
+    text-align: left;
+}
+.tech-teachers hr {
+    width: 226px;
+    background-color: #E7E7E7;
+    margin: 40px auto;
+}
+.tech-teachers .tea-zhang .zhang-pic {
+    float: right;
+    margin-right: 82px;
+}
+.tech-teachers .tea-zhang .zhang-info {
+    float: right;
+    text-align: right;
+    margin-right: 46px;
+}
+.tech-teachers .tea-zhang .zhang-info a {
+    float: right;
+}
+/* ================================教学、服务部分 */
+.tech-services {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 115px;
+}
+.tech-services .services-ctt {
+    height: 430px;
+    background: url(../images/services.png) no-repeat;
+    position: relative;
+}
+.tech-services .services-ctt div {
+    position: absolute;
+    text-align: center;
+}
+.tech-services .services-ctt div h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #101010;
+    margin-bottom: 8px;
+}
+.tech-services .services-ctt div p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #7d7d7d;
+}
+.tech-services .services-ctt .gold-medals {
+    left: -50px;
+    top: 266px;
+}
+.tech-services .services-ctt .teacher {
+    left: 162px;
+    top: 403px;
+}
+.tech-services .services-ctt .assistant {
+    left: 388px;
+    top: 451.3px;
+}
+.tech-services .services-ctt .headteacher {
+    right: 157px;
+    top: 403px;
+}
+.tech-services .services-ctt .employer {
+    right: -28px;
+    top: 261px;
+}
+/* ================================企业列表部分 */
+.tech-companies {
+    padding-bottom: 65px;
+    margin-top: 148.3px;
+}
+.tech-companies-bg {
+    margin-top: 34px;
+    height: 510px;
+    background: url(../images/companies.png) repeat-x 0 bottom;
+}
+/* ================================页面尾部部分 */
+.tech-foot {
+    height: 400px;
+    background: url(../images/foot-bg.png) center no-repeat;
+}
+.tech-foot .foot-ctt {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 110px;
+}
+.tech-foot .foot-ctt p {
+    color: #fff;
+    font-size: 40px;
+    line-height: 47px;
+}
+.tech-foot .foot-ctt .learn-btn {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 44px;
+    text-align: left;
+}
+.tech-foot .foot-ctt .learn-btn a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    
+    border: 2px solid #fff;
+    width: 146px;
+    height: 46px;
+    line-height: 46px;
+
+    transition: all .3s ease-in-out;
+}
+.tech-foot .foot-ctt .learn-btn .audition {
+}
+.tech-foot .foot-ctt .learn-btn .sign-up {
+    border: 2px solid #1DACE3;
+    background-color: #1DACE3;
+    margin-left: 37px;/* 这里有一个inline-block时的元素间距6px(不同浏览器不同)*/
+}
+.tech-foot .foot-ctt .learn-btn .audition:hover {
+    background-color: #1DACE3;
+}
+.tech-foot .foot-ctt .learn-btn .sign-up:hover {
+    background-color: transparent;
+}
+
+
+
+
+
+
+

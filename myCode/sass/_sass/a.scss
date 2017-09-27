@@ -1,0 +1,42 @@
+/*song*/
+@import "b.scss"
+$clr: black;
+@mixin first($clr:red, $bgc:blue) {
+    color: $clr;
+    background-color: $bgc;
+}
+body {
+    @include first($bgc:yellow);
+    font-size: $fontSize;
+}
+h1 {
+    background: {
+        color: $clr;
+    }
+    @at-root span {
+        border: {
+            color: $clr;
+        }
+    }
+}
+.error-wrap {
+    text-align: center;
+    padding: 143px 0 150px 0;
+    p {
+        margin: 24.5px 0 18px 0;
+        font-size: 14px;
+        color: #8D8D8D;
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        width: 143px;
+        height: 32px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 32px;
+        color: #FFFFFF;
+        background: #00ABE6;
+        border-radius: 4px;
+    }
+}

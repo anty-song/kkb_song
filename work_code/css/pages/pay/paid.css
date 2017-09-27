@@ -1,0 +1,21 @@
+.paid-box {
+    padding: 407px 0 281px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.paid-box .txt {
+    color: #8d8d8d;
+}
+.paid-box .check-icourse {
+    display: block;
+    width: 142.7px;
+    height: 32px;
+    color: #fff;
+    line-height: 32px;
+    background: #00ABE6;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 16px;
+
+}

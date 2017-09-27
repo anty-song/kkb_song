@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        // 函数也是变量
+
+        // 1.
+        function A() {}
+        function B() {}
+
+        // 2.
+        var A = function() {}
+        var B = function() {}
+
+        // 3.
+        var obj3 = {
+            A : function() {
+                console.log('obj3');
+            },
+            B : function() {}
+        }
+        obj3.A();// obj3
+
+        // 4. 
+        var obj4 = function() {};
+        obj4.A = function() {
+            console.log('obj4');
+        };
+        obj4.B = function() {}
+        obj4.A();
+
+        // 5.
+        var obj5 = function () {
+            return {
+                A : function() {
+                    console.log('obj5');
+                },
+                B : function() {}
+            }
+        }
+        var _obj5 = obj5();
+        _obj5.A();
+
+        // 6.类
+        var obj6 = function() {
+            this.A = function() {
+                console.log('obj6')
+            };
+            this.B = function() {};
+        };
+        var _obj6 = new obj6();
+        _obj6.A();
+
+        // 6.1
+        var obj6_1 = function() {};
+        obj6_1.prototype.A = function() {
+            console.log("obj6_1");
+        };
+        obj6_1.prototype.B = function() {};
+        var _obj6_1 = new obj6_1();
+        _obj6_1.A();
+
+        // 6.2
+        var obj6_2 = function() {};
+        obj6_2.prototype = {
+            A : function() {
+                console.log("obj6_2");
+            },
+            B : function() {}
+        }
+        var _obj6_2 = new obj6_2();
+        _obj6_2.A();
+
+        // 7.
+        var obj7 = {
+            A : function() {
+                console.log("obj7_A");
+                return this;
+            },
+            B : function() {
+                console.log("obj7_B");
+                return this;
+            }
+        }
+        obj7.A().B();
+
+        // 8.
+        var obj8 = function() {};
+        obj8.prototype = {
+            A : function() {
+                console.log("obj8_A");
+                return this;
+            },
+            B : function() {
+                console.log("obj8_B");
+                return this;
+            }
+        }
+        var _obj8 = new obj8();
+        _obj8.A();
+
+        // 9.
+        Function.prototype.addMethod = function(name, fn) {
+            this[name] = fn;
+        }
+        var methods = new Function();
+        methods.addMethod('A', function() {console.log('Function9')});
+        methods.A();
+
+        // 10.
+        Function.prototype.addMethod = function(name, fn) {
+            this.prototype[name] = fn;
+        }
+        var Methods = function() {};
+        Methods.addMethod('A', function() {console.log('Function10')});
+        var m = new Methods();
+        m.A();
+    </script>
+</body>
+</html>

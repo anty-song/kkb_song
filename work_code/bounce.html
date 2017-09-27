@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @-webkit-keyframes bounce {
+            from, 20%, 53%, 80%, to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0)
+            }
+        
+            40%, 43% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate(0, -30px);
+                transform: translate(0, -30px)
+            }
+        
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate(0, -15px);
+                transform: translate(0, -15px)
+            }
+        
+            90% {
+                -webkit-transform: translate(0, -4px);
+                transform: translate(0, -4px)
+            }
+        }
+        
+        @keyframes bounce {
+            from, 20%, 53%, 80%, to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0)
+            }
+        
+            40%, 43% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate(0, -30px);
+                transform: translate(0, -30px)
+            }
+        
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                -webkit-transform: translate(0, -15px);
+                transform: translate(0, -15px)
+            }
+        
+            90% {
+                -webkit-transform: translate(0, -4px);
+                transform: translate(0, -4px)
+            }
+        }
+        
+        .bounce {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+            -webkit-transform-origin: center bottom;
+            -ms-transform-origin: center bottom;
+            transform-origin: center bottom;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        function openwin(text){
+            if(KS && KS.openDirChatWin){
+                var win=$("#k_s_ol_chatWin");
+                if(win.length>0){
+                    if(win.is(':visible')){
+                        win.addClass("bounce");
+                        var a=setTimeout(function(){
+                            win.removeClass("bounce");
+                        },1000);
+                    }
+                }
+                KS.openDirChatWin({sText:text});
+            }else{
+                var a=setTimeout(openwin,1000);
+            }
+        }
+    </script>  
+</body>
+</html>

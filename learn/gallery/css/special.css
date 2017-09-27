@@ -1,0 +1,57 @@
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+.gallery {
+    width: 1200px;
+    white-space: nowrap;
+    font-size: 0;
+    padding-bottom: 72px
+}
+
+.gallery li {
+    display: inline-block;
+    -webkit-box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2);
+    margin-left: 8px;
+    font-size: 0
+}
+
+.gallery li:first-child {
+    margin-left: 0
+}
+
+.gallery li a {
+    display: inline-block;
+    font-size: 0
+}
+
+.gallery li a img {
+    width: 426px;
+    height: 320px
+}
+
+.gallery .mCustomScrollBox,
+.gallery .mCSB_container {
+    overflow: visible
+}
+
+.gallery .mCSB_draggerRail {
+    height: 12px !important;
+    margin: 0 !important;
+    background: rgba(3, 44, 61, 0.14) !important
+}
+
+.gallery .mCSB_dragger_bar {
+    background: rgba(3, 44, 60, 0.5) !important;
+    height: 12px !important;
+    margin: 0 !important
+}
+
+.gallery .mCSB_scrollTools {
+    opacity: 1
+}
+
+.gallery .mCustomScrollBox {
+    padding-bottom: 40px
+}

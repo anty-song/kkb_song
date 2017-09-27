@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contextmenu</title>
+</head>
+<body>
+    <div id="myDiv">GET A CUSTOM CONTEXT MENU</div>
+    <ul id="myMenu"
+        style="background-color: silver;visibility: hidden;position:absolute;">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        // var EventUtil = {
+        //     addHandler : function (element, type, handler) {},
+        //     getEvent : function (event) {
+        //         return event ? event : window.event;
+        //     },
+        //     getTarget : function (event) {
+        //         return event.target || event.srcElement;
+        //     },
+        //     preventDefault : function (event) {
+        //         if (event.preventDefault) {
+        //             event.preventDefault();
+        //         } else {
+        //             event.returnValue = false;
+        //         }
+        //     },
+        //     removeHandler : function (element, type ,handler) {},
+        //     stopPropagation : function (event) {
+        //         if (event.stopPropagation) {
+        //             event.stopPropagation();
+        //         } else {
+        //             event.cancelBubble = true;
+        //         }
+        //     }
+        // };
+        // EventUtil.addHandler(window, "load", function (event) {
+            
+        //     var div = document.getElementById("myDiv");
+        //     EventUtil.addHandler(div, "contextmenu", function (event) {
+        //         event = EventUtil.getEvent(event);
+        //         EventUtil.preventDefault(event);
+
+        //         var menu = document.getElementById("myMenu");
+        //         menu.style.left = event.clientX + "px";
+        //         menu.style.top = event.clientY + "px";
+        //         menu.style.visibility = "visible";
+        //     });
+        //     EventUtil.addHandler(document, "click", function(event) {
+        //         document.getElementById("myMenu").style.visibility = "hidden";
+        //     })
+        // })
+        var myMenu = document.getElementById("myMenu");
+        document.addEventListener("contextmenu", function(event){
+        event.preventDefault();
+        myMenu.style.visibility = "visible";
+        //获取鼠标视口位置
+        myMenu.style.top = event.clientY + "px";
+        myMenu.style.left = event.clientX + "px";
+        document.addEventListener("click", function(event){
+            myMenu.style.visibility = "hidden";
+        });
+});
+    </script>
+</body>
+</html>

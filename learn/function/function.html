@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functional</title>
+</head>
+<body>
+    <script>
+        function counter() {
+            var n = 0;
+            return {
+                count : function () { return n++; },
+                reset : function () { return n = 0; }
+            };
+        }
+        var c = counter(), d = counter();
+        console.log( 
+            c.count(),
+            d.count(),
+            c.reset(),
+            c.count(),
+            d.count()
+        );
+
+        function a() {
+            var funcs = [];
+            for ( var i = 0; i < 10; i++ ) {
+                funcs[i] = function () { return i; };
+            }
+            return funcs;
+        }
+        var funcs = a();
+        console.log( funcs[0]() );
+        // 同一个作用域中定义两个闭包，这两个闭包共享同样的私有变量或变量
+        function addPrivateProperty( o, name, predicate ) {
+            var value;
+            o[ 'get' + name ] = function () { return value; };
+            o[ 'set' + name ] = function ( v ) {
+                if ( predicate && !predicate( v ) )
+                    throw Error ( 'set' + name + ': invalid value ' + v );
+                else
+                    value = v;
+            };
+        }
+        var o = {};
+        addPrivateProperty( o, 'Name', function ( x ) { return typeof x == 'string'; });
+        o.setName( 'Frank' );
+        console.log( o.getName() );
+        // o.setName( 0 );
+        // console.log( o.getName() );
+    </script>
+</body>
+</html>

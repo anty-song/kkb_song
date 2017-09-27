@@ -1,0 +1,85 @@
+<!-- IE6 + -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery图文焦点广告轮播代码</TITLE>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen">
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+// Slider
+jQuery(window).load(function() {
+    jQuery('#slider').nivoSlider({
+    effect: 'fold',
+    slices: 15,
+    animSpeed: 500, // Slide transition speed
+    pauseTime: 5000,
+    controlNav: false,
+    directionNavHide: false,
+    prevText: 'prev',
+    nextText: 'next',
+    startSlide:0, // Set starting Slide (0 index)
+    directionNav:true, // Next &amp; Prev
+    afterLoad: function(){
+        jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+        },
+        beforeChange: function(){
+        jQuery(".nivo-caption").animate({top:"-300"}, {easing:"easeInBack", duration: 500})
+        },
+        afterChange: function(){
+        jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+        }
+    });
+    
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="slider-container">
+
+    <div id="slider" class="nivoSlider">
+        <img title="#htmlcaption1" alt="" src="images/slider1.jpg">
+        <img title="#htmlcaption2" alt="" src="images/slider2.jpg">
+        <img title="#htmlcaption3" alt="" src="images/slider3.jpg">
+        <img title="#htmlcaption4" alt="" src="images/slider4.jpg">
+    </div><!-- #slider -->
+    
+    <div id="htmlcaption1" class="nivo-html-caption">
+        <span class="sdate">December 01, 2011</span>
+        <h1>Let´s create your company growth faster...</h1>
+        <hr>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+    </div>
+    
+    <div id="htmlcaption2" class="nivo-html-caption">
+        <span class="sdate">December 05, 2011</span>
+        <h1>We can help to solve your company problem...</h1>
+        <hr>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+    </div>
+    
+    <div id="htmlcaption3" class="nivo-html-caption">
+        <span class="sdate">December 07, 2011</span>
+        <h1>We always smile to help you...</h1>
+        <hr>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+    </div>
+    
+    <div id="htmlcaption4" class="nivo-html-caption">
+        <span class="sdate">December 07, 2011</span>
+        <h1>Discover the places you´ve never been before...</h1>
+        <hr>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+    </div>
+    
+</div>
+
+</body>
+</html>

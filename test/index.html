@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>wv</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      const extname = (filename) => {
+        if (typeof(filename) === "string") {
+        let arr = filename.split('.');
+        let result = `.${arr[arr.length-1]}`;
+        console.log(result, typeof(result));
+        } else {
+          alert("请输入String类型")
+        }
+      }
+      extname('hello.jpg');
+    </script>
+  </body>
+</html>

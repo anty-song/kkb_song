@@ -1,0 +1,17 @@
+/* line 1, client/sass/tpl/index/topic_block.scss */
+.topic-block {
+  margin: 90px auto 50px;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1100px;
+  text-align: center; }
+  /* line 7, client/sass/tpl/index/topic_block.scss */
+  .topic-block h3 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #343434; }
+  /* line 12, client/sass/tpl/index/topic_block.scss */
+  .topic-block h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #959595; }

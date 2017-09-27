@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>_form</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <form name="test_form" ng-submit="save()" ng-controller="myCtrl">
+        name: <input type="text" name="test_input" ng-model="name" ng-minlength=4 required="required" ng-pattern="/^[0-9]/">
+        <span ng-show="test_form.test_input.$error.required">不为空</span>
+        <span ng-show="test_form.test_input.$error.minlength">最小长度为4</span>
+        <span ng-show="test_form.test_input.$error.pattern">数字开头</span><br>
+
+        email: <input type="email" name="test_email" ng-model="email" required>
+        <span ng-show="test_form.test_email.$error.required">不为空</span>
+        <span ng-show="test_form.test_email.$error.email">格式错误</span><br>
+        <input type="submit" value="submit" ng-disabled="test_form">
+    </form>
+    <script type="text/javascript">
+        angular.module( 'myApp', [] ).controller( "myCtrl", [ '$scope', function ( $scope ) {
+            $scope.name = '1song';
+            $scope.save = function () {};
+            $scope.email = '123456@qq.com';
+        }])
+    </script>
+</body>
+</html>

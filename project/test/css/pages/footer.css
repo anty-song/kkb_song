@@ -1,0 +1,98 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            text-align: left;
+        }
+        .footer {
+            background-color: #F1F8FE;
+            height: 370px;
+            text-align: center;
+        }
+        .footer .footer-ctt {
+            width: 85.3%;
+            margin: 0 auto;
+        }
+        .footer .footer-prod {
+            padding: 60px 0;
+        }
+        .footer .footer-prod .left-item {
+            width: 13.4%;
+            float: left;
+        }
+        .footer .footer-prod .left-item .footer-logo {
+            width: 147px;
+            height: 45px;
+            background: url(./images/footer_logo.png) no-repeat;
+        }
+        .footer .footer-prod .center-item {
+            width: 60%;
+            float: left;
+            border-right: 2px solid #E3E6E8;
+            padding-left: 7%;
+        }
+        .footer .footer-prod .center-item ul {
+            padding-left: 6.9%;
+            float: left;
+            font-size: 14px;
+            line-height: 24px;
+            color: #6C7881;
+        }
+        .footer .footer-prod .center-item ul li:nth-of-type(1) {
+            font-size: 16px;
+            line-height: 22px;
+            color: #000;
+        }
+        .footer .footer-prod .center-item ul li:nth-of-type(2) {
+            height: 0;
+            width: 21px;
+            border: 1px solid #E3E6E8;
+            margin: 15px 0;
+        }
+        .footer .footer-prod .center-item ul li:nth-of-type(4) {
+            margin: ;
+        }
+        .footer .footer-prod .right-item {
+            width: 21.6%;
+            float: right;
+        }
+        .footer .footer-prod .right-item .connect-style li {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            float: left;
+        }
+        .footer .footer-prod .right-item .connect-style li:nth-of-type(1) {
+            background: #74B828 url(./images/weChat.png) center no-repeat;
+        }
+        .footer .footer-prod .right-item .connect-style li:nth-of-type(2) {
+            background: #F07474 url(./images/weiBo.png) center no-repeat;
+            margin: 0 17.6px;
+        }
+        .footer .footer-prod .right-item .connect-style li:nth-of-type(3) {
+            background:  #00ABE6 url(./images/iPhone.png) center no-repeat;
+        }
+        .footer .copyright {
+            font-size: 14px;
+            line-height: 20px;
+            color: #6C7881;
+        }
+        .footer .h-line {
+            height: 0;
+            border: 1px solid #E2E5E7;
+            margin: 20px 0;
+        }
+        .footer .links {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .footer .links span {
+            color: #000;
+        }
+        .footer .links a {
+            color: #6c7881;
+        }
+        
+        

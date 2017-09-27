@@ -1,0 +1,140 @@
+/* line 2, client/sass/tpl/index/serial_course_box.scss */
+.serial-course-box a {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 6, client/sass/tpl/index/serial_course_box.scss */
+.serial-course-box .serial-course-list {
+  margin: 0 -13px; }
+  /* line 8, client/sass/tpl/index/serial_course_box.scss */
+  .serial-course-box .serial-course-list .serial-course-item {
+    padding: 0 13px 25px; }
+    /* line 10, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item .course-img {
+      width: 100%;
+      padding-top: 57.31%;
+      background: none center no-repeat;
+      background-size: cover;
+      position: relative; }
+    /* line 17, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item .course-info {
+      border: 1px solid #eee;
+      padding: 0 20px;
+      position: relative; }
+      /* line 21, client/sass/tpl/index/serial_course_box.scss */
+      .serial-course-box .serial-course-list .serial-course-item .course-info .course-title {
+        margin-top: 18px;
+        line-height: 30px;
+        font-size: 22px;
+        color: #171717;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      /* line 30, client/sass/tpl/index/serial_course_box.scss */
+      .serial-course-box .serial-course-list .serial-course-item .course-info .course-desc {
+        margin-top: 21px;
+        height: 72px;
+        padding-bottom: 32px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #959595;
+        padding-right: 104px; }
+      /* line 39, client/sass/tpl/index/serial_course_box.scss */
+      .serial-course-box .serial-course-list .serial-course-item .course-info .course-btn-detail {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        padding: 8px 18px;
+        line-height: 20px;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #fff; }
+      /* line 49, client/sass/tpl/index/serial_course_box.scss */
+      .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info {
+        margin: 0 10px;
+        padding: 20px 0;
+        border-top: 2px solid #ededed;
+        overflow: hidden; }
+        /* line 54, client/sass/tpl/index/serial_course_box.scss */
+        .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-logo {
+          float: left;
+          margin-right: 12px;
+          width: 50px;
+          height: 56px;
+          line-height: 56px;
+          text-align: center;
+          font-size: 16px;
+          background: none center no-repeat;
+          background-size: contain; }
+        /* line 65, client/sass/tpl/index/serial_course_box.scss */
+        .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-content {
+          float: left; }
+          /* line 67, client/sass/tpl/index/serial_course_box.scss */
+          .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-content .serial-title {
+            margin-top: 5px;
+            font-size: 18px;
+            line-height: 25px;
+            color: #171717; }
+          /* line 73, client/sass/tpl/index/serial_course_box.scss */
+          .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-content .serial-desc {
+            margin-top: 2px;
+            font-size: 15px;
+            line-height: 18px;
+            color: #959595; }
+        /* line 80, client/sass/tpl/index/serial_course_box.scss */
+        .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-btn-enter {
+          float: right;
+          margin-top: 15px;
+          position: relative;
+          padding-right: 19px; }
+          /* line 85, client/sass/tpl/index/serial_course_box.scss */
+          .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-btn-enter:before {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            width: 0;
+            height: 0;
+            border: 7px solid transparent;
+            border-right: 0;
+            border-left: 7px solid #cbcbcb;
+            content: ""; }
+          /* line 96, client/sass/tpl/index/serial_course_box.scss */
+          .serial-course-box .serial-course-list .serial-course-item .course-info .serial-info .serial-btn-enter:after {
+            position: absolute;
+            right: 1px;
+            top: 2px;
+            width: 0;
+            height: 0;
+            border: 7px solid transparent;
+            border-right: 0;
+            border-left: 7px solid #fff;
+            content: ""; }
+    /* line 113, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item:first-child .course-info .course-btn-detail {
+      background: linear-gradient(90deg, #FF9595, #FE6868); }
+    /* line 117, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item:first-child .course-info .serial-info .serial-logo {
+      background-image: url(../../../img/serial_course_box/logo-border-red.png);
+      color: #F07474; }
+    /* line 127, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item:nth-child(2) .course-info .course-btn-detail {
+      background: linear-gradient(90deg, #24CAFB, #00ABE6); }
+    /* line 131, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item:nth-child(2) .course-info .serial-info .serial-logo {
+      background-image: url(../../../img/serial_course_box/logo-border-blue.png);
+      color: #57B2F5; }
+    /* line 140, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item:nth-child(3) .course-info .course-btn-detail {
+      background: linear-gradient(90deg, #5BE3C3, #4CC8AA); }
+    /* line 144, client/sass/tpl/index/serial_course_box.scss */
+    .serial-course-box .serial-course-list .serial-course-item:nth-child(3) .course-info .serial-info .serial-logo {
+      background-image: url(../../../img/serial_course_box/logo-border-green.png);
+      color: #5ABFA7; }
+
+/* line 154, client/sass/tpl/index/serial_course_box.scss */
+.item-box-shadow {
+  transition: .6s; }
+
+/* line 157, client/sass/tpl/index/serial_course_box.scss */
+.item-box-shadow:hover {
+  box-shadow: 0 2px 34px; }

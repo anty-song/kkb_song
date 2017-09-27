@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gradient</title>
+	<style>
+		.example{
+			width: 400px;
+			height: 50px;
+			/* Webkit: Safari 4-5, Chrome 1-9 */
+			background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#02D2F1), to(#00abe6));
+			/* Webkit: Safari 5.1+, Chrome 10+ */
+			background: -webkit-linear-gradient(left,#02D2F1,#00abe6);
+			/* Firefox 3.6+ */
+			background: -moz-linear-gradient(left,#02D2F1,#00abe6);
+			/* Opera 11.10+ */
+			background: -o-linear-gradient(left,#02D2F1,#00abe6);
+			/* IE 10 */
+			background: -ms-linear-gradient(left,#02D2F1,#00abe6);
+		}
+	</style>
+</head>
+<body>
+	<div class="example"></div>
+</body>
+</html>

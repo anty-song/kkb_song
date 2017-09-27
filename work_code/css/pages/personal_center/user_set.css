@@ -1,0 +1,236 @@
+.user-set form {
+    padding: 60px 0 100px 0;
+}
+.user-set .tabs-wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+.user-set .tabs-wrap ul {
+    width: 100%;
+}
+.nav-tabs {
+    border-bottom: 1px solid #e6e6e6;
+}
+.nav-tabs>li {
+    margin-bottom: -1px;
+}
+.nav-tabs>li>a {
+    width: 85px;
+    height: 42px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 42px;
+    color: #868686;
+}
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+}
+.nav>li>a {
+    padding: 0;
+}
+.user-set .form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+.user-set form p {
+    margin: 0;
+}
+.user-set form label {
+    font-size: 14px;
+    color: #7b7b7b;
+}
+.user-set form .controls {
+    padding-left: 10px;
+}
+.user-set form input {
+    // width: 384px;
+    height: 40px;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.user-set form .avatar label {
+    padding-top: 50px;
+}
+.user-set form .avatar .avatar-pic {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+.user-set form .avatar .avatar-pic img {
+    width: 100%;
+}
+.user-set form .avatar .avatar-info {
+    float: left;
+    margin-left: 20px;
+}
+.user-set form .avatar .avatar-info a {
+    display: block;
+    width: 100px;
+    height: 29px;
+    border: 1px solid #98A2A9;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #99A3A9;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 34px;
+}
+.user-set form .avatar .avatar-info p {
+    font-size: 12px;
+    color: #8C979F;
+    margin-top: 7px;
+}
+.user-set form .gender input {
+    height: inherit;
+}
+.user-set form .help-block {
+    margin-top: 7px;
+}
+.user-set form button {
+    width: 120px;
+    height: 32px;
+    margin-left: 10px;
+    background-color: #00abe6;
+    color: #fff;
+    margin-top: 20px;
+}
+.user-set .form-group {
+    margin-bottom: 20px;
+}
+.user-set .tab-content .account {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 60px 0 153px 0;
+}
+.user-set .tab-content .account .l-span {
+    color: #7b7b7b;
+}
+.user-set .tab-content .account .r-span {
+    font-size: 0;
+    margin-left: 27px;
+}
+.user-set .tab-content .account .r-span a {
+    color: #8A959D;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 13px;
+}
+.user-set .tab-content .account .r-span i {
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background-image: url(../../../img/personal_center/user_info/pen.png);
+}
+.user-set .tab-content .account p input {
+    width: 342px;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding-left: 25px;
+    margin-left: 25px;
+    font-size: 12px;
+    line-height: 40px;
+    border: 0;
+}
+.user-set .tab-content .account .password {
+    margin-top: 20px;
+}
+.user-set .tab-content .account .password .l-span {
+    margin-left: 14px;
+}
+.user-set .change-avatar {
+    padding: 60px 0 100px 0;
+    width: 590px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.user-set .change-avatar a {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+.user-set .change-avatar .uploading {
+    width: 100px;
+    height: 29px;
+    border: 1px solid #98A2A9;
+    border-radius: 4px;
+    line-height: 29px;
+    color: #99A3A9;
+}
+.user-set .change-avatar span {
+    font-size: 12px;
+    color: #8C979F;
+    margin-left: 19px;
+}
+.user-set .change-avatar .avatar-wrap {
+    margin: 21px 0 40px 0;
+}
+.user-set .change-avatar .avatar-wrap .edit {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 360px;
+    height: 360px;
+    background: rgba(236, 242, 248, .65);
+}
+.user-set .change-avatar .avatar-wrap .preview {
+    display: inline-block;
+    margin-left: 50px;
+}
+.user-set .change-avatar .avatar-wrap .preview p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+}
+.user-set .change-avatar .avatar-wrap .preview img {
+    width: 100%;
+}
+.user-set .change-avatar .avatar-wrap .preview .lg-avatar {
+    width: 180px;
+    height: 180px;
+    margin: 31px 0 15px 0;
+}
+.user-set .change-avatar .avatar-wrap .preview .size {
+    font-size: 14px;
+    line-height: 20px;
+    color: #99A3A9;
+    text-align: center;
+}
+.user-set .change-avatar .avatar-wrap .preview .sm-avatar {
+    width: 30px;
+    height: 30px;
+    margin: 27px 0 15px 0;
+}
+.user-set .change-avatar .save {
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    background: #00ABE6;
+    border-radius: 3px;
+}
+.user-set .change-avatar .cancel {
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    color: #00abe6;
+    margin-left: 15px;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+}
+@media (min-width: 992px) {
+    .col-md-offset-3 {
+        margin-left: 28%;
+    }
+}
+@media (max-width: 992px) {
+    .user-set .tabs-wrap {
+        width: 100%;
+    }
+    .user-set .tab-content .account p input {
+        margin: 20px 0;
+    }
+}

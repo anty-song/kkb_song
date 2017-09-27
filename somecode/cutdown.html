@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>countdown</title>
+	<style>
+		div{
+			width: 300px;
+			height: 30px;
+			background: cyan;
+		}
+	</style>
+</head>
+<body>
+	<div id="timer">
+		<span id="showDays"></span>
+		<span id="showHours"></span>
+		<span id="showMinutes"></span>
+		<span id="showSeconds"></span>
+	</div>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script>
+	function countDown() {
+		var currentTime = new Date();
+		var endTime = new Date("2017-9-1");
+		var timeLeft = endTime.getTime() - currentTime.getTime();
+		var days = Math.floor(timeLeft / 1000 / 3600 / 24);
+		var hours = Math.floor(timeLeft / 1000 / 3600 % 24);
+		var minutes = Math.floor(timeLeft / 1000 / 60 % 60);
+		var seconds = Math.floor(timeLeft / 1000 % 60);
+		var _days = String(days);
+		var _hours = String(hours);
+		var _minutes = String(minutes);
+		var _seconds = String(seconds);
+		_days.length == 2 ? $('#showDays').html(days + '天') : $('#showDays').html('0' + days + '天');
+		_hours.length == 2 ? $('#showHours').html(hours + '时') : $('#showHours').html('0' + hours + '时');
+		_minutes.length == 2 ? $('#showMinutes').html(minutes + '分') : $('#showMinutes').html('0' + minutes + '分');
+		_seconds.length == 2 ? $('#showSeconds').html(seconds + '秒') : $('#showSeconds').html('0' + seconds + '秒');
+		}
+		var timer = setInterval("countDown()",1000);
+	</script>
+</body>
+</html>

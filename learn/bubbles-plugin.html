@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bubbles</title>
+    <link rel="stylesheet" href="css/bublle.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <ul class="bubble-ul">
+        <li class="bubble bubble1"></li>
+        <li class="bubble bubble2"></li>
+        <li class="bubble bubble3"></li>
+        <li class="bubble bubble4"></li>
+        <li class="bubble bubble5"></li>
+        <li class="bubble bubble6"></li>
+        <li class="bubble bubble7 active"></li>
+        <li class="bubble bubble8"></li>
+    </ul>
+    <script>
+        $(function () {
+            var list = {
+                init: function () {
+                    var me = this;
+                    this.showBubble();
+                },
+                showBubble: function() {
+                    var els = $('.bubble');
+                    setInterval(function() {
+                        // 产生0~7之间的随机数
+                        var radom = Math.round(Math.random() * 4);
+                        els.eq(radom).addClass('active').siblings('li:nth-of-type(n-4)').removeClass('active');
+                        var radom = Math.round(Math.random() * (7 - 4) + 3);
+                        els.eq(radom).addClass('active').siblings('li:nth-of-type(n+4)').removeClass('active');
+                    }, 1000);
+                }
+            };
+            list.init();
+        })
+    </script>
+</body>
+</html>

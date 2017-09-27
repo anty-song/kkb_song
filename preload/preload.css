@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    background-color: #eee;
+}
+.box {
+    text-align: center;
+}
+.box>p {
+    margin-top: 30px;
+}
+.img_box {
+    height: 600px;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0 10px;
+    margin-right: 50px;
+    color: #333;
+}
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+.progress {
+    margin-top: 300px;
+}

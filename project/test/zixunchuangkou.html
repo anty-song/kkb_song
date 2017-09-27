@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function openwin(text){
+            if(KS && KS.openDirChatWin){
+                var win=$("#k_s_ol_chatWin");
+                if(win.length>0){
+                    if(win.is(':visible')){
+                        win.addClass("bounce");
+                        var a=setTimeout(function(){
+                            win.removeClass("bounce");
+                        },1000);
+                    }
+                }
+                KS.openDirChatWin({sText:text});
+            }else{
+                var a=setTimeout(openwin,1000);
+            }
+        }
+    </script>
+      
+</body>
+</html>

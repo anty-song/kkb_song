@@ -1,0 +1,36 @@
+/* line 1, client/sass/common/banner.scss */
+.banner {
+  width: 100%;
+  height: 39.06vw;
+  text-align: center; }
+  /* line 5, client/sass/common/banner.scss */
+  .banner img {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  /* line 10, client/sass/common/banner.scss */
+  .banner .swiper-container {
+    width: 100%;
+    height: 100%; }
+    /* line 13, client/sass/common/banner.scss */
+    .banner .swiper-container .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  /* line 32, client/sass/common/banner.scss */
+  .banner .banner-image {
+    width: 100%;
+    height: 100%;
+    background: none center no-repeat;
+    background-size: cover; }
+  @media (max-width: 768px) {
+    /* line 39, client/sass/common/banner.scss */
+    .banner {
+      height: 60vw; } }

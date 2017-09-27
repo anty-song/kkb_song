@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue_example</title>
+</head>
+<body>
+    <!-- 计算属性 -->
+    <!-- 计算属性和Methods的区别 ‘主要是计算属性是基于他们的依赖进行缓存的’ -->
+    <!-- <div id="example">
+        <p>Original message: "{{ message }}"</p>
+        <p>Computed reversed message: "{{ reversedMessage }}"</p>
+    </div> -->
+    <div id="app">
+        <span v-once>{{msg}}</span>
+        <p v-html="rawHTML"></p>
+        <button v-bind:disabled='isButtonDisabled'>ddd</button>
+        <p>{{reverseMsg}}</p>
+    </div>
+    <div id="demo">
+        {{fullName}}
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="./vue_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preload</title>
+</head>
+<body>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495505688&di=3da77d0d6937b024fef65eb51ba95385&imgtype=jpg&er=1&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D7c204481494a20a42e1e31c7a0539847%2F96dda144ad3459828d81f9010af431adcbef841d.jpg" alt="pic">
+    <script>
+        var img = new Image();
+        img.onload = function () {
+            alert('img is loaded');
+        };
+        img.onerror = function () {
+            alert('error');
+        };
+        img.src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495505688&di=3da77d0d6937b024fef65eb51ba95385&imgtype=jpg&er=1&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Flvpics%2Fh%3D800%2Fsign%3D7c204481494a20a42e1e31c7a0539847%2F96dda144ad3459828d81f9010af431adcbef841d.jpg";
+        function show() {
+            alert('body is loaded');
+        };
+        window.onload = show;
+    </script>
+</body>
+</html>

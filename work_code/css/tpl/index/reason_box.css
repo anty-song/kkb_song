@@ -1,0 +1,80 @@
+/* line 2, client/sass/tpl/index/reason_box.scss */
+.reason-box a {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 7, client/sass/tpl/index/reason_box.scss */
+.reason-box .reason-list {
+  margin: 0 0; }
+  /* line 9, client/sass/tpl/index/reason_box.scss */
+  .reason-box .reason-list .reason-item {
+    padding: 28px 56px 30px;
+    transition: .6s; }
+    /* line 12, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item:nth-child(n+2):before {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      height: 80%;
+      border-left: 1px solid #EBEBEB;
+      content: ""; }
+    /* line 20, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item .user-avatar {
+      margin: 0 auto;
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      background: #d8d8d8 center no-repeat;
+      background-size: contain; }
+    /* line 28, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item .user-name {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #171717; }
+    /* line 35, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item .user-desc {
+      margin-top: 7px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #171717; }
+    /* line 42, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item .user-comment {
+      margin-top: 29px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #676767; }
+    /* line 48, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item .btn-detail {
+      display: block;
+      margin: 20px auto 0;
+      width: 92px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 14px;
+      border: 1px solid #00ABE6;
+      color: #00ABE6;
+      visibility: hidden;
+      cursor: pointer; }
+    /* line 60, client/sass/tpl/index/reason_box.scss */
+    .reason-box .reason-list .reason-item:hover {
+      box-shadow: 0 2px 34px rgba(143, 143, 143, 0.5); }
+      /* line 61, client/sass/tpl/index/reason_box.scss */
+      .reason-box .reason-list .reason-item:hover:nth-child(n+2):before {
+        display: none; }
+      /* line 65, client/sass/tpl/index/reason_box.scss */
+      .reason-box .reason-list .reason-item:hover .btn-detail {
+        visibility: visible; }
+    @media (min-width: 768px) {
+      /* line 70, client/sass/tpl/index/reason_box.scss */
+      .reason-box .reason-list .reason-item .user-comment {
+        height: 110px; } }
+    @media (max-width: 768px) {
+      /* line 75, client/sass/tpl/index/reason_box.scss */
+      .reason-box .reason-list .reason-item:nth-child(n+2):before {
+        display: none; }
+      /* line 78, client/sass/tpl/index/reason_box.scss */
+      .reason-box .reason-list .reason-item .btn-detail {
+        visibility: visible; } }

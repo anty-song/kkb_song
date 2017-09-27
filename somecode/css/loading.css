@@ -1,0 +1,73 @@
+body {
+			background: #2196f3;
+		}
+		.css-loader{
+			padding: 0 75px;
+			position: absolute;
+			top: 46.5%;
+			left: 38.5%;
+			-webkit-filter: url("#goo");
+			filter: url("#goo");
+		}
+		.css-loader .ball-box{
+			position: relative;
+			height: 80px;
+			width: 80px;
+		}
+		.css-loader .ball-box .ball{
+			position: absolute;
+			left: 28px;
+			top: 28px;
+			border-radius: 50%;
+			height: 25px;
+			width: 25px;
+			background-color: #FFF;
+		}
+		.css-loader .ball-box .ball.moving{
+			animation: moving 3s ease-in-out infinite;
+			-webkit-animation: moving 3s ease-in-out infinite;
+			-moz-animation: moving 3s ease-in-out infinite;
+			-o-animation: moving 3s ease-in-out infinite;
+		}
+
+		@keyframes moving{
+			0%, 100%{
+				transform: translateX(-100px);
+			}
+			50%{
+				transform: translateX(100px);
+			}
+		}
+
+		@-webkit-keyframes moving{
+			0%, 100%{
+				-webkit-transform: translateX(-100px);
+				transform: translateX(-100px);
+			}
+			50%{
+				-webkit-transform: translateX(-100px);
+				transform: translateX(-100px);
+			}
+		}
+
+		@-moz-keyframes moving{
+			0%, 100%{
+				-moz-transform: translateX(-100px);
+				transform: translateX(-100px);
+			}
+			50%{
+				-moz-transform: translateX(-100px);
+				transform: translateX(-100px);
+			}
+		}
+
+		@-o-keyframes moving{
+			0%, 100%{
+				-o-transform: translateX(-100px);
+				transform: translateX(-100px);
+			}
+			50%{
+				-o-transform: translateX(-100px);
+				transform: translateX(-100px);
+			}
+		}

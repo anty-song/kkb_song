@@ -1,0 +1,57 @@
+/* line 2, client/sass/tpl/index/teacher_course_box.scss */
+.teacher-course-box a {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 7, client/sass/tpl/index/teacher_course_box.scss */
+.teacher-course-box .teacher-course-list {
+  margin: 0 -13px; }
+  /* line 9, client/sass/tpl/index/teacher_course_box.scss */
+  .teacher-course-box .teacher-course-list .teacher-course-item {
+    padding: 0 13px 30px; }
+    /* line 11, client/sass/tpl/index/teacher_course_box.scss */
+    .teacher-course-box .teacher-course-list .teacher-course-item .course-img {
+      width: 100%;
+      padding-top: 57.31%;
+      background: none center no-repeat;
+      background-size: cover;
+      position: relative; }
+    /* line 18, client/sass/tpl/index/teacher_course_box.scss */
+    .teacher-course-box .teacher-course-list .teacher-course-item .course-info {
+      border: 1px solid #eee;
+      padding: 0 20px;
+      position: relative; }
+      /* line 22, client/sass/tpl/index/teacher_course_box.scss */
+      .teacher-course-box .teacher-course-list .teacher-course-item .course-info .course-title {
+        margin-top: 20px;
+        line-height: 25px;
+        font-size: 18px;
+        color: #171717;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      /* line 31, client/sass/tpl/index/teacher_course_box.scss */
+      .teacher-course-box .teacher-course-list .teacher-course-item .course-info .teacher-info {
+        margin: 12px 0 16px;
+        overflow: hidden; }
+        /* line 34, client/sass/tpl/index/teacher_course_box.scss */
+        .teacher-course-box .teacher-course-list .teacher-course-item .course-info .teacher-info .teacher-avatar {
+          float: left;
+          margin-right: 8px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #d8d8d8 center no-repeat;
+          background-size: contain; }
+        /* line 43, client/sass/tpl/index/teacher_course_box.scss */
+        .teacher-course-box .teacher-course-list .teacher-course-item .course-info .teacher-info .teacher-name {
+          float: left;
+          line-height: 32px;
+          font-size: 14px;
+          color: #171717; }
+        /* line 49, client/sass/tpl/index/teacher_course_box.scss */
+        .teacher-course-box .teacher-course-list .teacher-course-item .course-info .teacher-info .learns {
+          float: right;
+          line-height: 32px;
+          font-size: 14px;
+          color: #959595; }

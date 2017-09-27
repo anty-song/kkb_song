@@ -1,0 +1,16 @@
+/* line 1, client/sass/pages/popup.scss */
+.modal .access-wrap {
+  position: relative;
+  padding: 52px 0 62px 0; }
+
+/* line 5, client/sass/pages/popup.scss */
+.modal .access-wrap button.close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer; }
+
+@media screen and (min-width: 768px) {
+  /* line 12, client/sass/pages/popup.scss */
+  .modal-sm {
+    width: 416px; } }

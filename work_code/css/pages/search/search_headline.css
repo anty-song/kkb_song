@@ -1,0 +1,63 @@
+.search-wrap .search-headline p {
+    margin: 0;
+}
+.search-wrap .search-headline {
+    width: 790px;
+    margin: 0 auto;
+}
+.search-wrap .search-headline .search-result {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B2D3D;
+    padding: 48px 0 4px 0;
+}
+.search-wrap .search-headline .search-result span {
+    color: #F37169;
+}
+.search-wrap .search-headline .item {
+    margin: 0;
+    padding: 26px 0;
+    border-bottom: 2px solid #E6E6E6;
+}
+.search-wrap .search-headline .item .articleinfo {
+    margin: 0;
+}
+.search-wrap .search-headline .item .articleinfo .article-title {
+    font-weight: bold;
+}
+.search-wrap .search-headline .item .articleinfo p.articledemo {
+    margin: 8px 0 26px 0;
+}
+.search-wrap .search-headline .item .articleinfo .articledata {
+    color: #B6BEC3;
+}
+.search-wrap .search-headline .item .articleinfo .articledata span.readNum:before {
+    margin-right: 2.5px;
+}
+.search-wrap .search-headline .item .articleinfo .articledata span.likesNum {
+    margin-left: 18px;
+}
+.search-wrap .search-headline .item .articleinfo .articledata span.selectNum {
+    margin-left: 14px;
+}
+.search-wrap .search-headline .item .articleinfo .articledata span.likesNum:before {
+    margin-right: 2.5px;
+}
+.search-wrap .search-headline .item .articleinfo .articledata span.selectNum:before {
+    margin-right: 2.5px;
+}
+.search-wrap .search-headline .item .article-right {
+    /*// width: 141px;*/
+}
+.search-wrap .search-headline .more {
+    height: 11px;
+    width: 22px;
+    margin: 40px auto 95px;
+    background-color: blue;
+}
+@media screen and (max-width: 790px) {
+    .search-wrap .search-headline {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

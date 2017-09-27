@@ -1,0 +1,887 @@
+/* line 1, client/sass/pages/about.scss */
+.about .ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+/* line 7, client/sass/pages/about.scss */
+.about .hide {
+  display: none; }
+
+/* line 11, client/sass/pages/about.scss */
+.about .left {
+  float: left; }
+
+/* line 15, client/sass/pages/about.scss */
+.about .right {
+  float: right; }
+
+/* line 19, client/sass/pages/about.scss */
+.about .center {
+  text-align: center !important; }
+
+/* line 23, client/sass/pages/about.scss */
+.about .clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+/* line 31, client/sass/pages/about.scss */
+.about .page {
+  background: #F5F5F5; }
+
+/* line 35, client/sass/pages/about.scss */
+.about .wrap {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: left; }
+
+/* line 41, client/sass/pages/about.scss */
+.about .white {
+  background-color: #fff !important; }
+
+/* line 45, client/sass/pages/about.scss */
+.about .bkF9F9FA {
+  background-color: #F9F9FA !important; }
+
+/* line 49, client/sass/pages/about.scss */
+.about .gray {
+  background-color: #f5f5f5 !important; }
+
+/* line 53, client/sass/pages/about.scss */
+.about .lighter-gray {
+  background-color: #f9f9f9 !important; }
+
+/* line 57, client/sass/pages/about.scss */
+.about .dark {
+  position: relative;
+  background-image: linear-gradient(to bottom, #536988 0%, #060C2C 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF536988', endColorstr='#FF060C2C', GradientType=0); }
+
+/* line 66, client/sass/pages/about.scss */
+.about .dark .bg-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+/* line 75, client/sass/pages/about.scss */
+.about .dark .wrap {
+  position: relative;
+  z-index: 2; }
+
+/* line 80, client/sass/pages/about.scss */
+.about .dark .box-tit, .dark .box-des {
+  color: #fff; }
+
+/* line 84, client/sass/pages/about.scss */
+.about .table {
+  display: table;
+  table-layout: fixed; }
+
+/* line 89, client/sass/pages/about.scss */
+.about .table > div {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* line 94, client/sass/pages/about.scss */
+.about .mb40 {
+  margin-bottom: 40px; }
+
+/* line 98, client/sass/pages/about.scss */
+.about .mt40 {
+  margin-top: 40px; }
+
+/* line 102, client/sass/pages/about.scss */
+.about .mt10 {
+  margin-top: 10px; }
+
+/* line 106, client/sass/pages/about.scss */
+.about .mt20 {
+  margin-top: 20px; }
+
+/* line 110, client/sass/pages/about.scss */
+.about .text-center {
+  text-align: center; }
+
+/* line 114, client/sass/pages/about.scss */
+.about .ft16 {
+  font-size: 16px; }
+
+/* line 118, client/sass/pages/about.scss */
+.about .pb40 {
+  padding-bottom: 40px; }
+
+/* line 122, client/sass/pages/about.scss */
+.about .box-page {
+  min-height: 575px; }
+
+/* line 125, client/sass/pages/about.scss */
+.about {
+  position: relative;
+  background: #FFFFFF; }
+
+/* line 130, client/sass/pages/about.scss */
+.about .slide {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+/* line 140, client/sass/pages/about.scss */
+.about .slide > video {
+  position: relative;
+  top: -50%; }
+
+/* line 145, client/sass/pages/about.scss */
+.about .slide .tip {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  line-height: 480px;
+  color: #FFFFFF;
+  text-align: center;
+  filter: Alpha(opacity=20);
+  background: #686A6F \9;
+  background: rgba(104, 106, 111, 0.2) none scroll repeat 0 0 !important; }
+
+/* line 161, client/sass/pages/about.scss */
+.about > section > header {
+  max-width: 1080px;
+  margin: 0px auto;
+  padding-top: 50px;
+  text-align: center; }
+
+/* line 168, client/sass/pages/about.scss */
+.about > section > header h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  color: #242629; }
+
+/* line 176, client/sass/pages/about.scss */
+.about > section > header h2:after {
+  content: "";
+  display: block;
+  margin: 10px auto 0px;
+  width: 18px;
+  height: 2px;
+  background: #242629; }
+
+/* line 185, client/sass/pages/about.scss */
+.about .aboutUs {
+  margin-bottom: 50px; }
+
+/* line 189, client/sass/pages/about.scss */
+.about .aboutUs .text-box {
+  padding: 0px 60px 0px; }
+
+/* line 193, client/sass/pages/about.scss */
+.about .aboutUs .text-box p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #666; }
+
+/* line 200, client/sass/pages/about.scss */
+.about .aboutUs .text-box p strong {
+  font-weight: bold;
+  font-size: 15px; }
+
+/* line 205, client/sass/pages/about.scss */
+.about .aboutUs .signature {
+  margin-top: 50px; }
+
+/* line 209, client/sass/pages/about.scss */
+.about .bigEvent {
+  padding-bottom: 50px; }
+
+/* line 213, client/sass/pages/about.scss */
+.about .bigEvent > div {
+  text-align: center; }
+
+/* line 217, client/sass/pages/about.scss */
+.about .bigEvent > div .axis {
+  width: 100%;
+  table-layout: fixed; }
+
+/* line 222, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item {
+  position: relative;
+  text-align: center;
+  padding-bottom: 45px; }
+
+/* line 228, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item:before, .about .bigEvent > div .axis .item:after {
+  display: none;
+  position: absolute;
+  left: 50%;
+  content: "";
+  margin-left: -15px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent; }
+
+/* line 239, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item:after {
+  bottom: -1px;
+  border-bottom: 15px solid #F5F5F5; }
+
+/* line 244, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item:before {
+  bottom: 0px;
+  border-bottom: 15px solid #E9E9E9; }
+
+/* line 249, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item.active:after, .about .bigEvent > div .axis .item.active:before {
+  display: block; }
+
+/* line 253, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a {
+  position: relative;
+  display: block;
+  cursor: pointer; }
+
+/* line 259, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a .year {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #A1A3A7; }
+
+/* line 266, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a .icon-home_lunbo1 {
+  position: relative;
+  z-index: 2;
+  font-size: 21px;
+  color: #B7B9BD; }
+
+/* line 273, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a:after {
+  position: absolute;
+  left: 0px;
+  bottom: 9px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #E9E9E9; }
+
+/* line 284, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a.last:after {
+  width: 50%; }
+
+/* line 288, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a:hover .year, .about .bigEvent > div .axis .item a.active .year {
+  color: #E43E3E; }
+
+/* line 292, client/sass/pages/about.scss */
+.about .bigEvent > div .axis .item a:hover .icon-home_lunbo1, .about .bigEvent > div .axis .item a.active .icon-home_lunbo1 {
+  color: #E43E3E; }
+
+/* line 296, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box {
+  height: 416px;
+  text-align: left;
+  padding: 10px 20px;
+  background: #F5F5F5;
+  border-radius: 9px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15); }
+
+/* line 306, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item {
+  display: none; }
+
+/* line 310, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item li {
+  line-height: 66px;
+  font-size: 0px; }
+
+/* line 315, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item li .mouth {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 22px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #E43E3E;
+  font-size: 24px;
+  line-height: 44px;
+  color: #E43E3E;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px; }
+
+/* line 330, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item li .mouth small {
+  font-size: 12px; }
+
+/* line 334, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item li .des {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 16px;
+  line-height: 66px;
+  color: #242629;
+  vertical-align: middle; }
+
+/* line 343, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item li .des a {
+  color: #08c;
+  font-size: 16px;
+  line-height: 66px; }
+
+/* line 349, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item li.last {
+  border-bottom: none; }
+
+/* line 353, client/sass/pages/about.scss */
+.about .bigEvent > div .axis-box .item.active {
+  display: block; }
+
+/* line 357, client/sass/pages/about.scss */
+.about .bigEvent .wrap {
+  width: 1000px;
+  margin: auto;
+  position: relative; }
+
+/* line 363, client/sass/pages/about.scss */
+.about .bigEvent .wrap:before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #d1d1d1;
+  top: 20px;
+  bottom: 26px;
+  left: 113.5px;
+  -ms-transform: scale(0.5, 1);
+  transform: scale(0.5, 1); }
+
+/* line 375, client/sass/pages/about.scss */
+.about .bigEvent table {
+  width: 100%; }
+
+/* line 379, client/sass/pages/about.scss */
+.about .bigEvent table tr:first-child .year-point {
+  border-width: 1px;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-left: -10px; }
+
+/* line 387, client/sass/pages/about.scss */
+.about .bigEvent table tr:first-child .year-point:after {
+  content: '';
+  display: block;
+  background: #00AAE5;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; }
+
+/* line 396, client/sass/pages/about.scss */
+.about .bigEvent table tr td {
+  padding: 5px 10px;
+  line-height: 40px;
+  vertical-align: top;
+  font-size: 16px;
+  color: #666; }
+
+/* line 404, client/sass/pages/about.scss */
+.about .bigEvent table tr td img {
+  margin-top: 16px; }
+
+/* line 408, client/sass/pages/about.scss */
+.about .bigEvent table tr td.tac {
+  width: 45px;
+  text-align: center; }
+
+/* line 413, client/sass/pages/about.scss */
+.about .bigEvent .year {
+  font-size: 28px;
+  line-height: 40px;
+  width: 80px;
+  color: #00AAE5; }
+
+/* line 420, client/sass/pages/about.scss */
+.about .bigEvent .date {
+  font-size: 18px;
+  color: #242629;
+  text-align: right; }
+
+/* line 426, client/sass/pages/about.scss */
+.about .bigEvent .year-point {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #00AAE5;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 113px;
+  margin-left: -7px;
+  margin-top: 12px; }
+
+/* line 439, client/sass/pages/about.scss */
+.about .office .img-box {
+  padding-bottom: 48px;
+  overflow: hidden;
+  font-size: 0px; }
+
+/* line 445, client/sass/pages/about.scss */
+.about .office .img-box .item {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  float: left;
+  margin: 0px 10px 10px 0px;
+  font-size: 0px;
+  overflow: hidden; }
+
+/* line 455, client/sass/pages/about.scss */
+.about .office .img-box .item img {
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: transform 0.2s; }
+
+/* line 465, client/sass/pages/about.scss */
+.about .office .img-box .item:hover img, .about .office .img-box .item.hover img {
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 471, client/sass/pages/about.scss */
+.about .office .img-box .item.mr0 {
+  margin-right: 0px; }
+
+/* line 475, client/sass/pages/about.scss */
+.about .office .img-box .item.playOpt {
+  cursor: pointer; }
+
+/* line 479, client/sass/pages/about.scss */
+.about .office .img-box .item.playOpt:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-right: -30px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../img/play@1x.png) center center no-repeat; }
+
+/* line 492, client/sass/pages/about.scss */
+.about .office .img-box .item.playOpt:hover:after {
+  background: url(../img/play_hover@1x.png) center center no-repeat; }
+
+/* line 496, client/sass/pages/about.scss */
+.about .activity .wrap {
+  padding: 0px 1px 78px;
+  overflow: hidden; }
+
+/* line 501, client/sass/pages/about.scss */
+.about .activity .wrap .item {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 292px;
+  height: 182px;
+  float: left;
+  margin: 0px 10px 10px 0px;
+  overflow: hidden; }
+
+/* line 512, client/sass/pages/about.scss */
+.about .activity .wrap .item .info {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 90px;
+  padding: 0px 15px 15px;
+  background: url(../img/activitybg.png) left top repeat-x; }
+
+/* line 522, client/sass/pages/about.scss */
+.about .activity .wrap .item .info .tit {
+  margin-top: 54px;
+  width: 180px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/* line 533, client/sass/pages/about.scss */
+.about .activity .wrap .item .info .place {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF; }
+
+/* line 542, client/sass/pages/about.scss */
+.about .activity .wrap .item .info .place em {
+  position: relative;
+  top: 1px;
+  margin-right: 3px;
+  font-size: 16px; }
+
+/* line 549, client/sass/pages/about.scss */
+.about .activity .wrap .item.mr0 {
+  margin-right: 0px; }
+
+/* line 553, client/sass/pages/about.scss */
+.about .activity .wrap .item img {
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: transform 0.2s; }
+
+/* line 563, client/sass/pages/about.scss */
+.about .activity .wrap .item:hover img, .about .activity .wrap .item.hover img {
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 569, client/sass/pages/about.scss */
+.about .question .ques-list {
+  padding-bottom: 40px;
+  overflow: hidden; }
+
+/* line 574, client/sass/pages/about.scss */
+.about .question .ques-list .item {
+  width: 595px;
+  padding: 32px 30px 30px;
+  height: 178px;
+  float: left;
+  margin: 0px 10px 10px 0px;
+  background: #F5F5F5;
+  border-radius: 4px; }
+
+/* line 584, client/sass/pages/about.scss */
+.about .question .ques-list .item h4 {
+  margin-bottom: 16px;
+  overflow: hidden; }
+
+/* line 589, client/sass/pages/about.scss */
+.about .question .ques-list .item h4 .icon-adoutus_question {
+  float: left;
+  margin-top: 4px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #00AAE5; }
+
+/* line 597, client/sass/pages/about.scss */
+.about .question .ques-list .item h4 .tag {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  float: left;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00AAE5; }
+
+/* line 607, client/sass/pages/about.scss */
+.about .question .ques-list .item h4 .tit {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 460px;
+  float: left;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242629; }
+
+/* line 617, client/sass/pages/about.scss */
+.about .question .ques-list .item .answer {
+  font-size: 15px;
+  line-height: 26px;
+  color: #696A70; }
+
+/* line 623, client/sass/pages/about.scss */
+.about .question .ques-list .item .tip {
+  margin-top: 27px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A1A3A7; }
+
+/* line 632, client/sass/pages/about.scss */
+.about .question .ques-list .item .consultation {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0px auto;
+  width: 102px;
+  height: 28px;
+  font-size: 13px;
+  color: #00AAE5;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #00AAE5;
+  border-radius: 2px; }
+
+/* line 646, client/sass/pages/about.scss */
+.about .question .ques-list .item.mr0 {
+  margin-right: 0px; }
+
+/* line 650, client/sass/pages/about.scss */
+.about .report .report-list {
+  padding: 0px 1px 30px;
+  overflow: hidden; }
+
+/* line 655, client/sass/pages/about.scss */
+.about .report .report-list li {
+  width: 386px;
+  height: 299px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+/* line 663, client/sass/pages/about.scss */
+.about .report .report-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E9E9E9;
+  overflow: hidden; }
+
+/* line 671, client/sass/pages/about.scss */
+.about .report .report-list li a .des {
+  padding: 15px 20px;
+  height: 82px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #696A70;
+  overflow: hidden; }
+
+/* line 680, client/sass/pages/about.scss */
+.about .report .report-list li a:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
+
+/* line 685, client/sass/pages/about.scss */
+.about .report .report-list li a:hover .des {
+  color: #00AAE5; }
+
+/* line 689, client/sass/pages/about.scss */
+.about .report .report-list li.mr0 {
+  margin-right: 0px; }
+
+/* line 693, client/sass/pages/about.scss */
+.about .contact .wrap {
+  padding-bottom: 30px;
+  overflow: hidden; }
+
+/* line 698, client/sass/pages/about.scss */
+.about .contact h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242629; }
+
+/* line 705, client/sass/pages/about.scss */
+.about .contact h4 a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 10px;
+  width: 52px;
+  height: 22px;
+  border: 1px solid #00AAE5;
+  font-size: 12px;
+  line-height: 20px;
+  color: #00AAE5;
+  text-align: center;
+  border-radius: 2px; }
+
+/* line 719, client/sass/pages/about.scss */
+.about .contact .item {
+  position: relative;
+  float: left;
+  margin-right: 21px;
+  margin-bottom: 20px;
+  padding: 54px 0px 53px 137px;
+  width: 386px;
+  height: 160px;
+  background: #F5F5F5; }
+
+/* line 730, client/sass/pages/about.scss */
+.about .contact .item .icon {
+  position: absolute;
+  top: 55px;
+  left: 47px;
+  font-size: 50px;
+  color: #696A70; }
+
+/* line 738, client/sass/pages/about.scss */
+.about .contact .item > a {
+  font-size: 15px;
+  line-height: 21px;
+  color: #696A70; }
+
+/* line 744, client/sass/pages/about.scss */
+.about .contact .item > a:hover {
+  color: #E43E3E; }
+
+/* line 748, client/sass/pages/about.scss */
+.about .contact .item.mr0 {
+  margin-right: 0px; }
+
+/* line 752, client/sass/pages/about.scss */
+.about .contact .address {
+  width: 386px;
+  height: 160px;
+  float: left;
+  padding: 28px 40px;
+  background: #F5F5F5;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15); }
+
+/* line 762, client/sass/pages/about.scss */
+.about .contact .address p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #696A70; }
+
+/* line 768, client/sass/pages/about.scss */
+.about .feedback > form {
+  display: block;
+  overflow: hidden; }
+
+/* line 773, client/sass/pages/about.scss */
+.about .feedback > form > div {
+  margin: 0px auto;
+  width: 800px;
+  overflow: hidden; }
+
+/* line 779, client/sass/pages/about.scss */
+.about .feedback > form > div.error textarea, .about .feedback > form > div.error input {
+  border: 1px solid #F6664B; }
+
+/* line 783, client/sass/pages/about.scss */
+.about .feedback > form > div.error .error-tip {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 788, client/sass/pages/about.scss */
+.about .feedback > form .error-tip {
+  clear: both;
+  display: none;
+  font-size: 14px;
+  color: #E43E3E; }
+
+/* line 795, client/sass/pages/about.scss */
+.about .feedback > form .error-tip em {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #E43E3E; }
+
+/* line 801, client/sass/pages/about.scss */
+.about .feedback > form textarea {
+  margin: 0px auto 10px;
+  display: block;
+  padding: 15px 20px;
+  width: 100%;
+  height: 150px;
+  border: 1px solid #E9E9E9;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8A8A8A;
+  border-radius: 4px;
+  resize: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* line 818, client/sass/pages/about.scss */
+.about .feedback > form input {
+  float: left;
+  margin: 10px auto 10px;
+  display: block;
+  padding: 0px 20px;
+  width: 100%;
+  height: 46px;
+  line-height: 46px\9;
+  _line-height: 46px;
+  border: 1px solid #E9E9E9;
+  font-size: 14px;
+  color: #8A8A8A;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* line 836, client/sass/pages/about.scss */
+.about .feedback > form button {
+  margin: 25px auto 100px;
+  display: block;
+  width: 180px;
+  height: 44px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #00AAE5;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer; }
+
+/* line 850, client/sass/pages/about.scss */
+.about .feedback > form button:hover {
+  color: #FFFFFF;
+  background: #009fd6; }
+
+/* line 855, client/sass/pages/about.scss */
+.about .feedback > div {
+  margin-bottom: 40px;
+  text-align: center; }
+
+/* line 860, client/sass/pages/about.scss */
+.about .feedback > div em {
+  margin-right: 4px;
+  font-size: 22px;
+  display: none; }
+
+/* line 866, client/sass/pages/about.scss */
+.about .feedback > div em.icon-XST-wancheng {
+  color: #1aa3ee; }
+
+/* line 870, client/sass/pages/about.scss */
+.about .feedback > div em.icon-guanbi {
+  color: #F6664B; }
+
+/* line 874, client/sass/pages/about.scss */
+.about .feedback > div em.show {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 879, client/sass/pages/about.scss */
+.about .feedback > div > span {
+  position: relative;
+  top: -4px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1AA3EE; }
+
+/* line 887, client/sass/pages/about.scss */
+.about .feedback > div p {
+  padding: 6px 0px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696A70; }

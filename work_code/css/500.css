@@ -1,0 +1,23 @@
+/* line 1, client/sass/500.scss */
+.error500-wrap {
+  text-align: center;
+  padding: 143px 0 150px 0; }
+
+/* line 5, client/sass/500.scss */
+.error500-wrap p {
+  margin: 24.5px 0 18px 0;
+  font-size: 14px;
+  color: #8D8D8D; }
+
+/* line 10, client/sass/500.scss */
+.error500-wrap a {
+  text-decoration: none;
+  display: block;
+  width: 143px;
+  height: 32px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 32px;
+  color: #FFFFFF;
+  background: #00ABE6;
+  border-radius: 4px; }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sidebar</title>
+    <style>
+        html {
+            height: 2000px;
+        }
+        .spig {
+            display: block;
+            width: 150px;
+            height: 190px;
+            position: absolute;
+            top: -200px;
+            left: 160px;
+            z-index: 9999;
+        }
+        #message {
+            color: #191919;
+            border: 1px solid #c4c4c4;
+            background: #ddd;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            min-height: 1em;
+            padding: 5px;
+            top: -30px;
+            position: absolute;
+            text-align: center;
+            width: auto !important;
+            z-index: 10000;
+            -moz-box-shadow: 0 0 15px #eeeeee;
+            -webkit-box-shadow: 0 0 15px #eeeeee;
+            border-color: #eeeeee;
+            box-shadow: 0 0 15px #eeeeee;
+            outline: none;}
+        .mumu{
+            width: 150px;
+            height: 190px;
+            cursor: move;
+            background-image: url( 'fixed_left.png' );
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /*http://blog.fishc.com/wp-content/themes/Metropro/images/spig.png(甲鱼C悬浮)*/
+    </style>
+</head>
+<body>
+    <div id="spig" class="spig" style="top: -204px; left: 1105px;">
+        <div id="message" style="display: none; opacity: 1;"></div>
+        <div id="mumu" class="mumu" style="opacity: 1;"></div>
+    </div>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>

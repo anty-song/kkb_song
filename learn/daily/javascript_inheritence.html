@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inheritence</title>
+</head>
+<body>
+    <script>
+
+        // 简单原型链继承
+        function A() {
+            this.val = 1;
+            this.arr = [ 1 ];
+        }
+        function B() {
+            // ...
+        }
+        B.prototype = new A();    // 核心 [拿父类实例来充当子类的原型对象]
+        var b1 = new B();
+        var b2 = new B();
+        b1.val = 2;
+        b1.arr.push( 2 );
+        console.log( b1.val, b2.val, b1.arr, b2.arr, B.prototype, A.__proto__ );
+
+        // 构造函数
+        function C( val ) {
+            this.val = val;
+            this.arr = [ 1 ];
+            this.fun = function () {};
+        }
+        function D( val ) {
+            C.call( this, val );    // 核心 [借父类的构造函数来增强子类实例]
+        }
+        var d1 = new D( 1 );
+        var d2 = new D( 2 );
+        d1.arr.push( 2 );
+        console.log( d1.val, d2.val, d1.arr, d2.arr, d1.fun == d2.fun );
+
+        // 组合继承
+        function E() {
+            this.val = 1;
+            this.arr = [ 1 ];
+        }
+        E.prototype.fun1 = function () {};
+        E.prototype.fun2 = function () {};
+        function F() {
+            E.call( this );         // 核心 [继承父类的基本属性和引用属性并保留能传参的优点]
+        }
+        F.prototype =  new E();     // 核心 [继承父类函数，实现函数复用]
+        var f1 = new F( 1 );
+        var f2 = new F( 2 );
+        console.log( f1.fun == f2.fun, F.prototype );
+
+        // 寄生组合继承
+        function beget( obj ) {
+            var G = function () {};
+            G.prototype = obj;
+            return new G();
+        }
+        function H() {
+            this.val = 1;
+            this.arr = [ 1 ];
+        }
+        H.prototype.fun3 = function () {};
+        H.prototype.fun4 = function () {};
+        function I() {
+            H.call( this );
+        }
+        var proto = beget( H.prototype );
+        proto.constructor = I;
+        I.prototype = proto;
+        var i = new I();
+        console.log( i.val, i.arr );
+
+        // 对象冒充
+        function Parent( username ) {
+            this.username = username;
+            this.hello = function () {
+                console.log( this.username );
+            }
+        }
+        function Child( username, password ) {
+            this.method = Parent;
+            this.method( username );
+            delete this.method;
+            this.password = password;
+            this.world = function () {
+                console.log( this.password );
+            }
+        }
+        var parent = new Parent( 'zhang3' );
+        var child = new Child( 'lisi', '1234' );
+        parent.hello();
+        child.hello();
+        child.world();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

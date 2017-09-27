@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Page-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(4.000000, 4.000000)" id="Black">
+            <g>
+                <rect id="Square" stroke="#D8D8D8" stroke-width="8" fill="#FFFFFF" x="0" y="0" width="392" height="392" rx="30.7000008"></rect>
+                <path d="M219.479769,275 L257.609827,275 L216.968208,206.959538 C237.973988,198.054913 248.020231,185.49711 248.020231,164.263006 C248.020231,132.297688 226.557803,117 184.317919,117 L135,117 L135,275 L168.563584,275 L168.563584,213.124277 L185.687861,213.124277 L219.479769,275 Z M168.563584,140.973988 L183.632948,140.973988 C203.953757,140.973988 213.315029,148.052023 213.315029,164.263006 C213.315029,182.072254 203.725434,189.378613 186.144509,189.378613 L168.563584,189.378613 L168.563584,140.973988 Z" id="R" fill="#333333"></path>
+            </g>
+        </g>
+    </g>
+</svg>

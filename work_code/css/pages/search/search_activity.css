@@ -1,0 +1,42 @@
+.search-wrap .search-activity {
+    width: 790px;
+    margin: 0 auto;
+}
+.search-wrap .search-activity .search-result {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B2D3D;
+    padding: 48px 0 5px 0;
+}
+.search-wrap .search-activity .search-result span {
+    color: #F37169;
+}
+.search-wrap .search-activity .item {
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #E6E6E6;
+}
+.search-wrap .search-activity .more {
+    height: 11px;
+    width: 22px;
+    margin: 40px auto 95px;
+    background-color: blue;
+}
+@media screen and (max-width: 790px) {
+    .search-wrap .search-activity {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .search-wrap .search-activity .active-title {
+        max-height: 30px;
+        line-height: 30px;
+    }
+    .search-wrap .search-activity .actove-img {
+        min-height: 72px;
+    }
+    .search-wrap .search-activity .actove-img img {
+        width: 100%;
+    }
+}
+
+

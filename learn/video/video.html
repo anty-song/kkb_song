@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            position: relative;
+        }
+        video {
+            height: 720px;
+            overflow: hidden;
+        }
+        .reel-angle {
+            bottom: 0;
+            height: 150px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <video id="reel" autoplay="1" loop="1">
+            <source src="http://andyburdin.co/wp-content/themes/andyburdin/assets/vid/reel.mp4" type="video/mp4">
+            <source src="http://andyburdin.co/wp-content/themes/andyburdin/assets/vid/reel.ogv" type="video/ogv">
+        </video>
+        <svg class="reel-angle" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon class="bottom" points="0,0 100,100 0,100 0,0" style="fill:white;fill-opacity:1">
+            </polygon>
+        </svg>
+    </section>
+</body>
+</html>

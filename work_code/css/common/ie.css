@@ -1,0 +1,30 @@
+/* line 1, client/sass/common/ie.scss */
+.js .nav-collapse {
+  position: relative; }
+
+/* line 5, client/sass/common/ie.scss */
+.nav-toggle {
+  display: none; }
+
+/* line 9, client/sass/common/ie.scss */
+.nav-collapse {
+  float: right;
+  width: auto; }
+
+/* line 14, client/sass/common/ie.scss */
+.nav-collapse li {
+  width: auto; }
+
+/* line 18, client/sass/common/ie.scss */
+.nav-collapse a {
+  border-left: 1px solid white;
+  padding: 1.02em 2em;
+  text-align: center;
+  border-top: 0;
+  float: left;
+  width: auto;
+  margin: 0; }
+
+/* line 28, client/sass/common/ie.scss */
+.nav-collapse .active a {
+  background: transparent; }

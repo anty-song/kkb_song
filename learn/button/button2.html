@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 120px;
+            height: 50px;
+            margin: 50px auto;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            border: 1px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .box:hover .bg {
+            left: 0;
+        }
+        .box .bg {
+            transition: all .3s linear;
+            position: absolute;
+            left: -120px;
+            top: 0;
+            width: 120px;
+            height: 50px;
+            background-color: #00abe5;
+            z-index: -1;
+        }
+        .box .bg1 {
+            position: absolute;
+            left: 0px;
+            top: 0;
+            width: 120px;
+            height: 50px;
+            background-color: #fff;
+            z-index: -2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bg"></div>
+        <div class="bg1"></div>
+        button
+    </div>
+</body>
+</html>

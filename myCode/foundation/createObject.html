@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 工厂模式【解决了创建多个相似对象的问题，但却没有解决对象识别问题】
+        function createPerson(name, age, job) {
+            var o = new Object();
+            o.name = name;
+            o.age = age;
+            o.job = job;
+            o.sayName = function() {
+                alert(this.name);
+            }
+            return o;
+        }
+        var person1 = createPerson('song', 25, 'FE');
+        console.log(person1);
+        /**
+        *构造函数模式 与工厂模式相比：
+        *
+        *1.没有显式的创建对象
+        *2.直接将属性和方法赋给了this对象
+        *3.没有return语句
+        *
+        *缺点：每个方法都要在每个实例上重新创建一遍
+        */
+        function Person(name, age, job) {
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.sayName = function() {
+                alert(this.name);
+            }
+            // this.sayName = new Function(alert(this.name))//同上面的等价
+        }
+        var person2 = new Person('song', 25, 'FE');
+        var person3 = new Person('peng', 25, 'FE');
+        console.log(person2);
+        console.log(person3);
+        // 不同实例上的同名函数是不相等的
+        //alert(person2.sayName == person3.sayName);// false
+        // 解决以上问题 可以如下
+
+        function $Person(name, age, job) {
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.sayName = sayName;
+        }
+        function sayName() {
+            alert(this.name);
+        }
+        // 然而 sayName 是全局定义的 与封装的思想不统一 故 采用原型模式
+        /**
+        *原型模式
+        *
+        *
+        *
+        */
+        function Obj() {}
+        Obj.prototype.name = 'song';
+        Obj.prototype.age = 25;
+        Obj.prototype.job = 'FE';
+        Obj.prototype.sayName = function() {
+            console.log(this.name)
+        }
+        var obj1 = new Obj();
+        var a = obj1.sayName();
+        var obj2 = new Obj();
+        var b = obj2.sayName();
+        console.log(a == b);
+        console.log(obj1.constructor);
+    </script>
+</body>
+</html>

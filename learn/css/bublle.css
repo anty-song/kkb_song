@@ -1,0 +1,78 @@
+html, body {
+    font-family: "PingFangSC-light", "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    font-size: 62.5%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+.bubble-ul {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    margin-top: 100px;
+    padding: 0;
+}
+.bubble {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    height: 180px;
+    position: absolute;
+    transition: all 0.6s linear 0s;
+    width: 180px;
+    z-index: 9;
+}
+.bubble1 {
+    background-image: url("../images/bubble1.png");
+    background-size: 75% 75%;
+    left: 2px;
+    top: 78px;
+}
+.bubble2 {
+    background-image: url("../images/bubble2.png");
+    background-size: 75% 75%;
+    left: 107px;
+    top: 200px;
+}
+.bubble3 {
+    background-image: url("../images/bubble3.png");
+    background-size: 75% 75%;
+    left: 183px;
+    top: 51px;
+}
+.bubble4 {
+    background-image: url("../images/bubble4.png");
+    background-size: 75% 75%;
+    left: 304px;
+    top: -56px;
+}
+.bubble5 {
+    background-image: url("../images/bubble5.png");
+    background-size: 75% 75%;
+    left: 407px;
+    top: 71px;
+}
+.bubble6 {
+    background-image: url("../images/bubble6.png");
+    background-size: 75% 75%;
+    left: 566px;
+    top: 178px;
+}
+.bubble7 {
+    background-image: url("../images/bubble7.png");
+    background-size: 75% 75%;
+    left: 646px;
+    top: 42px;
+}
+.bubble8 {
+    background-image: url("../images/bubble8.png");
+    background-size: 75% 75%;
+    left: 857px;
+    top: 85px;
+    z-index: 8;
+}
+.active {
+    background-size: 100% 100%;
+}

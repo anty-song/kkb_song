@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>digit</title>
+</head>
+<body>
+<ul id="color-list">
+<li>red</li>
+<li>orange</li>
+<li>yellow</li>
+<li>green</li>
+<li>blue</li>
+<li>indigo</li>
+<li>purple</li>
+</ul>
+<script>
+    var ul=document.querySelector('ul');
+    var lis=ul.querySelectorAll('ul li');
+    ul.addEventListener('click', function (e) {
+        var target= e.target;
+        if(target.nodeName.toUpperCase()==='LI'){
+            alert([].indexOf.call(lis,target));
+        }
+    },false)
+</script>
+</body>
+</html>

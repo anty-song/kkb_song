@@ -1,0 +1,51 @@
+.pay-fail {
+    text-align: center;
+    padding: 197px 0 346px 0;
+    font-size: 14px;
+}
+
+.pay-fail .fail-reason {
+    line-height: 18px;
+    color: #7b7b7b;
+    margin-bottom: 64px;
+    text-align: left;
+}
+.pay-fail .fail-tit {
+    font-size: 18px;
+    line-height: 26px;
+    color: #353535;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+.pay-fail .fail-tit span {
+    color: #F37169;
+}
+.pay-fail .fail-tit:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    background: url(../../../img/pay/pay_fail.png) center no-repeat;
+    background-size: 100% 100%;
+    vertical-align: top;
+}
+.pay-fail .item2 {
+    margin: 8px 0;
+}
+.pay-fail .repay {
+    display: block;
+    width: 194px;
+    height: 32px;
+    color: #fff;
+    line-height: 32px;
+    background: #00ABE6;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+    .col-md-8, .col-md-offset-2, .col-md-11, .col-md-offset-1 {
+        float: inherit;
+    }
+}
